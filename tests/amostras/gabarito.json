@@ -1,0 +1,35 @@
+{
+ "email": [
+  "fulano.teste@mailinator.com",
+  "luana.lins@teste.com.br",
+  "maria.santos@exemplo.com.br",
+  "pedro.alves@exemplo.org"
+ ],
+ "telefone": [
+  "+5511912345678",
+  "+558133334444",
+  "+5581987650001",
+  "+5581987654321",
+  "+5581991234567",
+  "+5581998765432"
+ ],
+ "cpf": [
+  "07068093868",
+  "11144477735",
+  "52998224725",
+  "93541134780",
+  "M:***456789**"
+ ],
+ "imei": [
+  "35209900176148",
+  "35693803564380",
+  "86453904123456"
+ ],
+ "nome": [
+  "ANA PAULA CAVALCANTI DE LIMA",
+  "JOSE CARLOS KOWALSKI",
+  "LUANA FERREIRA LINS",
+  "MARIA APARECIDA DOS SANTOS",
+  "PEDRO HENRIQUE ALVES"
+ ]
+}

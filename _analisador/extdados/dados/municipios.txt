@@ -1,0 +1,5572 @@
+# Municipios - kelvins/municipios-brasileiros (MIT). NOME<TAB>UF<TAB>DDD
+Abadia de Goiás	GO	62
+Abadia dos Dourados	MG	34
+Abadiânia	GO	62
+Abaetetuba	PA	91
+Abaeté	MG	37
+Abaiara	CE	88
+Abaré	BA	75
+Abatiá	PR	43
+Abaíra	BA	77
+Abdon Batista	SC	49
+Abel Figueiredo	PA	94
+Abelardo Luz	SC	49
+Abre Campo	MG	31
+Abreu e Lima	PE	81
+Abreulândia	TO	63
+Acaiaca	MG	31
+Acajutiba	BA	75
+Acarape	CE	85
+Acaraú	CE	88
+Acari	RN	84
+Acará	PA	91
+Acauã	PI	89
+Aceguá	RS	53
+Acopiara	CE	88
+Acorizal	MT	65
+Acrelândia	AC	68
+Acreúna	GO	64
+Adamantina	SP	18
+Adelândia	GO	64
+Adolfo	SP	17
+Adrianópolis	PR	41
+Adustina	BA	75
+Afogados da Ingazeira	PE	87
+Afonso Bezerra	RN	84
+Afonso Cláudio	ES	27
+Afonso Cunha	MA	98
+Afrânio	PE	87
+Afuá	PA	91
+Agrestina	PE	81
+Agricolândia	PI	86
+Agrolândia	SC	47
+Agronômica	SC	47
+Aguanil	MG	35
+Aguaí	SP	19
+Agudo	RS	55
+Agudos	SP	14
+Agudos do Sul	PR	41
+Aguiar	PB	83
+Aguiarnópolis	TO	63
+Aimorés	MG	33
+Aiquara	BA	73
+Aiuaba	CE	88
+Aiuruoca	MG	35
+Ajuricaba	RS	55
+Alagoa	MG	35
+Alagoa Grande	PB	83
+Alagoa Nova	PB	83
+Alagoinha	PB	83
+Alagoinha	PE	87
+Alagoinha do Piauí	PI	89
+Alagoinhas	BA	75
+Alambari	SP	15
+Albertina	MG	35
+Alcantil	PB	83
+Alcinópolis	MS	67
+Alcobaça	BA	73
+Alcântara	MA	98
+Alcântaras	CE	88
+Aldeias Altas	MA	99
+Alecrim	RS	55
+Alegre	ES	28
+Alegrete	RS	55
+Alegrete do Piauí	PI	89
+Alegria	RS	55
+Alenquer	PA	93
+Alexandria	RN	84
+Alexânia	GO	62
+Alfenas	MG	35
+Alfredo Chaves	ES	27
+Alfredo Marcondes	SP	18
+Alfredo Vasconcelos	MG	32
+Alfredo Wagner	SC	48
+Algodão de Jandaíra	PB	83
+Alhandra	PB	83
+Aliança	PE	81
+Aliança do Tocantins	TO	63
+Almadina	BA	73
+Almas	TO	63
+Almeirim	PA	93
+Almenara	MG	33
+Almino Afonso	RN	84
+Almirante Tamandaré	PR	41
+Almirante Tamandaré do Sul	RS	54
+Aloândia	GO	64
+Alpercata	MG	33
+Alpestre	RS	55
+Alpinópolis	MG	35
+Alta Floresta	MT	66
+Alta Floresta D'Oeste	RO	69
+Altair	SP	17
+Altamira	PA	93
+Altamira do Maranhão	MA	98
+Altamira do Paraná	PR	44
+Altaneira	CE	88
+Alterosa	MG	35
+Altinho	PE	81
+Altinópolis	SP	16
+Alto Alegre	RR	95
+Alto Alegre	SP	18
+Alto Alegre	RS	54
+Alto Alegre do Maranhão	MA	99
+Alto Alegre do Pindaré	MA	98
+Alto Alegre dos Parecis	RO	69
+Alto Araguaia	MT	66
+Alto Bela Vista	SC	49
+Alto Boa Vista	MT	66
+Alto Caparaó	MG	32
+Alto Feliz	RS	51
+Alto Garças	MT	66
+Alto Horizonte	GO	62
+Alto Jequitibá	MG	33
+Alto Longá	PI	86
+Alto Paraguai	MT	65
+Alto Paraná	PR	44
+Alto Paraíso	RO	69
+Alto Paraíso	PR	44
+Alto Paraíso de Goiás	GO	62
+Alto Parnaíba	MA	99
+Alto Piquiri	PR	44
+Alto Rio Doce	MG	32
+Alto Rio Novo	ES	27
+Alto Santo	CE	88
+Alto Taquari	MT	66
+Alto do Rodrigues	RN	84
+Altos	PI	86
+Altônia	PR	44
+Alumínio	SP	11
+Alvarenga	MG	33
+Alvarães	AM	97
+Alvinlândia	SP	14
+Alvinópolis	MG	31
+Alvorada	TO	63
+Alvorada	RS	51
+Alvorada D'Oeste	RO	69
+Alvorada de Minas	MG	31
+Alvorada do Gurguéia	PI	89
+Alvorada do Norte	GO	62
+Alvorada do Sul	PR	43
+Além Paraíba	MG	32
+Amajari	RR	95
+Amambai	MS	67
+Amaporã	PR	44
+Amapá	AP	96
+Amapá do Maranhão	MA	98
+Amaraji	PE	81
+Amaral Ferrador	RS	51
+Amaralina	GO	62
+Amarante	PI	86
+Amarante do Maranhão	MA	99
+Amargosa	BA	75
+Amaturá	AM	97
+Americana	SP	19
+Americano do Brasil	GO	64
+Ametista do Sul	RS	55
+Amontada	CE	88
+Amorinópolis	GO	64
+Amparo	PB	83
+Amparo	SP	19
+Amparo de São Francisco	SE	79
+Amparo do Serra	MG	31
+Ampére	PR	46
+Amélia Rodrigues	BA	75
+América Dourada	BA	74
+Américo Brasiliense	SP	16
+Américo de Campos	SP	17
+Anadia	AL	82
+Anagé	BA	77
+Anahy	PR	45
+Anajatuba	MA	98
+Anajás	PA	91
+Analândia	SP	19
+Anamã	AM	97
+Ananindeua	PA	91
+Ananás	TO	63
+Anapu	PA	91
+Anapurus	MA	98
+Anastácio	MS	67
+Anaurilândia	MS	67
+Anchieta	ES	28
+Anchieta	SC	49
+Andaraí	BA	75
+Andirá	PR	43
+Andorinha	BA	74
+Andradas	MG	35
+Andradina	SP	18
+Andrelândia	MG	35
+André da Rocha	RS	54
+Angatuba	SP	15
+Angelim	PE	87
+Angelina	SC	48
+Angelândia	MG	33
+Angical	BA	77
+Angical do Piauí	PI	86
+Angico	TO	63
+Angicos	RN	84
+Angra dos Reis	RJ	24
+Anguera	BA	75
+Angélica	MS	67
+Anhanguera	GO	64
+Anhembi	SP	14
+Anhumas	SP	18
+Anicuns	GO	64
+Anita Garibaldi	SC	49
+Anitápolis	SC	48
+Anori	AM	97
+Anta Gorda	RS	51
+Antas	BA	75
+Antonina	PR	41
+Antonina do Norte	CE	88
+Antônio Almeida	PI	89
+Antônio Cardoso	BA	75
+Antônio Carlos	MG	32
+Antônio Carlos	SC	48
+Antônio Dias	MG	31
+Antônio Gonçalves	BA	74
+Antônio João	MS	67
+Antônio Martins	RN	84
+Antônio Olinto	PR	42
+Antônio Prado	RS	54
+Antônio Prado de Minas	MG	32
+Anápolis	GO	62
+Anísio de Abreu	PI	89
+Aparecida	PB	83
+Aparecida	SP	12
+Aparecida d'Oeste	SP	17
+Aparecida de Goiânia	GO	62
+Aparecida do Rio Doce	GO	64
+Aparecida do Rio Negro	TO	63
+Aparecida do Taboado	MS	67
+Aperibé	RJ	22
+Apiacá	ES	28
+Apiacás	MT	66
+Apiaí	SP	15
+Apicum-Açu	MA	98
+Apiúna	SC	47
+Apodi	RN	84
+Aporá	BA	75
+Aporé	GO	64
+Apuarema	BA	73
+Apucarana	PR	43
+Apuiarés	CE	85
+Apuí	AM	97
+Aquidabã	SE	79
+Aquidauana	MS	67
+Aquiraz	CE	85
+Arabutã	SC	49
+Aracaju	SE	79
+Aracati	CE	88
+Aracatu	BA	77
+Araci	BA	75
+Aracitaba	MG	32
+Aracoiaba	CE	85
+Aracruz	ES	27
+Aragarças	GO	64
+Aragoiânia	GO	62
+Aragominas	TO	63
+Araguacema	TO	63
+Araguaiana	MT	66
+Araguainha	MT	66
+Araguanã	TO	63
+Araguanã	MA	98
+Araguapaz	GO	62
+Araguari	MG	34
+Araguatins	TO	63
+Araguaçu	TO	63
+Araguaína	TO	63
+Araioses	MA	98
+Aral Moreira	MS	67
+Aramari	BA	75
+Arambaré	RS	51
+Arame	MA	99
+Aramina	SP	16
+Arandu	SP	14
+Arantina	MG	32
+Arapeí	SP	12
+Arapiraca	AL	82
+Arapoema	TO	63
+Araponga	MG	31
+Arapongas	PR	43
+Araporã	MG	34
+Arapoti	PR	43
+Araputanga	MT	65
+Arapuá	MG	34
+Arapuã	PR	43
+Araquari	SC	47
+Arara	PB	83
+Araranguá	SC	48
+Araraquara	SP	16
+Araras	SP	19
+Ararendá	CE	88
+Arari	MA	98
+Araricá	RS	51
+Araripe	CE	88
+Araripina	PE	87
+Araruama	RJ	22
+Araruna	PB	83
+Araruna	PR	44
+Arataca	BA	73
+Aratiba	RS	54
+Aratuba	CE	85
+Aratuípe	BA	75
+Araucária	PR	41
+Arauá	SE	79
+Araxá	MG	34
+Araçagi	PB	83
+Araçariguama	SP	11
+Araças	BA	75
+Araçatuba	SP	18
+Araçaí	MG	31
+Araçoiaba	PE	81
+Araçoiaba da Serra	SP	15
+Araçu	GO	62
+Araçuaí	MG	33
+Araújos	MG	37
+Arceburgo	MG	35
+Arco-Íris	SP	14
+Arcos	MG	37
+Arcoverde	PE	87
+Areado	MG	35
+Areal	RJ	24
+Arealva	SP	14
+Areia	PB	83
+Areia Branca	RN	84
+Areia Branca	SE	79
+Areia de Baraúnas	PB	83
+Areial	PB	83
+Areias	SP	12
+Areiópolis	SP	14
+Arenápolis	MT	65
+Arenópolis	GO	64
+Argirita	MG	32
+Aricanduva	MG	33
+Arinos	MG	38
+Aripuanã	MT	66
+Ariquemes	RO	69
+Ariranha	SP	17
+Ariranha do Ivaí	PR	43
+Armazém	SC	48
+Armação dos Búzios	RJ	22
+Arneiroz	CE	88
+Aroazes	PI	89
+Aroeiras	PB	83
+Aroeiras do Itaim	PI	89
+Arraial	PI	89
+Arraial do Cabo	RJ	22
+Arraias	TO	63
+Arroio Grande	RS	53
+Arroio Trinta	SC	49
+Arroio do Meio	RS	51
+Arroio do Padre	RS	53
+Arroio do Sal	RS	51
+Arroio do Tigre	RS	51
+Arroio dos Ratos	RS	51
+Artur Nogueira	SP	19
+Aruanã	GO	62
+Arujá	SP	11
+Arvoredo	SC	49
+Arvorezinha	RS	51
+Arês	RN	84
+Ascurra	SC	47
+Aspásia	SP	17
+Assaré	CE	88
+Assaí	PR	43
+Assis	SP	18
+Assis Brasil	AC	68
+Assis Chateaubriand	PR	44
+Assunção	PB	83
+Assunção do Piauí	PI	86
+Astolfo Dutra	MG	32
+Astorga	PR	44
+Atalaia	AL	82
+Atalaia	PR	44
+Atalaia do Norte	AM	97
+Atalanta	SC	47
+Ataléia	MG	33
+Atibaia	SP	11
+Atilio Vivacqua	ES	28
+Augustinópolis	TO	63
+Augusto Corrêa	PA	91
+Augusto Pestana	RS	55
+Augusto Severo (Campo Grande)	RN	84
+Augusto de Lima	MG	38
+Aurelino Leal	BA	73
+Auriflama	SP	17
+Aurilândia	GO	64
+Aurora	CE	88
+Aurora	SC	47
+Aurora do Pará	PA	91
+Aurora do Tocantins	TO	63
+Autazes	AM	92
+Avanhandava	SP	18
+Avaré	SP	14
+Avaí	SP	14
+Aveiro	PA	93
+Avelino Lopes	PI	89
+Avelinópolis	GO	64
+Axixá	MA	98
+Axixá do Tocantins	TO	63
+Açailândia	MA	99
+Açu	RN	84
+Açucena	MG	33
+Babaçulândia	TO	63
+Bacabal	MA	99
+Bacabeira	MA	98
+Bacuri	MA	98
+Bacurituba	MA	98
+Bady Bassitt	SP	17
+Baependi	MG	35
+Bagre	PA	91
+Bagé	RS	53
+Baianópolis	BA	77
+Baixa Grande	BA	74
+Baixa Grande do Ribeiro	PI	89
+Baixio	CE	88
+Baixo Guandu	ES	27
+Baião	PA	91
+Balbinos	SP	14
+Baldim	MG	31
+Baliza	GO	64
+Balneário Arroio do Silva	SC	48
+Balneário Barra do Sul	SC	47
+Balneário Camboriú	SC	47
+Balneário Gaivota	SC	48
+Balneário Pinhal	RS	51
+Balneário Piçarras	SC	47
+Balneário Rincão	SC	48
+Balsa Nova	PR	41
+Balsas	MA	99
+Bambuí	MG	37
+Banabuiú	CE	88
+Bananal	SP	12
+Bananeiras	PB	83
+Bandeira	MG	33
+Bandeira do Sul	MG	35
+Bandeirante	SC	49
+Bandeirantes	PR	43
+Bandeirantes	MS	67
+Bandeirantes do Tocantins	TO	63
+Bannach	PA	94
+Banzaê	BA	75
+Baraúna	RN	84
+Baraúna	PB	83
+Barbacena	MG	32
+Barbalha	CE	88
+Barbosa	SP	18
+Barbosa Ferraz	PR	44
+Barcarena	PA	91
+Barcelona	RN	84
+Barcelos	AM	97
+Bariri	SP	14
+Barra	BA	74
+Barra Bonita	SP	14
+Barra Bonita	SC	49
+Barra D'Alcântara	PI	89
+Barra Funda	RS	54
+Barra Longa	MG	31
+Barra Mansa	RJ	24
+Barra Velha	SC	47
+Barra da Estiva	BA	77
+Barra de Guabiraba	PE	81
+Barra de Santa Rosa	PB	83
+Barra de Santana	PB	83
+Barra de Santo Antônio	AL	82
+Barra de São Francisco	ES	27
+Barra de São Miguel	PB	83
+Barra de São Miguel	AL	82
+Barra do Bugres	MT	65
+Barra do Chapéu	SP	15
+Barra do Choça	BA	77
+Barra do Corda	MA	99
+Barra do Garças	MT	66
+Barra do Guarita	RS	55
+Barra do Jacaré	PR	43
+Barra do Mendes	BA	74
+Barra do Ouro	TO	63
+Barra do Piraí	RJ	24
+Barra do Quaraí	RS	55
+Barra do Ribeiro	RS	51
+Barra do Rio Azul	RS	54
+Barra do Rocha	BA	73
+Barra do Turvo	SP	15
+Barra dos Coqueiros	SE	79
+Barracão	PR	49
+Barracão	RS	54
+Barras	PI	86
+Barreira	CE	85
+Barreiras	BA	77
+Barreiras do Piauí	PI	89
+Barreirinha	AM	92
+Barreirinhas	MA	98
+Barreiros	PE	81
+Barretos	SP	17
+Barrinha	SP	16
+Barro	CE	88
+Barro Alto	BA	74
+Barro Alto	GO	62
+Barro Duro	PI	86
+Barro Preto	BA	73
+Barrocas	BA	75
+Barrolândia	TO	63
+Barroquinha	CE	88
+Barros Cassal	RS	54
+Barroso	MG	32
+Barueri	SP	11
+Barão	RS	51
+Barão de Antonina	SP	15
+Barão de Cocais	MG	31
+Barão de Cotegipe	RS	54
+Barão de Grajaú	MA	99
+Barão de Melgaço	MT	65
+Barão de Monte Alto	MG	32
+Barão do Triunfo	RS	51
+Bastos	SP	14
+Bataguassu	MS	67
+Batalha	PI	86
+Batalha	AL	82
+Batatais	SP	16
+Batayporã	MS	67
+Baturité	CE	85
+Bauru	SP	14
+Bayeux	PB	83
+Baía Formosa	RN	84
+Baía da Traição	PB	83
+Bebedouro	SP	17
+Beberibe	CE	85
+Bela Cruz	CE	88
+Bela Vista	MS	67
+Bela Vista da Caroba	PR	46
+Bela Vista de Goiás	GO	62
+Bela Vista de Minas	MG	31
+Bela Vista do Maranhão	MA	98
+Bela Vista do Paraíso	PR	43
+Bela Vista do Piauí	PI	89
+Bela Vista do Toldo	SC	47
+Belford Roxo	RJ	21
+Belmiro Braga	MG	32
+Belmonte	BA	73
+Belmonte	SC	49
+Belo Campo	BA	77
+Belo Horizonte	MG	31
+Belo Jardim	PE	81
+Belo Monte	AL	82
+Belo Oriente	MG	31
+Belo Vale	MG	31
+Belterra	PA	93
+Belágua	MA	98
+Belém	PA	91
+Belém	PB	83
+Belém	AL	82
+Belém de Maria	PE	81
+Belém do Brejo do Cruz	PB	83
+Belém do Piauí	PI	89
+Belém do São Francisco	PE	87
+Beneditinos	PI	86
+Benedito Leite	MA	99
+Benedito Novo	SC	47
+Benevides	PA	91
+Benjamin Constant	AM	97
+Benjamin Constant do Sul	RS	54
+Bento Fernandes	RN	84
+Bento Gonçalves	RS	54
+Bento de Abreu	SP	18
+Bequimão	MA	98
+Berilo	MG	33
+Berizal	MG	38
+Bernardino Batista	PB	83
+Bernardino de Campos	SP	14
+Bernardo Sayão	TO	63
+Bernardo do Mearim	MA	99
+Bertioga	SP	13
+Bertolínia	PI	89
+Bertópolis	MG	33
+Beruri	AM	97
+Betim	MG	31
+Betânia	PE	87
+Betânia do Piauí	PI	89
+Bezerros	PE	81
+Bias Fortes	MG	32
+Bicas	MG	32
+Biguaçu	SC	48
+Bilac	SP	18
+Biquinhas	MG	37
+Birigui	SP	18
+Biritiba-Mirim	SP	11
+Biritinga	BA	75
+Bituruna	PR	42
+Blumenau	SC	47
+Boa Esperança	MG	35
+Boa Esperança	ES	27
+Boa Esperança	PR	44
+Boa Esperança do Iguaçu	PR	46
+Boa Esperança do Norte	MT	66
+Boa Esperança do Sul	SP	16
+Boa Hora	PI	86
+Boa Nova	BA	77
+Boa Ventura	PB	83
+Boa Ventura de São Roque	PR	42
+Boa Viagem	CE	88
+Boa Vista	RR	95
+Boa Vista	PB	83
+Boa Vista da Aparecida	PR	45
+Boa Vista das Missões	RS	55
+Boa Vista do Buricá	RS	55
+Boa Vista do Cadeado	RS	55
+Boa Vista do Gurupi	MA	98
+Boa Vista do Incra	RS	55
+Boa Vista do Ramos	AM	92
+Boa Vista do Sul	RS	54
+Boa Vista do Tupim	BA	75
+Boca da Mata	AL	82
+Boca do Acre	AM	97
+Bocaina	PI	89
+Bocaina	SP	14
+Bocaina de Minas	MG	32
+Bocaina do Sul	SC	49
+Bocaiúva	MG	38
+Bocaiúva do Sul	PR	41
+Bodocó	PE	87
+Bodoquena	MS	67
+Bodó	RN	84
+Bofete	SP	14
+Boituva	SP	15
+Bom Conselho	PE	87
+Bom Despacho	MG	37
+Bom Jardim	MA	98
+Bom Jardim	PE	81
+Bom Jardim	RJ	22
+Bom Jardim da Serra	SC	49
+Bom Jardim de Goiás	GO	64
+Bom Jardim de Minas	MG	32
+Bom Jesus	PI	89
+Bom Jesus	RN	84
+Bom Jesus	PB	83
+Bom Jesus	SC	49
+Bom Jesus	RS	54
+Bom Jesus da Lapa	BA	77
+Bom Jesus da Penha	MG	35
+Bom Jesus da Serra	BA	77
+Bom Jesus das Selvas	MA	98
+Bom Jesus de Goiás	GO	64
+Bom Jesus do Amparo	MG	31
+Bom Jesus do Araguaia	MT	66
+Bom Jesus do Galho	MG	33
+Bom Jesus do Itabapoana	RJ	22
+Bom Jesus do Norte	ES	28
+Bom Jesus do Oeste	SC	49
+Bom Jesus do Sul	PR	46
+Bom Jesus do Tocantins	PA	94
+Bom Jesus do Tocantins	TO	63
+Bom Jesus dos Perdões	SP	11
+Bom Lugar	MA	99
+Bom Princípio	RS	51
+Bom Princípio do Piauí	PI	86
+Bom Progresso	RS	55
+Bom Repouso	MG	35
+Bom Retiro	SC	49
+Bom Retiro do Sul	RS	51
+Bom Sucesso	PB	83
+Bom Sucesso	MG	35
+Bom Sucesso	PR	43
+Bom Sucesso de Itararé	SP	15
+Bom Sucesso do Sul	PR	46
+Bombinhas	SC	47
+Bonfim	RR	95
+Bonfim	MG	31
+Bonfim do Piauí	PI	89
+Bonfinópolis	GO	62
+Bonfinópolis de Minas	MG	38
+Boninal	BA	75
+Bonito	PA	91
+Bonito	PE	81
+Bonito	BA	75
+Bonito	MS	67
+Bonito de Minas	MG	38
+Bonito de Santa Fé	PB	83
+Bonópolis	GO	62
+Boqueirão	PB	83
+Boqueirão do Leão	RS	51
+Boqueirão do Piauí	PI	86
+Boquim	SE	79
+Boquira	BA	77
+Boracéia	SP	14
+Borba	AM	92
+Borborema	PB	83
+Borborema	SP	16
+Borda da Mata	MG	35
+Borebi	SP	14
+Borrazópolis	PR	43
+Borá	SP	18
+Bossoroca	RS	55
+Botelhos	MG	35
+Botucatu	SP	14
+Botumirim	MG	38
+Botuporã	BA	77
+Botuverá	SC	47
+Bozano	RS	55
+Braga	RS	55
+Braganey	PR	45
+Bragança	PA	91
+Bragança Paulista	SP	11
+Branquinha	AL	82
+Brasil Novo	PA	93
+Brasileira	PI	86
+Brasilândia	MS	67
+Brasilândia de Minas	MG	38
+Brasilândia do Sul	PR	44
+Brasilândia do Tocantins	TO	63
+Brasiléia	AC	68
+Brasnorte	MT	66
+Brasília	DF	61
+Brasília de Minas	MG	38
+Brazabrantes	GO	62
+Brazópolis	MG	33
+Braço do Norte	SC	48
+Braço do Trombudo	SC	47
+Braúna	SP	18
+Braúnas	MG	35
+Brejetuba	ES	27
+Brejinho	RN	84
+Brejinho	PE	87
+Brejinho de Nazaré	TO	63
+Brejo	MA	98
+Brejo Alegre	SP	18
+Brejo Grande	SE	79
+Brejo Grande do Araguaia	PA	94
+Brejo Santo	CE	88
+Brejo da Madre de Deus	PE	81
+Brejo de Areia	MA	98
+Brejo do Cruz	PB	83
+Brejo do Piauí	PI	89
+Brejo dos Santos	PB	83
+Brejolândia	BA	77
+Brejão	PE	87
+Brejões	BA	75
+Breu Branco	PA	94
+Breves	PA	91
+Britânia	GO	62
+Brochier	RS	51
+Brodowski	SP	16
+Brotas	SP	14
+Brotas de Macaúbas	BA	77
+Brumadinho	MG	31
+Brumado	BA	77
+Brunópolis	SC	49
+Brusque	SC	47
+Brás Pires	MG	32
+Bueno Brandão	MG	35
+Buenos Aires	PE	81
+Buenópolis	MG	38
+Buerarema	BA	73
+Bugre	MG	33
+Bujari	AC	68
+Bujaru	PA	91
+Buri	SP	15
+Buritama	SP	18
+Buriti	MA	98
+Buriti Alegre	GO	64
+Buriti Bravo	MA	99
+Buriti de Goiás	GO	64
+Buriti do Tocantins	TO	63
+Buriti dos Lopes	PI	86
+Buriti dos Montes	PI	86
+Buriticupu	MA	98
+Buritinópolis	GO	62
+Buritirama	BA	77
+Buritirana	MA	99
+Buritis	RO	69
+Buritis	MG	38
+Buritizal	SP	16
+Buritizeiro	MG	38
+Butiá	RS	51
+Buíque	PE	87
+Bálsamo	SP	17
+Caapiranga	AM	92
+Caaporã	PB	83
+Caarapó	MS	67
+Caatiba	BA	77
+Cabaceiras	PB	83
+Cabaceiras do Paraguaçu	BA	75
+Cabeceira Grande	MG	38
+Cabeceiras	GO	61
+Cabeceiras do Piauí	PI	86
+Cabedelo	PB	83
+Cabixi	RO	69
+Cabo Frio	RJ	22
+Cabo Verde	MG	35
+Cabo de Santo Agostinho	PE	81
+Cabreúva	SP	11
+Cabrobó	PE	87
+Cabrália Paulista	SP	14
+Cacaulândia	RO	69
+Cacequi	RS	55
+Cachoeira	BA	75
+Cachoeira Alta	GO	64
+Cachoeira Dourada	MG	34
+Cachoeira Dourada	GO	64
+Cachoeira Grande	MA	98
+Cachoeira Paulista	SP	12
+Cachoeira da Prata	MG	31
+Cachoeira de Goiás	GO	64
+Cachoeira de Minas	MG	35
+Cachoeira de Pajeú	MG	33
+Cachoeira do Arari	PA	91
+Cachoeira do Piriá	PA	91
+Cachoeira do Sul	RS	51
+Cachoeira dos Índios	PB	83
+Cachoeiras de Macacu	RJ	21
+Cachoeirinha	TO	63
+Cachoeirinha	PE	81
+Cachoeirinha	RS	51
+Cachoeiro de Itapemirim	ES	28
+Cacimba de Areia	PB	83
+Cacimba de Dentro	PB	83
+Cacimbas	PB	83
+Cacimbinhas	AL	82
+Cacique Doble	RS	54
+Cacoal	RO	69
+Caconde	SP	19
+Caculé	BA	77
+Caetanos	BA	77
+Caetanópolis	MG	31
+Caetité	BA	77
+Caeté	MG	31
+Caetés	PE	87
+Cafarnaum	BA	74
+Cafeara	PR	43
+Cafelândia	SP	14
+Cafelândia	PR	45
+Cafezal do Sul	PR	44
+Caiabu	SP	18
+Caiana	MG	32
+Caiapônia	GO	64
+Caibaté	RS	55
+Caibi	SC	49
+Caicó	RN	84
+Caieiras	SP	11
+Cairu	BA	75
+Caiuá	SP	18
+Caiçara	PB	83
+Caiçara	RS	55
+Caiçara do Norte	RN	84
+Caiçara do Rio do Vento	RN	84
+Cajamar	SP	11
+Cajapió	MA	98
+Cajari	MA	98
+Cajati	SP	13
+Cajazeiras	PB	83
+Cajazeiras do Piauí	PI	89
+Cajazeirinhas	PB	83
+Cajobi	SP	17
+Cajueiro	AL	82
+Cajueiro da Praia	PI	86
+Cajuri	MG	31
+Cajuru	SP	16
+Caldas	MG	35
+Caldas Brandão	PB	83
+Caldas Novas	GO	64
+Caldazinha	GO	62
+Caldeirão Grande	BA	74
+Caldeirão Grande do Piauí	PI	89
+Califórnia	PR	43
+Calmon	SC	49
+Calumbi	PE	87
+Calçado	PE	87
+Calçoene	AP	96
+Camacan	BA	73
+Camacho	MG	37
+Camalaú	PB	83
+Camamu	BA	73
+Camanducaia	MG	35
+Camapuã	MS	67
+Camaquã	RS	51
+Camaragibe	PE	81
+Camargo	RS	54
+Camaçari	BA	71
+Cambará	PR	43
+Cambará do Sul	RS	54
+Cambira	PR	43
+Camboriú	SC	47
+Cambuci	RJ	22
+Cambuquira	MG	35
+Cambuí	MG	35
+Cambé	PR	43
+Cametá	PA	91
+Camocim	CE	88
+Camocim de São Félix	PE	81
+Campanha	MG	35
+Campanário	MG	33
+Campestre	AL	82
+Campestre	MG	35
+Campestre da Serra	RS	54
+Campestre de Goiás	GO	62
+Campestre do Maranhão	MA	99
+Campina Grande	PB	83
+Campina Grande do Sul	PR	41
+Campina Verde	MG	34
+Campina da Lagoa	PR	44
+Campina das Missões	RS	55
+Campina do Monte Alegre	SP	15
+Campina do Simão	PR	42
+Campinas	SP	19
+Campinas do Piauí	PI	89
+Campinas do Sul	RS	54
+Campinaçu	GO	62
+Campinorte	GO	62
+Campinápolis	MT	66
+Campo Alegre	AL	82
+Campo Alegre	SC	47
+Campo Alegre de Goiás	GO	64
+Campo Alegre de Lourdes	BA	74
+Campo Alegre do Fidalgo	PI	89
+Campo Azul	MG	38
+Campo Belo	MG	35
+Campo Belo do Sul	SC	49
+Campo Bom	RS	51
+Campo Bonito	PR	45
+Campo Erê	SC	49
+Campo Florido	MG	34
+Campo Formoso	BA	74
+Campo Grande	AL	82
+Campo Grande	MS	67
+Campo Grande do Piauí	PI	89
+Campo Largo	PR	41
+Campo Largo do Piauí	PI	86
+Campo Limpo Paulista	SP	11
+Campo Limpo de Goiás	GO	62
+Campo Magro	PR	41
+Campo Maior	PI	86
+Campo Mourão	PR	44
+Campo Novo	RS	55
+Campo Novo de Rondônia	RO	69
+Campo Novo do Parecis	MT	65
+Campo Redondo	RN	84
+Campo Verde	MT	66
+Campo do Brito	SE	79
+Campo do Meio	MG	35
+Campo do Tenente	PR	41
+Campos Altos	MG	37
+Campos Belos	GO	62
+Campos Borges	RS	54
+Campos Gerais	MG	35
+Campos Lindos	TO	63
+Campos Novos	SC	49
+Campos Novos Paulista	SP	14
+Campos Sales	CE	88
+Campos Verdes	GO	62
+Campos de Júlio	MT	65
+Campos do Jordão	SP	12
+Campos dos Goytacazes	RJ	22
+Camutanga	PE	81
+Cana Verde	MG	35
+Canabrava do Norte	MT	66
+Cananéia	SP	13
+Canapi	AL	82
+Canarana	BA	74
+Canarana	MT	66
+Canas	SP	12
+Canavieira	PI	89
+Canavieiras	BA	73
+Canaã	MG	31
+Canaã dos Carajás	PA	94
+Candeal	BA	75
+Candeias	BA	71
+Candeias	MG	35
+Candeias do Jamari	RO	69
+Candelária	RS	51
+Candiba	BA	77
+Candiota	RS	53
+Candói	PR	42
+Canela	RS	54
+Canelinha	SC	48
+Canguaretama	RN	84
+Canguçu	RS	53
+Canhoba	SE	79
+Canhotinho	PE	87
+Canindé	CE	85
+Canindé de São Francisco	SE	79
+Canitar	SP	14
+Canoas	RS	51
+Canoinhas	SC	47
+Cansanção	BA	75
+Cantagalo	MG	33
+Cantagalo	RJ	22
+Cantagalo	PR	42
+Cantanhede	MA	98
+Canto do Buriti	PI	89
+Cantá	RR	95
+Canudos	BA	75
+Canudos do Vale	RS	51
+Canutama	AM	97
+Canápolis	BA	77
+Canápolis	MG	34
+Capanema	PA	91
+Capanema	PR	46
+Caparaó	MG	32
+Capela	AL	82
+Capela	SE	79
+Capela Nova	MG	31
+Capela de Santana	RS	51
+Capela do Alto	SP	15
+Capela do Alto Alegre	BA	75
+Capelinha	MG	33
+Capetinga	MG	35
+Capim	PB	83
+Capim Branco	MG	31
+Capim Grosso	BA	74
+Capinzal	SC	49
+Capinzal do Norte	MA	99
+Capinópolis	MG	34
+Capistrano	CE	85
+Capitão	RS	51
+Capitão Andrade	MG	33
+Capitão Enéas	MG	38
+Capitão Gervásio Oliveira	PI	89
+Capitão Leônidas Marques	PR	45
+Capitão Poço	PA	91
+Capitão de Campos	PI	86
+Capitólio	MG	37
+Capivari	SP	19
+Capivari de Baixo	SC	48
+Capivari do Sul	RS	51
+Capixaba	AC	68
+Capoeiras	PE	87
+Caputira	MG	31
+Capão Alto	SC	49
+Capão Bonito	SP	15
+Capão Bonito do Sul	RS	54
+Capão da Canoa	RS	51
+Capão do Cipó	RS	55
+Capão do Leão	RS	53
+Caracaraí	RR	95
+Caracol	PI	89
+Caracol	MS	67
+Caraguatatuba	SP	12
+Carambeí	PR	42
+Caranaíba	MG	31
+Carandaí	MG	32
+Carangola	MG	32
+Carapebus	RJ	22
+Carapicuíba	SP	11
+Caratinga	MG	33
+Carauari	AM	97
+Caravelas	BA	73
+Carazinho	RS	54
+Caraá	RS	51
+Caraí	MG	33
+Caraíbas	BA	77
+Caraúbas	RN	84
+Caraúbas	PB	83
+Caraúbas do Piauí	PI	86
+Carbonita	MG	38
+Cardeal da Silva	BA	75
+Cardoso	SP	17
+Cardoso Moreira	RJ	22
+Careaçu	MG	35
+Careiro	AM	92
+Careiro da Várzea	AM	92
+Cariacica	ES	27
+Caridade	CE	85
+Caridade do Piauí	PI	89
+Carinhanha	BA	77
+Carira	SE	79
+Cariri do Tocantins	TO	63
+Caririaçu	CE	88
+Cariré	CE	88
+Cariús	CE	88
+Carlinda	MT	66
+Carlos Barbosa	RS	54
+Carlos Chagas	MG	33
+Carlos Gomes	RS	54
+Carlópolis	PR	43
+Carmo	RJ	22
+Carmo da Cachoeira	MG	35
+Carmo da Mata	MG	37
+Carmo de Minas	MG	35
+Carmo do Cajuru	MG	37
+Carmo do Paranaíba	MG	34
+Carmo do Rio Claro	MG	35
+Carmo do Rio Verde	GO	62
+Carmolândia	TO	63
+Carmésia	MG	31
+Carmópolis	SE	79
+Carmópolis de Minas	MG	37
+Carnaubais	RN	84
+Carnaubal	CE	88
+Carnaubeira da Penha	PE	87
+Carnaíba	PE	87
+Carnaúba dos Dantas	RN	84
+Carneirinho	MG	34
+Carneiros	AL	82
+Caroebe	RR	95
+Carolina	MA	99
+Carpina	PE	81
+Carrancas	MG	35
+Carrapateira	PB	83
+Carrasco Bonito	TO	63
+Caruaru	PE	81
+Carutapera	MA	98
+Carvalhos	MG	35
+Carvalhópolis	MG	35
+Casa Branca	SP	19
+Casa Grande	MG	31
+Casa Nova	BA	74
+Casca	RS	54
+Cascalho Rico	MG	34
+Cascavel	CE	85
+Cascavel	PR	45
+Caseara	TO	63
+Caseiros	RS	54
+Casimiro de Abreu	RJ	22
+Casinhas	PE	81
+Casserengue	PB	83
+Cassilândia	MS	67
+Castanhal	PA	91
+Castanheira	MT	66
+Castanheiras	RO	69
+Castelo	ES	28
+Castelo do Piauí	PI	86
+Castelândia	GO	64
+Castilho	SP	18
+Castro	PR	42
+Castro Alves	BA	75
+Cataguases	MG	32
+Catalão	GO	64
+Catanduva	SP	17
+Catanduvas	PR	45
+Catanduvas	SC	49
+Catarina	CE	88
+Catas Altas	MG	31
+Catas Altas da Noruega	MG	31
+Catende	PE	81
+Catiguá	SP	17
+Catingueira	PB	83
+Catolândia	BA	77
+Catolé do Rocha	PB	83
+Catu	BA	71
+Catuji	MG	33
+Catunda	CE	88
+Caturama	BA	77
+Caturaí	GO	62
+Caturité	PB	83
+Catuti	MG	38
+Catuípe	RS	55
+Caucaia	CE	85
+Cavalcante	GO	62
+Caxambu	MG	35
+Caxambu do Sul	SC	49
+Caxias	MA	99
+Caxias do Sul	RS	54
+Caxingó	PI	86
+Caçador	SC	49
+Caçapava	SP	12
+Caçapava do Sul	RS	55
+Caçu	GO	64
+Caém	BA	74
+Ceará-Mirim	RN	84
+Cedral	MA	98
+Cedral	SP	17
+Cedro	CE	88
+Cedro	PE	87
+Cedro de São João	SE	79
+Cedro do Abaeté	MG	37
+Celso Ramos	SC	49
+Centenário	TO	63
+Centenário	RS	54
+Centenário do Sul	PR	43
+Central	BA	74
+Central de Minas	MG	33
+Central do Maranhão	MA	98
+Centralina	MG	34
+Centro Novo do Maranhão	MA	98
+Centro do Guilherme	MA	98
+Cerejeiras	RO	69
+Ceres	GO	62
+Cerqueira César	SP	14
+Cerquilho	SP	15
+Cerrito	RS	53
+Cerro Azul	PR	41
+Cerro Branco	RS	51
+Cerro Corá	RN	84
+Cerro Grande	RS	55
+Cerro Grande do Sul	RS	51
+Cerro Largo	RS	55
+Cerro Negro	SC	49
+Cesário Lange	SP	15
+Cezarina	GO	64
+Chalé	MG	33
+Chapada	RS	54
+Chapada Gaúcha	MG	38
+Chapada da Natividade	TO	63
+Chapada de Areia	TO	63
+Chapada do Norte	MG	33
+Chapada dos Guimarães	MT	65
+Chapadinha	MA	98
+Chapadão do Céu	GO	64
+Chapadão do Lageado	SC	47
+Chapadão do Sul	MS	67
+Chapecó	SC	49
+Charqueada	SP	19
+Charqueadas	RS	51
+Charrua	RS	54
+Chaval	CE	88
+Chavantes	SP	14
+Chaves	PA	91
+Chiador	MG	32
+Chiapetta	RS	55
+Chopinzinho	PR	46
+Chorozinho	CE	85
+Chorrochó	BA	75
+Choró	CE	88
+Chupinguaia	RO	69
+Chuvisca	RS	51
+Chuí	RS	53
+Chácara	MG	32
+Chã Grande	PE	81
+Chã Preta	AL	82
+Chã de Alegria	PE	81
+Cianorte	PR	44
+Cidade Gaúcha	PR	44
+Cidade Ocidental	GO	61
+Cidelândia	MA	99
+Cidreira	RS	51
+Cipotânea	MG	32
+Cipó	BA	75
+Ciríaco	RS	54
+Claraval	MG	34
+Claro dos Poções	MG	38
+Clementina	SP	18
+Clevelândia	PR	46
+Cláudia	MT	66
+Cláudio	MG	37
+Coaraci	BA	73
+Coari	AM	97
+Cocal	PI	86
+Cocal de Telha	PI	86
+Cocal do Sul	SC	48
+Cocal dos Alves	PI	86
+Cocalinho	MT	66
+Cocalzinho de Goiás	GO	62
+Cocos	BA	77
+Codajás	AM	97
+Codó	MA	99
+Coelho Neto	MA	98
+Coimbra	MG	32
+Coité do Nóia	AL	82
+Coivaras	PI	86
+Colares	PA	91
+Colatina	ES	27
+Colina	SP	17
+Colinas	MA	99
+Colinas	RS	51
+Colinas do Sul	GO	62
+Colinas do Tocantins	TO	63
+Colméia	TO	63
+Colniza	MT	66
+Colombo	PR	41
+Colorado	PR	44
+Colorado	RS	54
+Colorado do Oeste	RO	69
+Coluna	MG	33
+Colíder	MT	66
+Colômbia	SP	17
+Colônia Leopoldina	AL	82
+Colônia do Gurguéia	PI	89
+Colônia do Piauí	PI	89
+Combinado	TO	63
+Comendador Gomes	MG	34
+Comendador Levy Gasparian	RJ	24
+Comercinho	MG	33
+Comodoro	MT	65
+Conceição	PB	83
+Conceição da Aparecida	MG	35
+Conceição da Barra	ES	27
+Conceição da Barra de Minas	MG	32
+Conceição da Feira	BA	75
+Conceição das Alagoas	MG	34
+Conceição das Pedras	MG	35
+Conceição de Ipanema	MG	33
+Conceição de Macabu	RJ	22
+Conceição do Almeida	BA	75
+Conceição do Araguaia	PA	94
+Conceição do Canindé	PI	89
+Conceição do Castelo	ES	28
+Conceição do Coité	BA	75
+Conceição do Jacuípe	BA	75
+Conceição do Lago-Açu	MA	98
+Conceição do Mato Dentro	MG	31
+Conceição do Pará	MG	37
+Conceição do Rio Verde	MG	35
+Conceição do Tocantins	TO	63
+Conceição dos Ouros	MG	35
+Conchal	SP	19
+Conchas	SP	14
+Concórdia	SC	49
+Concórdia do Pará	PA	91
+Condado	PB	83
+Condado	PE	81
+Conde	PB	83
+Conde	BA	75
+Condeúba	BA	77
+Condor	RS	55
+Confins	MG	31
+Confresa	MT	66
+Congo	PB	83
+Congonhal	MG	35
+Congonhas	MG	31
+Congonhas do Norte	MG	31
+Congonhinhas	PR	43
+Conquista	MG	34
+Conquista D'Oeste	MT	65
+Conselheiro Lafaiete	MG	31
+Conselheiro Mairinck	PR	43
+Conselheiro Pena	MG	33
+Consolação	MG	35
+Constantina	RS	54
+Contagem	MG	31
+Contenda	PR	41
+Contendas do Sincorá	BA	77
+Coqueiral	MG	35
+Coqueiro Baixo	RS	51
+Coqueiro Seco	AL	82
+Coqueiros do Sul	RS	54
+Coração de Jesus	MG	38
+Coração de Maria	BA	75
+Corbélia	PR	45
+Cordeiro	RJ	22
+Cordeiros	BA	77
+Cordeirópolis	SP	19
+Cordilheira Alta	SC	49
+Cordisburgo	MG	31
+Cordislândia	MG	35
+Coreaú	CE	88
+Coremas	PB	83
+Corguinho	MS	67
+Coribe	BA	77
+Corinto	MG	38
+Cornélio Procópio	PR	43
+Coroaci	MG	33
+Coroados	SP	18
+Coroatá	MA	99
+Coromandel	MG	34
+Coronel Barros	RS	55
+Coronel Bicaco	RS	55
+Coronel Domingos Soares	PR	46
+Coronel Ezequiel	RN	84
+Coronel Fabriciano	MG	31
+Coronel Freitas	SC	49
+Coronel José Dias	PI	89
+Coronel João Pessoa	RN	84
+Coronel João Sá	BA	75
+Coronel Macedo	SP	14
+Coronel Martins	SC	49
+Coronel Murta	MG	33
+Coronel Pacheco	MG	32
+Coronel Pilar	RS	54
+Coronel Sapucaia	MS	67
+Coronel Vivida	PR	46
+Coronel Xavier Chaves	MG	32
+Correia Pinto	SC	49
+Corrente	PI	89
+Correntes	PE	87
+Correntina	BA	77
+Cortês	PE	81
+Corumbataí	SP	19
+Corumbataí do Sul	PR	44
+Corumbaíba	GO	64
+Corumbiara	RO	69
+Corumbá	MS	67
+Corumbá de Goiás	GO	62
+Corupá	SC	47
+Coruripe	AL	82
+Cosmorama	SP	17
+Cosmópolis	SP	19
+Costa Marques	RO	69
+Costa Rica	MS	67
+Cotegipe	BA	77
+Cotia	SP	11
+Cotiporã	RS	54
+Cotriguaçu	MT	66
+Couto Magalhães	TO	63
+Couto de Magalhães de Minas	MG	38
+Coxilha	RS	54
+Coxim	MS	67
+Coxixola	PB	83
+Crateús	CE	88
+Crato	CE	88
+Cravinhos	SP	16
+Cravolândia	BA	73
+Craíbas	AL	82
+Criciúma	SC	48
+Crissiumal	RS	55
+Cristais	MG	35
+Cristais Paulista	SP	16
+Cristal	RS	51
+Cristal do Sul	RS	55
+Cristalina	GO	61
+Cristalândia	TO	63
+Cristalândia do Piauí	PI	89
+Cristiano Otoni	MG	31
+Cristianópolis	GO	64
+Cristina	MG	35
+Cristino Castro	PI	89
+Cristinápolis	SE	79
+Cristália	MG	38
+Cristópolis	BA	77
+Crisólita	MG	33
+Crisópolis	BA	75
+Crixás	GO	62
+Crixás do Tocantins	TO	63
+Croatá	CE	88
+Cromínia	GO	64
+Crucilândia	MG	31
+Cruz	CE	88
+Cruz Alta	RS	55
+Cruz Machado	PR	42
+Cruz das Almas	BA	75
+Cruz do Espírito Santo	PB	83
+Cruzaltense	RS	54
+Cruzeiro	SP	12
+Cruzeiro da Fortaleza	MG	34
+Cruzeiro do Iguaçu	PR	46
+Cruzeiro do Oeste	PR	44
+Cruzeiro do Sul	AC	68
+Cruzeiro do Sul	PR	44
+Cruzeiro do Sul	RS	51
+Cruzeta	RN	84
+Cruzmaltina	PR	43
+Cruzália	SP	18
+Cruzília	MG	35
+Cubati	PB	83
+Cubatão	SP	13
+Cuiabá	MT	65
+Cuitegi	PB	83
+Cuité	PB	83
+Cuité de Mamanguape	PB	83
+Cujubim	RO	69
+Cumari	GO	64
+Cumaru	PE	81
+Cumaru do Norte	PA	94
+Cumbe	SE	79
+Cunha	SP	12
+Cunha Porã	SC	49
+Cunhataí	SC	49
+Cuparaque	MG	33
+Cupira	PE	81
+Curaçá	BA	74
+Curimatá	PI	89
+Curionópolis	PA	94
+Curitiba	PR	41
+Curitibanos	SC	49
+Curiúva	PR	43
+Currais	PI	89
+Currais Novos	RN	84
+Curral Novo do Piauí	PI	89
+Curral Velho	PB	83
+Curral de Cima	PB	83
+Curral de Dentro	MG	33
+Curralinho	PA	91
+Curralinhos	PI	86
+Cururupu	MA	98
+Curuá	PA	93
+Curuçá	PA	91
+Curvelo	MG	38
+Curvelândia	MT	65
+Custódia	PE	87
+Cutias	AP	96
+Cáceres	MT	65
+Cássia	MG	35
+Cássia dos Coqueiros	SP	16
+Cândido Godói	RS	55
+Cândido Mendes	MA	98
+Cândido Mota	SP	18
+Cândido Rodrigues	SP	16
+Cândido Sales	BA	77
+Cândido de Abreu	PR	43
+Céu Azul	PR	45
+Cícero Dantas	BA	75
+Córrego Danta	MG	37
+Córrego Fundo	MG	37
+Córrego Novo	MG	33
+Córrego do Bom Jesus	MG	35
+Córrego do Ouro	GO	64
+Cônego Marinho	MG	38
+Damianópolis	GO	62
+Damião	PB	83
+Damolândia	GO	62
+Darcinópolis	TO	63
+Datas	MG	38
+David Canabarro	RS	54
+Davinópolis	MA	99
+Davinópolis	GO	64
+Delfim Moreira	MG	35
+Delfinópolis	MG	35
+Delmiro Gouveia	AL	82
+Delta	MG	34
+Demerval Lobão	PI	86
+Denise	MT	65
+Deodápolis	MS	67
+Deputado Irapuan Pinheiro	CE	88
+Derrubadas	RS	55
+Descalvado	SP	19
+Descanso	SC	49
+Descoberto	MG	32
+Desterro	PB	83
+Desterro de Entre Rios	MG	31
+Desterro do Melo	MG	32
+Dezesseis de Novembro	RS	55
+Diadema	SP	11
+Diamante	PB	83
+Diamante D'Oeste	PR	45
+Diamante do Norte	PR	44
+Diamante do Sul	PR	45
+Diamantina	MG	38
+Diamantino	MT	65
+Dianópolis	TO	63
+Dias d'Ávila	BA	71
+Dilermando de Aguiar	RS	55
+Diogo de Vasconcelos	MG	31
+Dionísio	MG	31
+Dionísio Cerqueira	SC	49
+Diorama	GO	64
+Dirce Reis	SP	17
+Dirceu Arcoverde	PI	89
+Divina Pastora	SE	79
+Divino	MG	32
+Divino das Laranjeiras	MG	33
+Divino de São Lourenço	ES	28
+Divinolândia	SP	19
+Divinolândia de Minas	MG	33
+Divinésia	MG	32
+Divinópolis	MG	37
+Divinópolis de Goiás	GO	62
+Divinópolis do Tocantins	TO	63
+Divisa Alegre	MG	33
+Divisa Nova	MG	35
+Divisópolis	MG	33
+Dobrada	SP	16
+Dois Córregos	SP	14
+Dois Irmãos	RS	51
+Dois Irmãos das Missões	RS	55
+Dois Irmãos do Buriti	MS	67
+Dois Irmãos do Tocantins	TO	63
+Dois Lajeados	RS	54
+Dois Riachos	AL	82
+Dois Vizinhos	PR	46
+Dolcinópolis	SP	17
+Dom Aquino	MT	66
+Dom Basílio	BA	77
+Dom Bosco	MG	38
+Dom Cavati	MG	33
+Dom Eliseu	PA	94
+Dom Expedito Lopes	PI	89
+Dom Feliciano	RS	51
+Dom Inocêncio	PI	89
+Dom Joaquim	MG	31
+Dom Macedo Costa	BA	75
+Dom Pedrito	RS	53
+Dom Pedro	MA	99
+Dom Pedro de Alcântara	RS	51
+Dom Silvério	MG	31
+Dom Viçoso	MG	35
+Domingos Martins	ES	27
+Domingos Mourão	PI	86
+Dona Emma	SC	47
+Dona Eusébia	MG	32
+Dona Francisca	RS	55
+Dona Inês	PB	83
+Dores de Campos	MG	32
+Dores de Guanhães	MG	33
+Dores do Indaiá	MG	37
+Dores do Rio Preto	ES	28
+Dores do Turvo	MG	32
+Doresópolis	MG	37
+Dormentes	PE	87
+Douradina	PR	44
+Douradina	MS	67
+Dourado	SP	16
+Douradoquara	MG	34
+Dourados	MS	67
+Doutor Camargo	PR	44
+Doutor Maurício Cardoso	RS	55
+Doutor Pedrinho	SC	47
+Doutor Ricardo	RS	51
+Doutor Severiano	RN	84
+Doutor Ulysses	PR	41
+Doverlândia	GO	64
+Dracena	SP	18
+Duartina	SP	14
+Duas Barras	RJ	22
+Duas Estradas	PB	83
+Dueré	TO	63
+Dumont	SP	16
+Duque Bacelar	MA	98
+Duque de Caxias	RJ	21
+Durandé	MG	33
+Dário Meira	BA	73
+Echaporã	SP	18
+Ecoporanga	ES	27
+Edealina	GO	64
+Edéia	GO	64
+Eirunepé	AM	97
+Eldorado	SP	13
+Eldorado	MS	67
+Eldorado do Carajás	PA	94
+Eldorado do Sul	RS	51
+Elesbão Veloso	PI	86
+Elias Fausto	SP	19
+Eliseu Martins	PI	89
+Elisiário	SP	17
+Elísio Medrado	BA	75
+Elói Mendes	MG	35
+Emas	PB	83
+Embaúba	SP	17
+Embu das Artes	SP	11
+Embu-Guaçu	SP	11
+Emilianópolis	SP	18
+Encantado	RS	51
+Encanto	RN	84
+Encruzilhada	BA	77
+Encruzilhada do Sul	RS	51
+Engenheiro Beltrão	PR	44
+Engenheiro Caldas	MG	33
+Engenheiro Coelho	SP	19
+Engenheiro Navarro	MG	38
+Engenheiro Paulo de Frontin	RJ	24
+Engenho Velho	RS	54
+Entre Folhas	MG	33
+Entre Rios	BA	75
+Entre Rios	SC	49
+Entre Rios de Minas	MG	31
+Entre Rios do Oeste	PR	45
+Entre Rios do Sul	RS	54
+Entre-Ijuís	RS	55
+Envira	AM	97
+Enéas Marques	PR	46
+Epitaciolândia	AC	68
+Equador	RN	84
+Erebango	RS	54
+Erechim	RS	54
+Ererê	CE	88
+Ermo	SC	48
+Ernestina	RS	54
+Erval Grande	RS	54
+Erval Seco	RS	55
+Erval Velho	SC	49
+Ervália	MG	32
+Escada	PE	81
+Esmeralda	RS	54
+Esmeraldas	MG	31
+Espera Feliz	MG	32
+Esperantina	TO	63
+Esperantina	PI	86
+Esperantinópolis	MA	99
+Esperança	PB	83
+Esperança Nova	PR	44
+Esperança do Sul	RS	55
+Espigão Alto do Iguaçu	PR	46
+Espigão D'Oeste	RO	69
+Espinosa	MG	38
+Esplanada	BA	75
+Espumoso	RS	54
+Espírito Santo	RN	84
+Espírito Santo do Dourado	MG	35
+Espírito Santo do Pinhal	SP	19
+Espírito Santo do Turvo	SP	14
+Estação	RS	54
+Esteio	RS	51
+Estiva	MG	35
+Estiva Gerbi	SP	19
+Estreito	MA	99
+Estrela	RS	51
+Estrela Dalva	MG	32
+Estrela Velha	RS	51
+Estrela d'Oeste	SP	17
+Estrela de Alagoas	AL	82
+Estrela do Indaiá	MG	37
+Estrela do Norte	SP	18
+Estrela do Norte	GO	62
+Estrela do Sul	MG	34
+Estância	SE	79
+Estância Velha	RS	51
+Euclides da Cunha	BA	75
+Euclides da Cunha Paulista	SP	18
+Eugenópolis	MG	32
+Eugênio de Castro	RS	55
+Eunápolis	BA	73
+Eusébio	CE	85
+Ewbank da Câmara	MG	32
+Extrema	MG	35
+Extremoz	RN	84
+Exu	PE	87
+Fagundes	PB	83
+Fagundes Varela	RS	54
+Faina	GO	62
+Fama	MG	35
+Faria Lemos	MG	32
+Farias Brito	CE	88
+Faro	PA	93
+Farol	PR	44
+Farroupilha	RS	54
+Fartura	SP	14
+Fartura do Piauí	PI	89
+Faxinal	PR	43
+Faxinal do Soturno	RS	55
+Faxinal dos Guedes	SC	49
+Faxinalzinho	RS	54
+Fazenda Nova	GO	62
+Fazenda Rio Grande	PR	41
+Fazenda Vilanova	RS	51
+Feijó	AC	68
+Feira Grande	AL	82
+Feira Nova	PE	81
+Feira Nova	SE	79
+Feira Nova do Maranhão	MA	99
+Feira da Mata	BA	77
+Feira de Santana	BA	75
+Felipe Guerra	RN	84
+Felisburgo	MG	33
+Felixlândia	MG	38
+Feliz	RS	51
+Feliz Deserto	AL	82
+Feliz Natal	MT	66
+Felício dos Santos	MG	38
+Fernandes Pinheiro	PR	42
+Fernandes Tourinho	MG	33
+Fernando Falcão	MA	99
+Fernando Pedroza	RN	84
+Fernando Prestes	SP	16
+Fernando de Noronha	PE	81
+Fernandópolis	SP	17
+Fernão	SP	14
+Ferraz de Vasconcelos	SP	11
+Ferreira Gomes	AP	96
+Ferreiros	PE	81
+Ferros	MG	31
+Fervedouro	MG	32
+Figueira	PR	43
+Figueirão	MS	67
+Figueirópolis	TO	63
+Figueirópolis D'Oeste	MT	65
+Filadélfia	TO	63
+Filadélfia	BA	74
+Firmino Alves	BA	73
+Firminópolis	GO	64
+Flexeiras	AL	82
+Flor da Serra do Sul	PR	46
+Flor do Sertão	SC	49
+Flora Rica	SP	18
+Floraí	PR	44
+Floreal	SP	17
+Flores	PE	87
+Flores da Cunha	RS	54
+Flores de Goiás	GO	62
+Flores do Piauí	PI	89
+Floresta	PE	87
+Floresta	PR	44
+Floresta Azul	BA	73
+Floresta do Araguaia	PA	94
+Floresta do Piauí	PI	89
+Florestal	MG	31
+Florestópolis	PR	43
+Floriano	PI	89
+Floriano Peixoto	RS	54
+Florianópolis	SC	48
+Florânia	RN	84
+Florínia	SP	18
+Flórida	PR	44
+Flórida Paulista	SP	18
+Fonte Boa	AM	97
+Fontoura Xavier	RS	54
+Formiga	MG	37
+Formigueiro	RS	55
+Formosa	GO	61
+Formosa da Serra Negra	MA	99
+Formosa do Oeste	PR	44
+Formosa do Rio Preto	BA	77
+Formosa do Sul	SC	49
+Formoso	MG	38
+Formoso	GO	62
+Formoso do Araguaia	TO	63
+Forquetinha	RS	51
+Forquilha	CE	88
+Forquilhinha	SC	48
+Fortaleza	CE	85
+Fortaleza de Minas	MG	35
+Fortaleza do Tabocão	TO	63
+Fortaleza dos Nogueiras	MA	99
+Fortaleza dos Valos	RS	55
+Fortim	CE	88
+Fortuna	MA	99
+Fortuna de Minas	MG	31
+Foz do Iguaçu	PR	45
+Foz do Jordão	PR	42
+Fraiburgo	SC	49
+Franca	SP	16
+Francinópolis	PI	89
+Francisco Alves	PR	44
+Francisco Ayres	PI	89
+Francisco Badaró	MG	33
+Francisco Beltrão	PR	46
+Francisco Dantas	RN	84
+Francisco Dumont	MG	38
+Francisco Macedo	PI	89
+Francisco Morato	SP	11
+Francisco Santos	PI	89
+Francisco Sá	MG	38
+Franciscópolis	MG	33
+Franco da Rocha	SP	11
+Frecheirinha	CE	88
+Frederico Westphalen	RS	55
+Frei Gaspar	MG	33
+Frei Inocêncio	MG	33
+Frei Lagonegro	MG	33
+Frei Martinho	PB	83
+Frei Miguelinho	PE	81
+Frei Paulo	SE	79
+Frei Rogério	SC	49
+Fronteira	MG	34
+Fronteira dos Vales	MG	33
+Fronteiras	PI	89
+Fruta de Leite	MG	38
+Frutal	MG	34
+Frutuoso Gomes	RN	84
+Fundão	ES	27
+Funilândia	MG	31
+Fátima	TO	63
+Fátima	BA	75
+Fátima do Sul	MS	67
+Fênix	PR	44
+Gabriel Monteiro	SP	18
+Gado Bravo	PB	83
+Galiléia	MG	33
+Galinhos	RN	84
+Galvão	SC	49
+Gameleira	PE	81
+Gameleira de Goiás	GO	62
+Gameleiras	MG	38
+Gandu	BA	73
+Garanhuns	PE	87
+Gararu	SE	79
+Garibaldi	RS	54
+Garopaba	SC	48
+Garrafão do Norte	PA	91
+Garruchos	RS	55
+Garuva	SC	47
+Garça	SP	14
+Gaspar	SC	47
+Gastão Vidigal	SP	17
+Gaurama	RS	54
+Gavião	BA	75
+Gavião Peixoto	SP	16
+Gaúcha do Norte	MT	66
+Geminiano	PI	89
+General Carneiro	PR	42
+General Carneiro	MT	66
+General Câmara	RS	51
+General Maynard	SE	79
+General Salgado	SP	17
+General Sampaio	CE	85
+Gentil	RS	54
+Gentio do Ouro	BA	74
+Getulina	SP	14
+Getúlio Vargas	RS	54
+Gilbués	PI	89
+Girau do Ponciano	AL	82
+Giruá	RS	55
+Glaucilândia	MG	38
+Glicério	SP	18
+Glorinha	RS	51
+Glória	BA	75
+Glória D'Oeste	MT	65
+Glória de Dourados	MS	67
+Glória do Goitá	PE	81
+Godofredo Viana	MA	98
+Godoy Moreira	PR	43
+Goiabeira	MG	33
+Goiana	PE	81
+Goiandira	GO	64
+Goianinha	RN	84
+Goianira	GO	62
+Goianorte	TO	63
+Goianá	MG	32
+Goianápolis	GO	62
+Goianésia	GO	62
+Goianésia do Pará	PA	94
+Goiatins	TO	63
+Goiatuba	GO	64
+Goioerê	PR	44
+Goioxim	PR	42
+Goiás	GO	62
+Goiânia	GO	62
+Gongogi	BA	73
+Gonzaga	MG	33
+Gonçalves	MG	35
+Gonçalves Dias	MA	99
+Gouveia	MG	38
+Gouvelândia	GO	64
+Governador Archer	MA	99
+Governador Celso Ramos	SC	48
+Governador Dix-Sept Rosado	RN	84
+Governador Edison Lobão	MA	99
+Governador Eugênio Barros	MA	99
+Governador Jorge Teixeira	RO	69
+Governador Lindenberg	ES	27
+Governador Luiz Rocha	MA	99
+Governador Mangabeira	BA	75
+Governador Newton Bello	MA	98
+Governador Nunes Freire	MA	98
+Governador Valadares	MG	33
+Gracho Cardoso	SE	79
+Grajaú	MA	99
+Gramado	RS	54
+Gramado Xavier	RS	51
+Gramado dos Loureiros	RS	54
+Grandes Rios	PR	43
+Granito	PE	87
+Granja	CE	88
+Granjeiro	CE	88
+Gravatal	SC	48
+Gravataí	RS	51
+Gravatá	PE	81
+Graça	CE	88
+Graça Aranha	MA	99
+Groaíras	CE	88
+Grossos	RN	84
+Grupiara	MG	34
+Grão Mogol	MG	38
+Grão Pará	SC	48
+Guabiju	RS	54
+Guabiruba	SC	47
+Guadalupe	PI	89
+Guaimbê	SP	14
+Guairaçá	PR	44
+Guaiçara	SP	14
+Guaiúba	CE	85
+Guajará	AM	97
+Guajará-Mirim	RO	69
+Guajeru	BA	77
+Guamaré	RN	84
+Guamiranga	PR	42
+Guanambi	BA	77
+Guanhães	MG	33
+Guapiara	SP	15
+Guapiaçu	SP	17
+Guapimirim	RJ	21
+Guapirama	PR	43
+Guaporema	PR	44
+Guaporé	RS	54
+Guapé	MG	35
+Guapó	GO	62
+Guarabira	PB	83
+Guaraci	SP	17
+Guaraci	PR	43
+Guaraciaba	MG	31
+Guaraciaba	SC	49
+Guaraciaba do Norte	CE	88
+Guaraciama	MG	38
+Guaramiranga	CE	85
+Guaramirim	SC	47
+Guarani	MG	32
+Guarani d'Oeste	SP	17
+Guarani das Missões	RS	55
+Guarani de Goiás	GO	62
+Guaraniaçu	PR	45
+Guarantã	SP	14
+Guarantã do Norte	MT	66
+Guaranésia	MG	35
+Guarapari	ES	27
+Guarapuava	PR	42
+Guaraqueçaba	PR	41
+Guararapes	SP	18
+Guararema	SP	11
+Guarará	MG	32
+Guaratinga	BA	73
+Guaratinguetá	SP	12
+Guaratuba	PR	41
+Guaraçaí	SP	18
+Guaraí	TO	63
+Guaraíta	GO	62
+Guarda-Mor	MG	38
+Guareí	SP	15
+Guariba	SP	16
+Guaribas	PI	89
+Guarinos	GO	62
+Guarujá	SP	13
+Guarujá do Sul	SC	49
+Guarulhos	SP	11
+Guará	SP	16
+Guatambú	SC	49
+Guatapará	SP	16
+Guaxupé	MG	35
+Guaçuí	ES	28
+Guaíba	RS	51
+Guaíra	SP	17
+Guaíra	PR	44
+Guia Lopes da Laguna	MS	67
+Guidoval	MG	32
+Guimarânia	MG	34
+Guimarães	MA	98
+Guiratinga	MT	66
+Guiricema	MG	32
+Gurinhatã	MG	34
+Gurinhém	PB	83
+Gurjão	PB	83
+Gurupi	TO	63
+Gurupá	PA	91
+Guzolândia	SP	17
+Gália	SP	14
+Harmonia	RS	51
+Heitoraí	GO	62
+Heliodora	MG	35
+Heliópolis	BA	75
+Herculândia	SP	14
+Herval	RS	53
+Herval d'Oeste	SC	49
+Herveiras	RS	51
+Hidrolina	GO	62
+Hidrolândia	CE	88
+Hidrolândia	GO	62
+Holambra	SP	19
+Honório Serpa	PR	46
+Horizonte	CE	85
+Horizontina	RS	55
+Hortolândia	SP	19
+Hugo Napoleão	PI	86
+Hulha Negra	RS	53
+Humaitá	AM	97
+Humaitá	RS	55
+Humberto de Campos	MA	98
+Iacanga	SP	14
+Iaciara	GO	62
+Iacri	SP	14
+Iapu	MG	33
+Iaras	SP	14
+Iati	PE	87
+Iaçu	BA	75
+Ibaiti	PR	43
+Ibarama	RS	51
+Ibaretama	CE	88
+Ibateguara	AL	82
+Ibatiba	ES	28
+Ibaté	SP	16
+Ibema	PR	45
+Ibertioga	MG	32
+Ibiam	SC	49
+Ibiapina	CE	88
+Ibiara	PB	83
+Ibiassucê	BA	77
+Ibiaçá	RS	54
+Ibiaí	MG	38
+Ibicaraí	BA	73
+Ibicaré	SC	49
+Ibicoara	BA	77
+Ibicuitinga	CE	88
+Ibicuí	BA	73
+Ibimirim	PE	87
+Ibipeba	BA	74
+Ibipitanga	BA	77
+Ibiporã	PR	43
+Ibiquera	BA	75
+Ibiracatu	MG	38
+Ibiraci	MG	35
+Ibiraiaras	RS	54
+Ibirajuba	PE	87
+Ibirama	SC	47
+Ibirapitanga	BA	73
+Ibirapuitã	RS	54
+Ibirapuã	BA	73
+Ibirarema	SP	14
+Ibirataia	BA	73
+Ibiraçu	ES	27
+Ibirité	MG	31
+Ibirubá	RS	54
+Ibirá	SP	17
+Ibitiara	BA	77
+Ibitinga	SP	16
+Ibitirama	ES	28
+Ibititá	BA	74
+Ibitiúra de Minas	MG	35
+Ibituruna	MG	35
+Ibiá	MG	34
+Ibiúna	SP	15
+Ibotirama	BA	77
+Icapuí	CE	88
+Icaraí de Minas	MG	38
+Icaraíma	PR	44
+Icatu	MA	98
+Ichu	BA	75
+Iconha	ES	28
+Icém	SP	17
+Icó	CE	88
+Ielmo Marinho	RN	84
+Iepê	SP	18
+Igaci	AL	82
+Igaporã	BA	77
+Igaracy	PB	83
+Igarapava	SP	16
+Igarapé	MG	31
+Igarapé Grande	MA	99
+Igarapé do Meio	MA	98
+Igarapé-Açu	PA	91
+Igarapé-Miri	PA	91
+Igarassu	PE	81
+Igaratinga	MG	37
+Igaratá	SP	11
+Igaraçu do Tietê	SP	14
+Igrapiúna	BA	73
+Igreja Nova	AL	82
+Igrejinha	RS	51
+Iguaba Grande	RJ	22
+Iguape	SP	13
+Iguaracy	PE	87
+Iguaraçu	PR	44
+Iguatama	MG	37
+Iguatemi	MS	67
+Iguatu	CE	88
+Iguatu	PR	45
+Iguaí	BA	73
+Ijaci	MG	35
+Ijuí	RS	55
+Ilha Comprida	SP	13
+Ilha Grande	PI	86
+Ilha Solteira	SP	18
+Ilha das Flores	SE	79
+Ilha de Itamaracá	PE	81
+Ilhabela	SP	12
+Ilhota	SC	47
+Ilhéus	BA	73
+Ilicínea	MG	35
+Ilópolis	RS	51
+Imaculada	PB	83
+Imaruí	SC	48
+Imbaú	PR	42
+Imbituba	SC	48
+Imbituva	PR	42
+Imbuia	SC	47
+Imbé	RS	51
+Imbé de Minas	MG	33
+Imigrante	RS	51
+Imperatriz	MA	99
+Inaciolândia	GO	64
+Inajá	PE	87
+Inajá	PR	44
+Inconfidentes	MG	35
+Indaiabira	MG	38
+Indaial	SC	47
+Indaiatuba	SP	19
+Independência	CE	88
+Independência	RS	55
+Indiana	SP	18
+Indianópolis	MG	34
+Indianópolis	PR	44
+Indiaporã	SP	17
+Indiara	GO	64
+Indiaroba	SE	79
+Indiavaí	MT	65
+Ingazeira	PE	87
+Ingaí	MG	35
+Ingá	PB	83
+Inhacorá	RS	55
+Inhambupe	BA	75
+Inhangapi	PA	91
+Inhapi	AL	82
+Inhapim	MG	33
+Inhaúma	MG	31
+Inhuma	PI	89
+Inhumas	GO	62
+Inimutaba	MG	38
+Inocência	MS	67
+Inácio Martins	PR	42
+Inúbia Paulista	SP	18
+Iomerê	SC	49
+Ipaba	MG	31
+Ipameri	GO	64
+Ipanema	MG	33
+Ipanguaçu	RN	84
+Ipaporanga	CE	88
+Ipatinga	MG	31
+Ipaumirim	CE	88
+Ipaussu	SP	14
+Ipecaetá	BA	75
+Iperó	SP	15
+Ipeúna	SP	19
+Ipiaçu	MG	34
+Ipiaú	BA	73
+Ipiguá	SP	17
+Ipira	SC	49
+Ipiranga	PR	42
+Ipiranga de Goiás	GO	62
+Ipiranga do Norte	MT	65
+Ipiranga do Piauí	PI	89
+Ipiranga do Sul	RS	54
+Ipirá	BA	75
+Ipixuna	AM	97
+Ipixuna do Pará	PA	91
+Ipojuca	PE	81
+Iporanga	SP	15
+Iporá	GO	64
+Iporã	PR	44
+Iporã do Oeste	SC	49
+Ipu	CE	88
+Ipuaçu	SC	49
+Ipubi	PE	87
+Ipueira	RN	84
+Ipueiras	TO	63
+Ipueiras	CE	88
+Ipuiúna	MG	35
+Ipumirim	SC	49
+Ipupiara	BA	77
+Ipuã	SP	16
+Ipê	RS	54
+Iracema	RR	95
+Iracema	CE	88
+Iracema do Oeste	PR	44
+Iraceminha	SC	49
+Iracemápolis	SP	19
+Irajuba	BA	73
+Iramaia	BA	77
+Iranduba	AM	92
+Irani	SC	49
+Irapuru	SP	18
+Irapuã	SP	17
+Iraquara	BA	75
+Irará	BA	75
+Irati	PR	42
+Irati	SC	49
+Irauçuba	CE	88
+Iraí	RS	55
+Iraí de Minas	MG	34
+Irecê	BA	74
+Iretama	PR	44
+Irineópolis	SC	47
+Irituia	PA	91
+Irupi	ES	28
+Isaías Coelho	PI	89
+Israelândia	GO	64
+Itaara	RS	55
+Itabaiana	PB	83
+Itabaiana	SE	79
+Itabaianinha	SE	79
+Itabela	BA	73
+Itaberaba	BA	75
+Itaberaí	GO	62
+Itaberá	SP	15
+Itabi	SE	79
+Itabira	MG	31
+Itabirinha	MG	33
+Itabirito	MG	31
+Itaboraí	RJ	21
+Itabuna	BA	73
+Itacajá	TO	63
+Itacambira	MG	38
+Itacarambi	MG	38
+Itacaré	BA	73
+Itacoatiara	AM	92
+Itacuruba	PE	87
+Itacurubi	RS	55
+Itaeté	BA	75
+Itagi	BA	73
+Itagibá	BA	73
+Itagimirim	BA	73
+Itaguajé	PR	44
+Itaguara	MG	31
+Itaguari	GO	62
+Itaguaru	GO	62
+Itaguatins	TO	63
+Itaguaçu	ES	27
+Itaguaçu da Bahia	BA	74
+Itaguaí	RJ	21
+Itainópolis	PI	89
+Itaipava do Grajaú	MA	99
+Itaipulândia	PR	45
+Itaipé	MG	33
+Itaitinga	CE	85
+Itaituba	PA	93
+Itaiçaba	CE	88
+Itaiópolis	SC	47
+Itajaí	SC	47
+Itajobi	SP	17
+Itaju	SP	14
+Itaju do Colônia	BA	73
+Itajubá	MG	35
+Itajuípe	BA	73
+Itajá	RN	84
+Itajá	GO	64
+Italva	RJ	22
+Itamaraju	BA	73
+Itamarandiba	MG	38
+Itamarati	AM	97
+Itamarati de Minas	MG	32
+Itamari	BA	73
+Itambacuri	MG	33
+Itambaracá	PR	43
+Itambé	PE	81
+Itambé	BA	77
+Itambé	PR	44
+Itambé do Mato Dentro	MG	31
+Itamogi	MG	35
+Itamonte	MG	35
+Itanagra	BA	75
+Itanhandu	MG	35
+Itanhangá	MT	66
+Itanhaém	SP	13
+Itanhomi	MG	33
+Itanhém	BA	73
+Itaobim	MG	33
+Itaocara	RJ	22
+Itapaci	GO	62
+Itapagipe	MG	34
+Itapajé	CE	85
+Itaparica	BA	71
+Itapebi	BA	73
+Itapecerica	MG	37
+Itapecerica da Serra	SP	11
+Itapecuru Mirim	MA	98
+Itapejara d'Oeste	PR	46
+Itapema	SC	47
+Itapemirim	ES	28
+Itaperuna	RJ	22
+Itaperuçu	PR	41
+Itapetim	PE	87
+Itapetinga	BA	77
+Itapetininga	SP	15
+Itapeva	MG	35
+Itapeva	SP	15
+Itapevi	SP	11
+Itapicuru	BA	75
+Itapipoca	CE	88
+Itapira	SP	19
+Itapiranga	AM	92
+Itapiranga	SC	49
+Itapirapuã	GO	62
+Itapirapuã Paulista	SP	15
+Itapiratins	TO	63
+Itapissuma	PE	81
+Itapitanga	BA	73
+Itapiúna	CE	88
+Itaporanga	PB	83
+Itaporanga	SP	15
+Itaporanga d'Ajuda	SE	79
+Itapororoca	PB	83
+Itaporã	MS	67
+Itaporã do Tocantins	TO	63
+Itapoá	SC	47
+Itapuca	RS	51
+Itapura	SP	18
+Itapuranga	GO	62
+Itapuã do Oeste	RO	69
+Itapuí	SP	14
+Itapé	BA	73
+Itaquaquecetuba	SP	11
+Itaquara	BA	73
+Itaqui	RS	55
+Itaquiraí	MS	67
+Itaquitinga	PE	81
+Itarana	ES	27
+Itarantim	BA	73
+Itararé	SP	15
+Itarema	CE	88
+Itariri	SP	13
+Itarumã	GO	64
+Itati	RS	51
+Itatiaia	RJ	24
+Itatiaiuçu	MG	31
+Itatiba	SP	11
+Itatiba do Sul	RS	54
+Itatim	BA	75
+Itatinga	SP	14
+Itatira	CE	88
+Itatuba	PB	83
+Itaubal	AP	96
+Itaueira	PI	89
+Itauçu	GO	62
+Itaverava	MG	31
+Itaí	SP	14
+Itaíba	PE	87
+Itaóca	SP	15
+Itaú	RN	84
+Itaú de Minas	MG	35
+Itaúba	MT	66
+Itaúna	MG	37
+Itaúna do Sul	PR	44
+Itinga	MG	33
+Itinga do Maranhão	MA	99
+Itiquira	MT	65
+Itirapina	SP	19
+Itirapuã	SP	16
+Itiruçu	BA	73
+Itiúba	BA	74
+Itobi	SP	19
+Itororó	BA	73
+Itu	SP	11
+Ituaçu	BA	77
+Ituberá	BA	73
+Itueta	MG	33
+Ituiutaba	MG	34
+Itumbiara	GO	64
+Itumirim	MG	35
+Itupeva	SP	11
+Itupiranga	PA	94
+Ituporanga	SC	47
+Iturama	MG	34
+Itutinga	MG	35
+Ituverava	SP	16
+Itá	SC	49
+Itápolis	SP	16
+Iuiú	BA	77
+Ivaiporã	PR	43
+Ivatuba	PR	44
+Ivaté	PR	44
+Ivaí	PR	42
+Ivinhema	MS	67
+Ivolândia	GO	64
+Ivorá	RS	55
+Ivoti	RS	51
+Içara	SC	48
+Iúna	ES	28
+Jaboatão dos Guararapes	PE	81
+Jaborandi	BA	77
+Jaborandi	SP	17
+Jaborá	SC	49
+Jaboti	PR	43
+Jaboticaba	RS	55
+Jaboticabal	SP	16
+Jaboticatubas	MG	31
+Jacaraci	BA	77
+Jacaraú	PB	83
+Jacareacanga	PA	93
+Jacarezinho	PR	43
+Jacareí	SP	12
+Jacaré dos Homens	AL	82
+Jaci	SP	17
+Jaciara	MT	66
+Jacinto	MG	33
+Jacinto Machado	SC	48
+Jacobina	BA	74
+Jacobina do Piauí	PI	89
+Jacuizinho	RS	55
+Jacundá	PA	94
+Jacupiranga	SP	13
+Jacutinga	MG	35
+Jacutinga	RS	54
+Jacuí	MG	35
+Jacuípe	AL	82
+Jaguapitã	PR	43
+Jaguaquara	BA	73
+Jaguarari	BA	74
+Jaguaraçu	MG	31
+Jaguaretama	CE	88
+Jaguari	RS	55
+Jaguariaíva	PR	43
+Jaguaribara	CE	88
+Jaguaribe	CE	88
+Jaguaripe	BA	75
+Jaguariúna	SP	19
+Jaguaruana	CE	88
+Jaguaruna	SC	48
+Jaguarão	RS	53
+Jaguaré	ES	27
+Jaicós	PI	89
+Jales	SP	17
+Jambeiro	SP	12
+Jampruca	MG	33
+Janaúba	MG	38
+Jandaia	GO	64
+Jandaia do Sul	PR	43
+Jandaíra	RN	84
+Jandaíra	BA	75
+Jandira	SP	11
+Janduís	RN	84
+Jangada	MT	65
+Janiópolis	PR	44
+Januária	MG	38
+Januário Cicco (Boa Saúde)	RN	84
+Japaratinga	AL	82
+Japaratuba	SE	79
+Japaraíba	MG	37
+Japeri	RJ	21
+Japi	RN	84
+Japira	PR	43
+Japoatã	SE	79
+Japonvar	MG	38
+Japorã	MS	67
+Japurá	AM	97
+Japurá	PR	44
+Jaqueira	PE	81
+Jaquirana	RS	54
+Jaraguari	MS	67
+Jaraguá	GO	62
+Jaraguá do Sul	SC	47
+Jaramataia	AL	82
+Jardim	CE	88
+Jardim	MS	67
+Jardim Alegre	PR	43
+Jardim Olinda	PR	44
+Jardim de Angicos	RN	84
+Jardim de Piranhas	RN	84
+Jardim do Mulato	PI	86
+Jardim do Seridó	RN	84
+Jardinópolis	SP	16
+Jardinópolis	SC	49
+Jari	RS	55
+Jarinu	SP	11
+Jaru	RO	69
+Jataizinho	PR	43
+Jataí	GO	64
+Jataúba	PE	81
+Jateí	MS	67
+Jati	CE	88
+Jatobá	MA	99
+Jatobá	PE	87
+Jatobá do Piauí	PI	86
+Jaupaci	GO	64
+Jauru	MT	65
+Jaçanã	RN	84
+Jaíba	MG	38
+Jaú	SP	14
+Jaú do Tocantins	TO	63
+Jeceaba	MG	31
+Jenipapo de Minas	MG	33
+Jenipapo dos Vieiras	MA	99
+Jequeri	MG	31
+Jequitaí	MG	38
+Jequitibá	MG	31
+Jequitinhonha	MG	33
+Jequiá da Praia	AL	82
+Jequié	BA	73
+Jeremoabo	BA	75
+Jericó	PB	83
+Jeriquara	SP	16
+Jerumenha	PI	89
+Jerônimo Monteiro	ES	28
+Jesuânia	MG	35
+Jesuítas	PR	44
+Jesúpolis	GO	62
+Ji-Paraná	RO	69
+Jijoca de Jericoacoara	CE	88
+Jiquiriçá	BA	75
+Jitaúna	BA	73
+Joanésia	MG	33
+Joanópolis	SP	11
+Joaquim Felício	MG	38
+Joaquim Gomes	AL	82
+Joaquim Nabuco	PE	81
+Joaquim Pires	PI	86
+Joaquim Távora	PR	43
+Joaçaba	SC	49
+Joaíma	MG	33
+Joca Claudino	PB	83
+Joca Marques	PI	86
+Joinville	SC	47
+Jordânia	MG	33
+Jordão	AC	68
+Joselândia	MA	99
+Josenópolis	MG	38
+José Boiteux	SC	47
+José Bonifácio	SP	17
+José Gonçalves de Minas	MG	33
+José Raydan	MG	33
+José da Penha	RN	84
+José de Freitas	PI	86
+Joviânia	GO	64
+João Alfredo	PE	81
+João Costa	PI	89
+João Câmara	RN	84
+João Dias	RN	84
+João Dourado	BA	74
+João Lisboa	MA	99
+João Monlevade	MG	31
+João Neiva	ES	27
+João Pessoa	PB	83
+João Pinheiro	MG	38
+João Ramalho	SP	18
+Juara	MT	66
+Juarez Távora	PB	83
+Juarina	TO	63
+Juatuba	MG	31
+Juazeirinho	PB	83
+Juazeiro	BA	74
+Juazeiro do Norte	CE	88
+Juazeiro do Piauí	PI	86
+Jucati	PE	87
+Jucurutu	RN	84
+Jucuruçu	BA	73
+Jucás	CE	88
+Juiz de Fora	MG	32
+Jumirim	SP	15
+Junco do Maranhão	MA	98
+Junco do Seridó	PB	83
+Jundiaí	SP	11
+Jundiaí do Sul	PR	43
+Jundiá	RN	84
+Jundiá	AL	82
+Junqueiro	AL	82
+Junqueirópolis	SP	18
+Jupi	PE	87
+Jupiá	SC	49
+Juquitiba	SP	11
+Juquiá	SP	13
+Juramento	MG	38
+Juranda	PR	44
+Jurema	PI	89
+Jurema	PE	87
+Juripiranga	PB	83
+Juru	PB	83
+Juruaia	MG	35
+Juruena	MT	66
+Juruti	PA	93
+Juruá	AM	97
+Juscimeira	MT	66
+Jussara	BA	74
+Jussara	PR	44
+Jussara	GO	62
+Jussari	BA	73
+Jussiape	BA	77
+Jutaí	AM	97
+Juti	MS	67
+Juvenília	MG	38
+Juína	MT	66
+Jóia	RS	55
+Júlio Borges	PI	89
+Júlio Mesquita	SP	14
+Júlio de Castilhos	RS	55
+Kaloré	PR	43
+Lacerdópolis	SC	49
+Ladainha	MG	33
+Ladário	MS	67
+Lafaiete Coutinho	BA	73
+Lagamar	MG	34
+Lagarto	SE	79
+Lages	SC	49
+Lago Verde	MA	99
+Lago da Pedra	MA	99
+Lago do Junco	MA	99
+Lago dos Rodrigues	MA	99
+Lagoa	PB	83
+Lagoa Alegre	PI	86
+Lagoa Bonita do Sul	RS	51
+Lagoa Dourada	MG	32
+Lagoa Formosa	MG	34
+Lagoa Grande	PE	87
+Lagoa Grande	MG	34
+Lagoa Grande do Maranhão	MA	99
+Lagoa Nova	RN	84
+Lagoa Real	BA	77
+Lagoa Salgada	RN	84
+Lagoa Santa	MG	31
+Lagoa Santa	GO	64
+Lagoa Seca	PB	83
+Lagoa Vermelha	RS	54
+Lagoa d'Anta	RN	84
+Lagoa da Canoa	AL	82
+Lagoa da Confusão	TO	63
+Lagoa da Prata	MG	37
+Lagoa de Dentro	PB	83
+Lagoa de Itaenga	PE	81
+Lagoa de Pedras	RN	84
+Lagoa de São Francisco	PI	86
+Lagoa de Velhos	RN	84
+Lagoa do Barro do Piauí	PI	89
+Lagoa do Carro	PE	81
+Lagoa do Mato	MA	99
+Lagoa do Ouro	PE	87
+Lagoa do Piauí	PI	86
+Lagoa do Sítio	PI	89
+Lagoa do Tocantins	TO	63
+Lagoa dos Gatos	PE	81
+Lagoa dos Patos	MG	38
+Lagoa dos Três Cantos	RS	54
+Lagoinha	SP	12
+Lagoinha do Piauí	PI	86
+Lagoão	RS	51
+Laguna	SC	48
+Laguna Carapã	MS	67
+Laje	BA	75
+Laje do Muriaé	RJ	22
+Lajeado	TO	63
+Lajeado	RS	51
+Lajeado Grande	SC	49
+Lajeado Novo	MA	99
+Lajeado do Bugre	RS	55
+Lajedinho	BA	75
+Lajedo	PE	87
+Lajedo do Tabocal	BA	73
+Lajedão	BA	73
+Lajes	RN	84
+Lajes Pintadas	RN	84
+Lajinha	MG	33
+Lamarão	BA	75
+Lambari	MG	35
+Lambari D'Oeste	MT	65
+Lamim	MG	31
+Landri Sales	PI	89
+Lapa	PR	41
+Lapão	BA	74
+Laranja da Terra	ES	27
+Laranjal	MG	32
+Laranjal	PR	42
+Laranjal Paulista	SP	15
+Laranjal do Jari	AP	96
+Laranjeiras	SE	79
+Laranjeiras do Sul	PR	42
+Lassance	MG	38
+Lastro	PB	83
+Laurentino	SC	47
+Lauro Muller	SC	48
+Lauro de Freitas	BA	71
+Lavandeira	TO	63
+Lavras	MG	35
+Lavras da Mangabeira	CE	88
+Lavras do Sul	RS	55
+Lavrinhas	SP	12
+Lavínia	SP	18
+Leandro Ferreira	MG	37
+Lebon Régis	SC	49
+Leme	SP	19
+Leme do Prado	MG	33
+Lençóis	BA	75
+Lençóis Paulista	SP	14
+Leoberto Leal	SC	48
+Leopoldina	MG	32
+Leopoldo de Bulhões	GO	62
+Leópolis	PR	43
+Liberato Salzano	RS	55
+Liberdade	MG	32
+Licínio de Almeida	BA	77
+Lidianópolis	PR	43
+Lima Campos	MA	99
+Lima Duarte	MG	32
+Limeira	SP	19
+Limeira do Oeste	MG	34
+Limoeiro	PE	81
+Limoeiro de Anadia	AL	82
+Limoeiro do Ajuru	PA	91
+Limoeiro do Norte	CE	88
+Lindoeste	PR	45
+Lindolfo Collor	RS	51
+Lindóia	SP	19
+Lindóia do Sul	SC	49
+Linha Nova	RS	51
+Linhares	ES	27
+Lins	SP	14
+Livramento	PB	83
+Livramento de Nossa Senhora	BA	77
+Lizarda	TO	63
+Loanda	PR	44
+Lobato	PR	44
+Logradouro	PB	83
+Londrina	PR	43
+Lontra	MG	38
+Lontras	SC	47
+Lorena	SP	12
+Loreto	MA	99
+Lourdes	SP	18
+Louveira	SP	19
+Lucas do Rio Verde	MT	65
+Lucena	PB	83
+Lucianópolis	SP	14
+Luciara	MT	66
+Lucrécia	RN	84
+Lucélia	SP	18
+Luisburgo	MG	33
+Luislândia	MG	38
+Luiz Alves	SC	47
+Luiziana	PR	44
+Luiziânia	SP	18
+Luminárias	MG	35
+Lunardelli	PR	43
+Lupionópolis	PR	43
+Lupércio	SP	14
+Lutécia	SP	18
+Luz	MG	37
+Luzerna	SC	49
+Luzilândia	PI	86
+Luzinópolis	TO	63
+Luziânia	GO	61
+Luís Antônio	SP	16
+Luís Correia	PI	86
+Luís Domingues	MA	98
+Luís Eduardo Magalhães	BA	77
+Luís Gomes	RN	84
+Lábrea	AM	97
+Macajuba	BA	74
+Macambira	SE	79
+Macaparana	PE	81
+Macapá	AP	96
+Macarani	BA	77
+Macatuba	SP	14
+Macau	RN	84
+Macaubal	SP	17
+Macaé	RJ	22
+Macaíba	RN	84
+Macaúbas	BA	77
+Macedônia	SP	17
+Maceió	AL	82
+Machacalis	MG	33
+Machadinho	RS	54
+Machadinho D'Oeste	RO	69
+Machado	MG	35
+Machados	PE	81
+Macieira	SC	49
+Macuco	RJ	22
+Macururé	BA	75
+Madalena	CE	88
+Madeiro	PI	86
+Madre de Deus	BA	71
+Madre de Deus de Minas	MG	32
+Maetinga	BA	77
+Mafra	SC	47
+Magalhães Barata	PA	91
+Magalhães de Almeida	MA	98
+Magda	SP	17
+Magé	RJ	21
+Maiquinique	BA	77
+Mairi	BA	74
+Mairinque	SP	11
+Mairiporã	SP	11
+Mairipotaba	GO	64
+Major Gercino	SC	48
+Major Isidoro	AL	82
+Major Sales	RN	84
+Major Vieira	SC	47
+Malacacheta	MG	33
+Malhada	BA	77
+Malhada de Pedras	BA	77
+Malhada dos Bois	SE	79
+Malhador	SE	79
+Mallet	PR	42
+Malta	PB	83
+Mamanguape	PB	83
+Mambaí	GO	62
+Mamborê	PR	44
+Mamonas	MG	38
+Mampituba	RS	51
+Manacapuru	AM	92
+Manaquiri	AM	92
+Manari	PE	87
+Manaus	AM	92
+Manaíra	PB	83
+Mandaguari	PR	44
+Mandaguaçu	PR	44
+Mandirituba	PR	41
+Manduri	SP	14
+Manfrinópolis	PR	46
+Manga	MG	38
+Mangaratiba	RJ	21
+Mangueirinha	PR	46
+Manhuaçu	MG	33
+Manhumirim	MG	33
+Manicoré	AM	97
+Manoel Emídio	PI	89
+Manoel Ribas	PR	43
+Manoel Urbano	AC	68
+Manoel Viana	RS	55
+Manoel Vitorino	BA	73
+Mansidão	BA	77
+Mantena	MG	33
+Mantenópolis	ES	27
+Maquiné	RS	51
+Mar Vermelho	AL	82
+Mar de Espanha	MG	32
+Mara Rosa	GO	62
+Marabá	PA	94
+Marabá Paulista	SP	18
+Maracaju	MS	67
+Maracajá	SC	48
+Maracanaú	CE	85
+Maracanã	PA	91
+Maracaçumé	MA	98
+Maracaí	SP	18
+Maracás	BA	73
+Maragogi	AL	82
+Maragogipe	BA	75
+Maraial	PE	81
+Marajá do Sena	MA	98
+Maranguape	CE	85
+Maranhãozinho	MA	98
+Marapanim	PA	91
+Marapoama	SP	17
+Marataízes	ES	28
+Maratá	RS	51
+Marau	RS	54
+Maravilha	AL	82
+Maravilha	SC	49
+Maravilhas	MG	37
+Maraã	AM	97
+Maraú	BA	73
+Marcação	PB	83
+Marcelino Ramos	RS	54
+Marcelino Vieira	RN	84
+Marcelândia	MT	66
+Marcionílio Souza	BA	75
+Marco	CE	88
+Marcolândia	PI	89
+Marcos Parente	PI	89
+Marechal Cândido Rondon	PR	45
+Marechal Deodoro	AL	82
+Marechal Floriano	ES	27
+Marechal Thaumaturgo	AC	68
+Marema	SC	49
+Mari	PB	83
+Maria Helena	PR	44
+Maria da Fé	MG	35
+Marialva	PR	44
+Mariana	MG	31
+Mariana Pimentel	RS	51
+Mariano Moro	RS	54
+Marianópolis do Tocantins	TO	63
+Maribondo	AL	82
+Maricá	RJ	21
+Marilac	MG	33
+Marilena	PR	44
+Mariluz	PR	44
+Marilândia	ES	27
+Marilândia do Sul	PR	43
+Maringá	PR	44
+Marinópolis	SP	17
+Maripá	PR	44
+Maripá de Minas	MG	32
+Marituba	PA	91
+Marizópolis	PB	83
+Mariápolis	SP	18
+Mariópolis	PR	46
+Marliéria	MG	31
+Marmeleiro	PR	46
+Marmelópolis	MG	35
+Marques de Souza	RS	51
+Marquinho	PR	42
+Martinho Campos	MG	37
+Martins	RN	84
+Martins Soares	MG	33
+Martinópole	CE	88
+Martinópolis	SP	18
+Maruim	SE	79
+Marumbi	PR	43
+Marzagão	GO	64
+Marília	SP	14
+Mascote	BA	73
+Massapê	CE	88
+Massapê do Piauí	PI	89
+Massaranduba	PB	83
+Massaranduba	SC	47
+Mata	RS	55
+Mata Grande	AL	82
+Mata Roma	MA	98
+Mata Verde	MG	33
+Mata de São João	BA	71
+Mataraca	PB	83
+Mateiros	TO	63
+Matelândia	PR	45
+Materlândia	MG	33
+Mateus Leme	MG	31
+Mathias Lobato	MG	33
+Matias Barbosa	MG	32
+Matias Cardoso	MG	38
+Matias Olímpio	PI	86
+Matina	BA	77
+Matinha	MA	98
+Matinhas	PB	83
+Matinhos	PR	41
+Matipó	MG	31
+Mato Castelhano	RS	54
+Mato Grosso	PB	83
+Mato Leitão	RS	51
+Mato Queimado	RS	55
+Mato Rico	PR	42
+Mato Verde	MG	38
+Matos Costa	SC	49
+Matozinhos	MG	31
+Matrinchã	GO	62
+Matriz de Camaragibe	AL	82
+Matupá	MT	66
+Maturéia	PB	83
+Matutina	MG	34
+Matão	SP	16
+Matões	MA	99
+Matões do Norte	MA	98
+Maurilândia	GO	64
+Maurilândia do Tocantins	TO	63
+Mauriti	CE	88
+Mauá	SP	11
+Mauá da Serra	PR	43
+Maués	AM	92
+Maxaranguape	RN	84
+Maximiliano de Almeida	RS	54
+Mazagão	AP	96
+Maçambará	RS	55
+Medeiros	MG	37
+Medeiros Neto	BA	73
+Medianeira	PR	45
+Medicilândia	PA	93
+Medina	MG	33
+Meleiro	SC	48
+Melgaço	PA	91
+Mendes	RJ	24
+Mendes Pimentel	MG	33
+Mendonça	SP	17
+Mercedes	PR	45
+Mercês	MG	32
+Meridiano	SP	17
+Meruoca	CE	88
+Mesquita	MG	33
+Mesquita	RJ	21
+Messias	AL	82
+Messias Targino	RN	84
+Mesópolis	SP	17
+Miguel Alves	PI	86
+Miguel Calmon	BA	74
+Miguel Leão	PI	86
+Miguel Pereira	RJ	24
+Miguelópolis	SP	16
+Milagres	CE	88
+Milagres	BA	75
+Milagres do Maranhão	MA	98
+Milhã	CE	88
+Milton Brandão	PI	86
+Mimoso de Goiás	GO	62
+Mimoso do Sul	ES	28
+Minador do Negrão	AL	82
+Minas Novas	MG	33
+Minas do Leão	RS	51
+Minaçu	GO	62
+Minduri	MG	35
+Mineiros	GO	64
+Mineiros do Tietê	SP	14
+Ministro Andreazza	RO	69
+Mira Estrela	SP	17
+Mirabela	MG	38
+Miracatu	SP	13
+Miracema	RJ	22
+Miracema do Tocantins	TO	63
+Mirador	MA	99
+Mirador	PR	44
+Miradouro	MG	32
+Miraguaí	RS	55
+Miranda	MS	67
+Miranda do Norte	MA	98
+Mirandiba	PE	87
+Mirandópolis	SP	18
+Mirangaba	BA	74
+Miranorte	TO	63
+Mirante	BA	77
+Mirante da Serra	RO	69
+Mirante do Paranapanema	SP	18
+Miraselva	PR	43
+Mirassol	SP	17
+Mirassol d'Oeste	MT	65
+Mirassolândia	SP	17
+Miravânia	MG	38
+Miraí	MG	32
+Miraíma	CE	88
+Mirim Doce	SC	47
+Mirinzal	MA	98
+Missal	PR	45
+Missão Velha	CE	88
+Mocajuba	PA	91
+Mococa	SP	19
+Modelo	SC	49
+Moeda	MG	31
+Moema	MG	37
+Mogeiro	PB	83
+Mogi Guaçu	SP	19
+Mogi Mirim	SP	19
+Mogi das Cruzes	SP	11
+Moiporá	GO	64
+Moita Bonita	SE	79
+Moju	PA	91
+Mojuí dos Campos	PA	93
+Mombaça	CE	88
+Mombuca	SP	19
+Mondaí	SC	49
+Mongaguá	SP	13
+Monjolos	MG	38
+Monsenhor Gil	PI	86
+Monsenhor Hipólito	PI	89
+Monsenhor Paulo	MG	35
+Monsenhor Tabosa	CE	88
+Montadas	PB	83
+Montalvânia	MG	38
+Montanha	ES	27
+Montanhas	RN	84
+Montauri	RS	54
+Monte Alegre	PA	93
+Monte Alegre	RN	84
+Monte Alegre de Goiás	GO	62
+Monte Alegre de Minas	MG	34
+Monte Alegre de Sergipe	SE	79
+Monte Alegre do Piauí	PI	89
+Monte Alegre do Sul	SP	19
+Monte Alegre dos Campos	RS	54
+Monte Alto	SP	16
+Monte Aprazível	SP	17
+Monte Azul	MG	38
+Monte Azul Paulista	SP	17
+Monte Belo	MG	35
+Monte Belo do Sul	RS	54
+Monte Carlo	SC	49
+Monte Carmelo	MG	34
+Monte Castelo	SP	18
+Monte Castelo	SC	47
+Monte Formoso	MG	33
+Monte Horebe	PB	83
+Monte Mor	SP	19
+Monte Negro	RO	69
+Monte Santo	BA	75
+Monte Santo de Minas	MG	35
+Monte Santo do Tocantins	TO	63
+Monte Sião	MG	35
+Monte das Gameleiras	RN	84
+Monte do Carmo	TO	63
+Monteiro	PB	83
+Monteiro Lobato	SP	12
+Monteirópolis	AL	82
+Montenegro	RS	51
+Montes Altos	MA	99
+Montes Claros	MG	38
+Montes Claros de Goiás	GO	62
+Montezuma	MG	38
+Montividiu	GO	64
+Montividiu do Norte	GO	62
+Monção	MA	98
+Monções	SP	17
+Morada Nova	CE	88
+Morada Nova de Minas	MG	37
+Moraújo	CE	88
+Moreilândia	PE	87
+Moreira Sales	PR	44
+Moreno	PE	81
+Mormaço	RS	54
+Morpará	BA	77
+Morretes	PR	41
+Morrinhos	CE	88
+Morrinhos	GO	64
+Morrinhos do Sul	RS	51
+Morro Agudo	SP	16
+Morro Agudo de Goiás	GO	62
+Morro Cabeça no Tempo	PI	89
+Morro Grande	SC	48
+Morro Redondo	RS	53
+Morro Reuter	RS	51
+Morro da Fumaça	SC	48
+Morro da Garça	MG	38
+Morro do Chapéu	BA	74
+Morro do Chapéu do Piauí	PI	86
+Morro do Pilar	MG	31
+Morros	MA	98
+Mortugaba	BA	77
+Morungaba	SP	11
+Mossoró	RN	84
+Mossâmedes	GO	64
+Mostardas	RS	51
+Motuca	SP	16
+Mozarlândia	GO	62
+Muaná	PA	91
+Mucajaí	RR	95
+Mucambo	CE	88
+Mucugê	BA	75
+Mucuri	BA	73
+Mucurici	ES	27
+Muitos Capões	RS	54
+Muliterno	RS	54
+Mulungu	CE	85
+Mulungu	PB	83
+Mulungu do Morro	BA	74
+Mundo Novo	BA	74
+Mundo Novo	MS	67
+Mundo Novo	GO	62
+Munhoz	MG	35
+Munhoz de Melo	PR	44
+Muniz Ferreira	BA	75
+Muniz Freire	ES	28
+Muqui	ES	28
+Muquém de São Francisco	BA	77
+Muriaé	MG	32
+Muribeca	SE	79
+Murici	AL	82
+Murici dos Portelas	PI	86
+Muricilândia	TO	63
+Muritiba	BA	75
+Murutinga do Sul	SP	18
+Mutum	MG	33
+Mutunópolis	GO	62
+Mutuípe	BA	75
+Muzambinho	MG	35
+Muçum	RS	51
+Mário Campos	MG	31
+Mâncio Lima	AC	68
+Mãe d'Água	PB	83
+Mãe do Rio	PA	91
+Nacip Raydan	MG	33
+Nantes	SP	18
+Nanuque	MG	33
+Naque	MG	33
+Narandiba	SP	18
+Natal	RN	84
+Natalândia	MG	38
+Natividade	TO	63
+Natividade	RJ	22
+Natividade da Serra	SP	12
+Natuba	PB	83
+Natércia	MG	35
+Navegantes	SC	47
+Naviraí	MS	67
+Nazareno	MG	35
+Nazarezinho	PB	83
+Nazaré	TO	63
+Nazaré	BA	75
+Nazaré Paulista	SP	11
+Nazaré da Mata	PE	81
+Nazaré do Piauí	PI	89
+Nazária	PI	86
+Nazário	GO	64
+Nepomuceno	MG	35
+Nerópolis	GO	62
+Neves Paulista	SP	17
+Neópolis	SE	79
+Nhamundá	AM	92
+Nhandeara	SP	17
+Nicolau Vergueiro	RS	54
+Nilo Peçanha	BA	73
+Nilópolis	RJ	21
+Nina Rodrigues	MA	98
+Ninheira	MG	38
+Nioaque	MS	67
+Nipoã	SP	17
+Niquelândia	GO	62
+Niterói	RJ	21
+Nobres	MT	65
+Nonoai	RS	54
+Nordestina	BA	75
+Normandia	RR	95
+Nortelândia	MT	65
+Nossa Senhora Aparecida	SE	79
+Nossa Senhora da Glória	SE	79
+Nossa Senhora das Dores	SE	79
+Nossa Senhora das Graças	PR	44
+Nossa Senhora de Lourdes	SE	79
+Nossa Senhora de Nazaré	PI	86
+Nossa Senhora do Livramento	MT	65
+Nossa Senhora do Socorro	SE	79
+Nossa Senhora dos Remédios	PI	86
+Nova Aliança	SP	17
+Nova Aliança do Ivaí	PR	44
+Nova Alvorada	RS	54
+Nova Alvorada do Sul	MS	67
+Nova América	GO	62
+Nova América da Colina	PR	43
+Nova Andradina	MS	67
+Nova Araçá	RS	54
+Nova Aurora	PR	45
+Nova Aurora	GO	64
+Nova Bandeirantes	MT	66
+Nova Bassano	RS	54
+Nova Belém	MG	33
+Nova Boa Vista	RS	54
+Nova Brasilândia	MT	66
+Nova Brasilândia D'Oeste	RO	69
+Nova Bréscia	RS	51
+Nova Campina	SP	15
+Nova Canaã	BA	73
+Nova Canaã Paulista	SP	17
+Nova Canaã do Norte	MT	66
+Nova Candelária	RS	55
+Nova Cantu	PR	44
+Nova Castilho	SP	17
+Nova Colinas	MA	99
+Nova Crixás	GO	62
+Nova Cruz	RN	84
+Nova Era	MG	31
+Nova Erechim	SC	49
+Nova Esperança	PR	44
+Nova Esperança do Piriá	PA	91
+Nova Esperança do Sudoeste	PR	46
+Nova Esperança do Sul	RS	55
+Nova Europa	SP	16
+Nova Floresta	PB	83
+Nova Friburgo	RJ	22
+Nova Fátima	BA	75
+Nova Fátima	PR	43
+Nova Glória	GO	62
+Nova Granada	SP	17
+Nova Guarita	MT	66
+Nova Guataporanga	SP	18
+Nova Hartz	RS	51
+Nova Ibiá	BA	73
+Nova Iguaçu	RJ	21
+Nova Iguaçu de Goiás	GO	62
+Nova Independência	SP	18
+Nova Iorque	MA	99
+Nova Ipixuna	PA	94
+Nova Itaberaba	SC	49
+Nova Itarana	BA	73
+Nova Lacerda	MT	65
+Nova Laranjeiras	PR	42
+Nova Lima	MG	31
+Nova Londrina	PR	44
+Nova Luzitânia	SP	17
+Nova Mamoré	RO	69
+Nova Marilândia	MT	65
+Nova Maringá	MT	66
+Nova Monte Verde	MT	66
+Nova Mutum	MT	65
+Nova Módica	MG	33
+Nova Nazaré	MT	66
+Nova Odessa	SP	19
+Nova Olinda	TO	63
+Nova Olinda	CE	88
+Nova Olinda	PB	83
+Nova Olinda do Maranhão	MA	98
+Nova Olinda do Norte	AM	92
+Nova Olímpia	PR	44
+Nova Olímpia	MT	65
+Nova Palma	RS	55
+Nova Palmeira	PB	83
+Nova Petrópolis	RS	54
+Nova Ponte	MG	34
+Nova Porteirinha	MG	38
+Nova Prata	RS	54
+Nova Prata do Iguaçu	PR	46
+Nova Pádua	RS	54
+Nova Ramada	RS	55
+Nova Redenção	BA	75
+Nova Resende	MG	35
+Nova Roma	GO	62
+Nova Roma do Sul	RS	54
+Nova Rosalândia	TO	63
+Nova Russas	CE	88
+Nova Santa Bárbara	PR	43
+Nova Santa Helena	MT	66
+Nova Santa Rita	PI	89
+Nova Santa Rita	RS	51
+Nova Santa Rosa	PR	45
+Nova Serrana	MG	37
+Nova Soure	BA	75
+Nova Tebas	PR	42
+Nova Timboteua	PA	91
+Nova Trento	SC	48
+Nova Ubiratã	MT	66
+Nova União	RO	69
+Nova União	MG	31
+Nova Veneza	SC	48
+Nova Veneza	GO	62
+Nova Venécia	ES	27
+Nova Viçosa	BA	73
+Nova Xavantina	MT	66
+Novais	SP	17
+Novo Acordo	TO	63
+Novo Airão	AM	92
+Novo Alegre	TO	63
+Novo Aripuanã	AM	97
+Novo Barreiro	RS	55
+Novo Brasil	GO	62
+Novo Cabrais	RS	51
+Novo Cruzeiro	MG	33
+Novo Gama	GO	61
+Novo Hamburgo	RS	51
+Novo Horizonte	BA	77
+Novo Horizonte	SP	17
+Novo Horizonte	SC	49
+Novo Horizonte do Norte	MT	66
+Novo Horizonte do Oeste	RO	69
+Novo Horizonte do Sul	MS	67
+Novo Itacolomi	PR	43
+Novo Jardim	TO	63
+Novo Lino	AL	82
+Novo Machado	RS	55
+Novo Mundo	MT	66
+Novo Oriente	CE	88
+Novo Oriente de Minas	MG	33
+Novo Oriente do Piauí	PI	89
+Novo Planalto	GO	62
+Novo Progresso	PA	93
+Novo Repartimento	PA	94
+Novo Santo Antônio	PI	86
+Novo Santo Antônio	MT	66
+Novo São Joaquim	MT	66
+Novo Tiradentes	RS	55
+Novo Triunfo	BA	75
+Novo Xingu	RS	54
+Novorizonte	MG	38
+Nuporanga	SP	16
+Não-Me-Toque	RS	54
+Nísia Floresta	RN	84
+Ocara	CE	85
+Ocauçu	SP	14
+Oeiras	PI	89
+Oeiras do Pará	PA	91
+Oiapoque	AP	96
+Olaria	MG	32
+Olho D'Água do Piauí	PI	86
+Olho d'Água	PB	83
+Olho d'Água Grande	AL	82
+Olho d'Água das Cunhãs	MA	98
+Olho d'Água das Flores	AL	82
+Olho d'Água do Casado	AL	82
+Olho-d'Água do Borges	RN	84
+Olhos d'Água	MG	38
+Olinda	PE	81
+Olinda Nova do Maranhão	MA	98
+Olindina	BA	75
+Olivedos	PB	83
+Oliveira	MG	37
+Oliveira Fortes	MG	32
+Oliveira de Fátima	TO	63
+Oliveira dos Brejinhos	BA	77
+Olivença	AL	82
+Olímpia	SP	17
+Olímpio Noronha	MG	35
+Onda Verde	SP	17
+Onça de Pitangui	MG	37
+Oratórios	MG	31
+Oriente	SP	14
+Orindiúva	SP	17
+Oriximiná	PA	93
+Orizona	GO	64
+Orizânia	MG	32
+Orleans	SC	48
+Orlândia	SP	16
+Orobó	PE	81
+Orocó	PE	87
+Ortigueira	PR	42
+Orós	CE	88
+Osasco	SP	11
+Oscar Bressane	SP	14
+Osvaldo Cruz	SP	18
+Osório	RS	51
+Otacílio Costa	SC	49
+Ouricuri	PE	87
+Ourilândia do Norte	PA	94
+Ourinhos	SP	14
+Ourizona	PR	44
+Ouriçangas	BA	75
+Ouro	SC	49
+Ouro Branco	RN	84
+Ouro Branco	AL	82
+Ouro Branco	MG	31
+Ouro Fino	MG	35
+Ouro Preto	MG	31
+Ouro Preto do Oeste	RO	69
+Ouro Velho	PB	83
+Ouro Verde	SP	18
+Ouro Verde	SC	49
+Ouro Verde de Goiás	GO	62
+Ouro Verde de Minas	MG	33
+Ouro Verde do Oeste	PR	45
+Ouroeste	SP	17
+Ourolândia	BA	74
+Ourém	PA	91
+Ouvidor	GO	64
+Pacaembu	SP	18
+Pacajus	CE	85
+Pacajá	PA	91
+Pacaraima	RR	95
+Pacatuba	CE	85
+Pacatuba	SE	79
+Pacoti	CE	85
+Pacujá	CE	88
+Padre Bernardo	GO	61
+Padre Carvalho	MG	38
+Padre Marcos	PI	89
+Padre Paraíso	MG	33
+Paes Landim	PI	89
+Pai Pedro	MG	38
+Paial	SC	49
+Paim Filho	RS	54
+Paineiras	MG	37
+Painel	SC	49
+Pains	MG	37
+Paiva	MG	32
+Paiçandu	PR	44
+Pajeú do Piauí	PI	89
+Palestina	AL	82
+Palestina	SP	17
+Palestina de Goiás	GO	64
+Palestina do Pará	PA	94
+Palhano	CE	88
+Palhoça	SC	48
+Palma	MG	32
+Palma Sola	SC	49
+Palmares	PE	81
+Palmares Paulista	SP	17
+Palmares do Sul	RS	51
+Palmas	TO	63
+Palmas	PR	46
+Palmas de Monte Alto	BA	77
+Palmeira	PR	42
+Palmeira	SC	49
+Palmeira d'Oeste	SP	17
+Palmeira das Missões	RS	55
+Palmeira do Piauí	PI	89
+Palmeira dos Índios	AL	82
+Palmeirais	PI	86
+Palmeirante	TO	63
+Palmeiras	BA	75
+Palmeiras de Goiás	GO	64
+Palmeiras do Tocantins	TO	63
+Palmeirina	PE	87
+Palmeirândia	MA	98
+Palmeirópolis	TO	63
+Palmelo	GO	64
+Palminópolis	GO	64
+Palmital	SP	18
+Palmital	PR	42
+Palmitinho	RS	55
+Palmitos	SC	49
+Palmácia	CE	85
+Palmópolis	MG	33
+Palotina	PR	44
+Panambi	RS	55
+Panamá	GO	64
+Pancas	ES	27
+Panelas	PE	81
+Panorama	SP	18
+Pantano Grande	RS	51
+Papagaios	MG	37
+Papanduva	SC	47
+Paquetá	PI	89
+Paracambi	RJ	21
+Paracatu	MG	38
+Paracuru	CE	85
+Paragominas	PA	91
+Paraguaçu	MG	35
+Paraguaçu Paulista	SP	18
+Paraibano	MA	99
+Paraibuna	SP	12
+Paraipaba	CE	85
+Paraisópolis	MG	35
+Parambu	CE	88
+Paramirim	BA	77
+Paramoti	CE	85
+Paranacity	PR	44
+Paranaguá	PR	41
+Paranaiguara	GO	64
+Paranapanema	SP	14
+Paranapoema	PR	44
+Paranapuã	SP	17
+Paranatama	PE	87
+Paranatinga	MT	66
+Paranavaí	PR	44
+Paranaíba	MS	67
+Paranaíta	MT	66
+Paranhos	MS	67
+Paraná	RN	84
+Paranã	TO	63
+Paraopeba	MG	31
+Parapuã	SP	18
+Parari	PB	83
+Paratinga	BA	77
+Paraty	RJ	24
+Parauapebas	PA	94
+Parazinho	RN	84
+Paraí	RS	54
+Paraíba do Sul	RJ	24
+Paraíso	SP	17
+Paraíso	SC	49
+Paraíso das Águas	MS	67
+Paraíso do Norte	PR	44
+Paraíso do Sul	RS	55
+Paraíso do Tocantins	TO	63
+Paraú	RN	84
+Paraúna	GO	64
+Pardinho	SP	14
+Pareci Novo	RS	51
+Parecis	RO	69
+Parelhas	RN	84
+Pariconha	AL	82
+Parintins	AM	92
+Paripiranga	BA	75
+Paripueira	AL	82
+Pariquera-Açu	SP	13
+Parisi	SP	17
+Parnaguá	PI	89
+Parnamirim	RN	84
+Parnamirim	PE	87
+Parnarama	MA	99
+Parnaíba	PI	86
+Parobé	RS	51
+Pará de Minas	MG	37
+Passa Quatro	MG	35
+Passa Sete	RS	51
+Passa Tempo	MG	37
+Passa e Fica	RN	84
+Passa-Vinte	MG	32
+Passabém	MG	31
+Passagem	RN	84
+Passagem	PB	83
+Passagem Franca	MA	99
+Passagem Franca do Piauí	PI	86
+Passira	PE	81
+Passo Fundo	RS	54
+Passo de Camaragibe	AL	82
+Passo de Torres	SC	48
+Passo do Sobrado	RS	51
+Passos	MG	35
+Passos Maia	SC	49
+Pastos Bons	MA	99
+Patis	MG	38
+Pato Bragado	PR	45
+Pato Branco	PR	46
+Patos	PB	83
+Patos de Minas	MG	34
+Patos do Piauí	PI	89
+Patrocínio	MG	34
+Patrocínio Paulista	SP	16
+Patrocínio do Muriaé	MG	32
+Patu	RN	84
+Paty do Alferes	RJ	24
+Pau Brasil	BA	73
+Pau D'Arco	TO	63
+Pau D'Arco do Piauí	PI	86
+Pau d'Arco	PA	94
+Pau dos Ferros	RN	84
+Paudalho	PE	81
+Pauini	AM	97
+Paula Cândido	MG	32
+Paula Freitas	PR	42
+Paulicéia	SP	18
+Paulino Neves	MA	98
+Paulista	PB	83
+Paulista	PE	81
+Paulistana	PI	89
+Paulistas	MG	33
+Paulistânia	SP	14
+Paulo Afonso	BA	75
+Paulo Bento	RS	54
+Paulo Frontin	PR	42
+Paulo Jacinto	AL	82
+Paulo Lopes	SC	48
+Paulo Ramos	MA	98
+Paulo de Faria	SP	17
+Paulínia	SP	19
+Paverama	RS	51
+Pavussu	PI	89
+Pavão	MG	33
+Paço do Lumiar	MA	98
+Peabiru	PR	44
+Pederneiras	SP	14
+Pedra	PE	87
+Pedra Azul	MG	33
+Pedra Bela	SP	11
+Pedra Bonita	MG	31
+Pedra Branca	CE	88
+Pedra Branca	PB	83
+Pedra Branca do Amapari	AP	96
+Pedra Dourada	MG	32
+Pedra Grande	RN	84
+Pedra Lavrada	PB	83
+Pedra Mole	SE	79
+Pedra Preta	RN	84
+Pedra Preta	MT	66
+Pedra do Anta	MG	31
+Pedra do Indaiá	MG	37
+Pedralva	MG	35
+Pedranópolis	SP	17
+Pedras Altas	RS	53
+Pedras Grandes	SC	48
+Pedras de Fogo	PB	83
+Pedras de Maria da Cruz	MG	38
+Pedregulho	SP	16
+Pedreira	SP	19
+Pedreiras	MA	99
+Pedrinhas	SE	79
+Pedrinhas Paulista	SP	18
+Pedrinópolis	MG	34
+Pedro Afonso	TO	63
+Pedro Alexandre	BA	75
+Pedro Avelino	RN	84
+Pedro Canário	ES	27
+Pedro Gomes	MS	67
+Pedro II	PI	86
+Pedro Laurentino	PI	89
+Pedro Leopoldo	MG	31
+Pedro Osório	RS	53
+Pedro Régis	PB	83
+Pedro Teixeira	MG	32
+Pedro Velho	RN	84
+Pedro de Toledo	SP	13
+Pedro do Rosário	MA	98
+Pedrão	BA	75
+Peixe	TO	63
+Peixe-Boi	PA	91
+Peixoto de Azevedo	MT	66
+Pejuçara	RS	55
+Pelotas	RS	53
+Penaforte	CE	88
+Penalva	MA	98
+Pendências	RN	84
+Penedo	AL	82
+Penha	SC	47
+Pentecoste	CE	85
+Penápolis	SP	18
+Pequeri	MG	32
+Pequi	MG	37
+Pequizeiro	TO	63
+Perdigão	MG	37
+Perdizes	MG	34
+Perdões	MG	35
+Pereira Barreto	SP	18
+Pereiras	SP	14
+Pereiro	CE	88
+Peri Mirim	MA	98
+Periquito	MG	33
+Peritiba	SC	49
+Peritoró	MA	99
+Perobal	PR	44
+Perolândia	GO	64
+Peruíbe	SP	13
+Pescador	MG	33
+Pescaria Brava	SC	48
+Pesqueira	PE	87
+Petrolina	PE	87
+Petrolina de Goiás	GO	62
+Petrolândia	PE	87
+Petrolândia	SC	47
+Petrópolis	RJ	24
+Peçanha	MG	33
+Piacatu	SP	18
+Piancó	PB	83
+Piatã	BA	77
+Piau	MG	32
+Piaçabuçu	AL	82
+Picada Café	RS	54
+Picos	PI	89
+Picuí	PB	83
+Piedade	SP	15
+Piedade de Caratinga	MG	33
+Piedade de Ponte Nova	MG	31
+Piedade do Rio Grande	MG	32
+Piedade dos Gerais	MG	31
+Pilar	PB	83
+Pilar	AL	82
+Pilar de Goiás	GO	62
+Pilar do Sul	SP	15
+Pilão Arcado	BA	74
+Pilões	RN	84
+Pilões	PB	83
+Pilõezinhos	PB	83
+Pimenta	MG	37
+Pimenta Bueno	RO	69
+Pimenteiras	PI	89
+Pimenteiras do Oeste	RO	69
+Pindamonhangaba	SP	12
+Pindaré-Mirim	MA	98
+Pindaí	BA	77
+Pindoba	AL	82
+Pindobaçu	BA	74
+Pindorama	SP	17
+Pindorama do Tocantins	TO	63
+Pindoretama	CE	85
+Pingo-d'Água	MG	33
+Pinhais	PR	41
+Pinhal	RS	55
+Pinhal Grande	RS	55
+Pinhal da Serra	RS	54
+Pinhal de São Bento	PR	46
+Pinhalzinho	SP	11
+Pinhalzinho	SC	49
+Pinhalão	PR	43
+Pinheiral	RJ	24
+Pinheirinho do Vale	RS	55
+Pinheiro	MA	98
+Pinheiro Machado	RS	53
+Pinheiro Preto	SC	49
+Pinheiros	ES	27
+Pinhão	SE	79
+Pinhão	PR	42
+Pintadas	BA	75
+Pinto Bandeira	RS	54
+Pintópolis	MG	38
+Pio IX	PI	89
+Pio XII	MA	98
+Piquerobi	SP	18
+Piquet Carneiro	CE	88
+Piquete	SP	12
+Piracaia	SP	11
+Piracanjuba	GO	64
+Piracema	MG	37
+Piracicaba	SP	19
+Piracuruca	PI	86
+Piraju	SP	14
+Pirajuba	MG	34
+Pirajuí	SP	14
+Pirambu	SE	79
+Piranga	MG	31
+Pirangi	SP	17
+Piranguinho	MG	35
+Piranguçu	MG	35
+Piranhas	AL	82
+Piranhas	GO	64
+Pirapemas	MA	98
+Pirapetinga	MG	32
+Pirapora	MG	38
+Pirapora do Bom Jesus	SP	11
+Pirapozinho	SP	18
+Pirapó	RS	55
+Piraquara	PR	41
+Piraquê	TO	63
+Pirassununga	SP	19
+Piratini	RS	53
+Piratininga	SP	14
+Piratuba	SC	49
+Piraí	RJ	24
+Piraí do Norte	BA	73
+Piraí do Sul	PR	42
+Piraúba	MG	32
+Pirenópolis	GO	62
+Pires Ferreira	CE	88
+Pires do Rio	GO	64
+Piripiri	PI	86
+Piripá	BA	77
+Piritiba	BA	74
+Pirpirituba	PB	83
+Pitanga	PR	42
+Pitangueiras	SP	16
+Pitangueiras	PR	43
+Pitangui	MG	37
+Pitimbu	PB	83
+Pium	TO	63
+Piumhi	MG	37
+Piçarra	PA	94
+Piên	PR	41
+Piúma	ES	28
+Placas	PA	93
+Planaltina	GO	61
+Planaltina do Paraná	PR	44
+Planaltino	BA	73
+Planalto	BA	77
+Planalto	SP	18
+Planalto	PR	46
+Planalto	RS	55
+Planalto Alegre	SC	49
+Planalto da Serra	MT	66
+Planura	MG	34
+Platina	SP	18
+Plácido de Castro	AC	68
+Pocinhos	PB	83
+Poconé	MT	65
+Pocrane	MG	33
+Pojuca	BA	71
+Poloni	SP	17
+Pombal	PB	83
+Pombos	PE	81
+Pomerode	SC	47
+Pompéia	SP	14
+Pompéu	MG	37
+Pongaí	SP	14
+Ponta Grossa	PR	42
+Ponta Porã	MS	67
+Ponta de Pedras	PA	91
+Pontal	SP	16
+Pontal do Araguaia	MT	66
+Pontal do Paraná	PR	41
+Pontalina	GO	64
+Pontalinda	SP	17
+Ponte Alta	SC	49
+Ponte Alta do Bom Jesus	TO	63
+Ponte Alta do Norte	SC	49
+Ponte Alta do Tocantins	TO	63
+Ponte Branca	MT	66
+Ponte Nova	MG	31
+Ponte Preta	RS	54
+Ponte Serrada	SC	49
+Pontes Gestal	SP	17
+Pontes e Lacerda	MT	65
+Ponto Belo	ES	27
+Ponto Chique	MG	38
+Ponto Novo	BA	74
+Ponto dos Volantes	MG	33
+Pontão	RS	54
+Populina	SP	17
+Poranga	CE	88
+Porangaba	SP	15
+Porangatu	GO	62
+Porciúncula	RJ	22
+Porecatu	PR	43
+Portalegre	RN	84
+Porteiras	CE	88
+Porteirinha	MG	38
+Porteirão	GO	64
+Portel	PA	91
+Portelândia	GO	64
+Porto	PI	86
+Porto Acre	AC	68
+Porto Alegre	RS	51
+Porto Alegre do Norte	MT	66
+Porto Alegre do Piauí	PI	89
+Porto Alegre do Tocantins	TO	63
+Porto Amazonas	PR	42
+Porto Barreiro	PR	42
+Porto Belo	SC	47
+Porto Calvo	AL	82
+Porto Esperidião	MT	65
+Porto Estrela	MT	65
+Porto Feliz	SP	15
+Porto Ferreira	SP	19
+Porto Firme	MG	31
+Porto Franco	MA	99
+Porto Grande	AP	96
+Porto Lucena	RS	55
+Porto Mauá	RS	55
+Porto Murtinho	MS	67
+Porto Nacional	TO	63
+Porto Real	RJ	24
+Porto Real do Colégio	AL	82
+Porto Rico	PR	44
+Porto Rico do Maranhão	MA	98
+Porto Seguro	BA	73
+Porto União	SC	42
+Porto Velho	RO	69
+Porto Vera Cruz	RS	55
+Porto Vitória	PR	42
+Porto Walter	AC	68
+Porto Xavier	RS	55
+Porto da Folha	SE	79
+Porto de Moz	PA	93
+Porto de Pedras	AL	82
+Porto do Mangue	RN	84
+Porto dos Gaúchos	MT	66
+Portão	RS	51
+Posse	GO	62
+Potengi	CE	88
+Potim	SP	12
+Potiraguá	BA	73
+Potirendaba	SP	17
+Potiretama	CE	88
+Poté	MG	33
+Pouso Alegre	MG	35
+Pouso Alto	MG	35
+Pouso Novo	RS	51
+Pouso Redondo	SC	47
+Poxoréu	MT	66
+Poá	SP	11
+Poço Branco	RN	84
+Poço Dantas	PB	83
+Poço Fundo	MG	35
+Poço Redondo	SE	79
+Poço Verde	SE	79
+Poço das Antas	RS	51
+Poço das Trincheiras	AL	82
+Poço de José de Moura	PB	83
+Poços de Caldas	MG	35
+Poção	PE	87
+Poção de Pedras	MA	99
+Poções	BA	77
+Pracinha	SP	18
+Pracuúba	AP	96
+Prado	BA	73
+Prado Ferreira	PR	43
+Prados	MG	32
+Pradópolis	SP	16
+Praia Grande	SP	13
+Praia Grande	SC	48
+Praia Norte	TO	63
+Prainha	PA	93
+Pranchita	PR	46
+Prata	PB	83
+Prata	MG	34
+Prata do Piauí	PI	86
+Pratinha	MG	34
+Pratápolis	MG	35
+Pratânia	SP	14
+Presidente Alves	SP	14
+Presidente Bernardes	MG	32
+Presidente Bernardes	SP	18
+Presidente Castello Branco	SC	49
+Presidente Castelo Branco	PR	44
+Presidente Dutra	MA	99
+Presidente Dutra	BA	74
+Presidente Epitácio	SP	18
+Presidente Figueiredo	AM	92
+Presidente Getúlio	SC	47
+Presidente Juscelino	MA	98
+Presidente Juscelino	MG	38
+Presidente Jânio Quadros	BA	77
+Presidente Kennedy	TO	63
+Presidente Kennedy	ES	28
+Presidente Kubitschek	MG	38
+Presidente Lucena	RS	51
+Presidente Médici	RO	69
+Presidente Médici	MA	98
+Presidente Nereu	SC	47
+Presidente Olegário	MG	34
+Presidente Prudente	SP	18
+Presidente Sarney	MA	98
+Presidente Tancredo Neves	BA	73
+Presidente Vargas	MA	98
+Presidente Venceslau	SP	18
+Primavera	PA	91
+Primavera	PE	81
+Primavera de Rondônia	RO	69
+Primavera do Leste	MT	66
+Primeira Cruz	MA	98
+Primeiro de Maio	PR	43
+Princesa	SC	49
+Princesa Isabel	PB	83
+Professor Jamil	GO	64
+Progresso	RS	51
+Promissão	SP	14
+Propriá	SE	79
+Protásio Alves	RS	54
+Prudente de Morais	MG	31
+Prudentópolis	PR	42
+Pugmil	TO	63
+Pureza	RN	84
+Putinga	RS	51
+Puxinanã	PB	83
+Pão de Açúcar	AL	82
+Pé de Serra	BA	75
+Pérola	PR	44
+Pérola d'Oeste	PR	46
+Quadra	SP	15
+Quaraí	RS	55
+Quartel Geral	MG	37
+Quarto Centenário	PR	44
+Quatiguá	PR	43
+Quatipuru	PA	91
+Quatis	RJ	24
+Quatro Barras	PR	41
+Quatro Irmãos	RS	54
+Quatro Pontes	PR	45
+Quatá	SP	18
+Quebrangulo	AL	82
+Quedas do Iguaçu	PR	46
+Queimada Nova	PI	89
+Queimadas	PB	83
+Queimadas	BA	75
+Queimados	RJ	21
+Queiroz	SP	14
+Queluz	SP	12
+Queluzito	MG	31
+Querência	MT	66
+Querência do Norte	PR	44
+Quevedos	RS	55
+Quijingue	BA	75
+Quilombo	SC	49
+Quinta do Sol	PR	44
+Quintana	SP	14
+Quinze de Novembro	RS	54
+Quipapá	PE	81
+Quirinópolis	GO	64
+Quissamã	RJ	22
+Quitandinha	PR	41
+Quiterianópolis	CE	88
+Quixaba	PE	87
+Quixabeira	BA	74
+Quixabá	PB	83
+Quixadá	CE	88
+Quixelô	CE	88
+Quixeramobim	CE	88
+Quixeré	CE	88
+Rafael Fernandes	RN	84
+Rafael Godeiro	RN	84
+Rafael Jambeiro	BA	75
+Rafard	SP	19
+Ramilândia	PR	45
+Rancharia	SP	18
+Rancho Alegre	PR	43
+Rancho Alegre D'Oeste	PR	44
+Rancho Queimado	SC	48
+Raposa	MA	98
+Raposos	MG	31
+Raul Soares	MG	33
+Realeza	PR	46
+Rebouças	PR	42
+Recife	PE	81
+Recreio	MG	32
+Recursolândia	TO	63
+Redentora	RS	55
+Redenção	PA	94
+Redenção	CE	85
+Redenção da Serra	SP	12
+Redenção do Gurguéia	PI	89
+Reduto	MG	33
+Regeneração	PI	86
+Regente Feijó	SP	18
+Reginópolis	SP	14
+Registro	SP	13
+Relvado	RS	51
+Remanso	BA	74
+Remígio	PB	83
+Renascença	PR	46
+Reriutaba	CE	88
+Resende	RJ	24
+Resende Costa	MG	32
+Reserva	PR	42
+Reserva do Cabaçal	MT	65
+Reserva do Iguaçu	PR	42
+Resplendor	MG	33
+Ressaquinha	MG	32
+Restinga	SP	16
+Restinga Sêca	RS	55
+Retirolândia	BA	75
+Riachinho	TO	63
+Riachinho	MG	38
+Riacho Frio	PI	89
+Riacho da Cruz	RN	84
+Riacho das Almas	PE	81
+Riacho de Santana	RN	84
+Riacho de Santana	BA	77
+Riacho de Santo Antônio	PB	83
+Riacho dos Cavalos	PB	83
+Riacho dos Machados	MG	38
+Riachuelo	RN	84
+Riachuelo	SE	79
+Riachão	MA	99
+Riachão	PB	83
+Riachão das Neves	BA	77
+Riachão do Bacamarte	PB	83
+Riachão do Dantas	SE	79
+Riachão do Jacuípe	BA	75
+Riachão do Poço	PB	83
+Rialma	GO	62
+Rianápolis	GO	62
+Ribamar Fiquene	MA	99
+Ribas do Rio Pardo	MS	67
+Ribeira	SP	15
+Ribeira do Amparo	BA	75
+Ribeira do Piauí	PI	89
+Ribeira do Pombal	BA	75
+Ribeiro Gonçalves	PI	89
+Ribeirão	PE	81
+Ribeirão Bonito	SP	16
+Ribeirão Branco	SP	15
+Ribeirão Cascalheira	MT	66
+Ribeirão Claro	PR	43
+Ribeirão Corrente	SP	16
+Ribeirão Grande	SP	15
+Ribeirão Pires	SP	11
+Ribeirão Preto	SP	16
+Ribeirão Vermelho	MG	35
+Ribeirão das Neves	MG	31
+Ribeirão do Largo	BA	77
+Ribeirão do Pinhal	PR	43
+Ribeirão do Sul	SP	14
+Ribeirão dos Índios	SP	18
+Ribeirãozinho	MT	66
+Ribeirópolis	SE	79
+Rifaina	SP	16
+Rincão	SP	16
+Rinópolis	SP	18
+Rio Acima	MG	31
+Rio Azul	PR	42
+Rio Bananal	ES	27
+Rio Bom	PR	43
+Rio Bonito	RJ	21
+Rio Bonito do Iguaçu	PR	42
+Rio Branco	AC	68
+Rio Branco	MT	65
+Rio Branco do Ivaí	PR	43
+Rio Branco do Sul	PR	41
+Rio Brilhante	MS	67
+Rio Casca	MG	31
+Rio Claro	RJ	24
+Rio Claro	SP	19
+Rio Crespo	RO	69
+Rio Doce	MG	31
+Rio Espera	MG	31
+Rio Formoso	PE	81
+Rio Fortuna	SC	48
+Rio Grande	RS	53
+Rio Grande da Serra	SP	11
+Rio Grande do Piauí	PI	89
+Rio Largo	AL	82
+Rio Manso	MG	31
+Rio Maria	PA	94
+Rio Negrinho	SC	47
+Rio Negro	PR	47
+Rio Negro	MS	67
+Rio Novo	MG	32
+Rio Novo do Sul	ES	28
+Rio Paranaíba	MG	34
+Rio Pardo	RS	51
+Rio Pardo de Minas	MG	38
+Rio Piracicaba	MG	31
+Rio Pomba	MG	32
+Rio Preto	MG	32
+Rio Preto da Eva	AM	92
+Rio Quente	GO	64
+Rio Real	BA	75
+Rio Rufino	SC	49
+Rio Sono	TO	63
+Rio Tinto	PB	83
+Rio Verde	GO	64
+Rio Verde de Mato Grosso	MS	67
+Rio Vermelho	MG	33
+Rio da Conceição	TO	63
+Rio das Antas	SC	49
+Rio das Flores	RJ	24
+Rio das Ostras	RJ	22
+Rio das Pedras	SP	19
+Rio de Contas	BA	77
+Rio de Janeiro	RJ	21
+Rio do Antônio	BA	77
+Rio do Campo	SC	47
+Rio do Fogo	RN	84
+Rio do Oeste	SC	47
+Rio do Pires	BA	77
+Rio do Prado	MG	33
+Rio do Sul	SC	47
+Rio dos Bois	TO	63
+Rio dos Cedros	SC	47
+Rio dos Índios	RS	54
+Riolândia	SP	17
+Riozinho	RS	51
+Riqueza	SC	49
+Ritápolis	MG	32
+Riversul	SP	15
+Roca Sales	RS	51
+Rochedo	MS	67
+Rochedo de Minas	MG	32
+Rodeio	SC	47
+Rodeio Bonito	RS	55
+Rodeiro	MG	32
+Rodelas	BA	75
+Rodolfo Fernandes	RN	84
+Rodrigues Alves	AC	68
+Rolador	RS	55
+Rolante	RS	51
+Rolim de Moura	RO	69
+Rolândia	PR	43
+Romaria	MG	34
+Romelândia	SC	49
+Roncador	PR	44
+Ronda Alta	RS	54
+Rondinha	RS	54
+Rondolândia	MT	66
+Rondon	PR	44
+Rondon do Pará	PA	94
+Rondonópolis	MT	66
+Roque Gonzales	RS	55
+Rorainópolis	RR	95
+Rosana	SP	18
+Roseira	SP	12
+Rosário	MA	98
+Rosário Oeste	MT	65
+Rosário da Limeira	MG	32
+Rosário do Catete	SE	79
+Rosário do Ivaí	PR	43
+Rosário do Sul	RS	55
+Roteiro	AL	82
+Rubelita	MG	38
+Rubiataba	GO	62
+Rubim	MG	33
+Rubinéia	SP	17
+Rubiácea	SP	18
+Rurópolis	PA	93
+Russas	CE	88
+Ruy Barbosa	RN	84
+Ruy Barbosa	BA	75
+Sabará	MG	31
+Sabino	SP	14
+Sabinópolis	MG	33
+Saboeiro	CE	88
+Sabáudia	PR	43
+Sacramento	MG	34
+Sagrada Família	RS	55
+Sagres	SP	18
+Sairé	PE	81
+Saldanha Marinho	RS	55
+Sales	SP	17
+Sales Oliveira	SP	16
+Salesópolis	SP	11
+Salete	SC	47
+Salgadinho	PB	83
+Salgadinho	PE	81
+Salgado	SE	79
+Salgado Filho	PR	46
+Salgado de São Félix	PB	83
+Salgueiro	PE	87
+Salinas	MG	38
+Salinas da Margarida	BA	75
+Salinópolis	PA	91
+Salitre	CE	88
+Salmourão	SP	18
+Saloá	PE	87
+Saltinho	SP	19
+Saltinho	SC	49
+Salto	SP	11
+Salto Grande	SP	14
+Salto Veloso	SC	49
+Salto da Divisa	MG	33
+Salto de Pirapora	SP	15
+Salto do Céu	MT	65
+Salto do Itararé	PR	43
+Salto do Jacuí	RS	55
+Salto do Lontra	PR	46
+Salvador	BA	71
+Salvador das Missões	RS	55
+Salvador do Sul	RS	51
+Salvaterra	PA	91
+Sambaíba	MA	99
+Sampaio	TO	63
+Sananduva	RS	54
+Sanclerlândia	GO	64
+Sandolândia	TO	63
+Sandovalina	SP	18
+Sangão	SC	48
+Sanharó	PE	87
+Sant'Ana do Livramento	RS	55
+Santa Adélia	SP	17
+Santa Albertina	SP	17
+Santa Amélia	PR	43
+Santa Branca	SP	12
+Santa Brígida	BA	75
+Santa Bárbara	BA	75
+Santa Bárbara	MG	31
+Santa Bárbara d'Oeste	SP	19
+Santa Bárbara de Goiás	GO	62
+Santa Bárbara do Leste	MG	33
+Santa Bárbara do Monte Verde	MG	32
+Santa Bárbara do Pará	PA	91
+Santa Bárbara do Sul	RS	55
+Santa Bárbara do Tugúrio	MG	32
+Santa Carmem	MT	66
+Santa Cecília	PB	83
+Santa Cecília	SC	49
+Santa Cecília do Pavão	PR	43
+Santa Cecília do Sul	RS	54
+Santa Clara d'Oeste	SP	17
+Santa Clara do Sul	RS	51
+Santa Cruz	RN	84
+Santa Cruz	PB	83
+Santa Cruz	PE	87
+Santa Cruz Cabrália	BA	73
+Santa Cruz da Baixa Verde	PE	87
+Santa Cruz da Conceição	SP	19
+Santa Cruz da Esperança	SP	16
+Santa Cruz da Vitória	BA	73
+Santa Cruz das Palmeiras	SP	19
+Santa Cruz de Goiás	GO	64
+Santa Cruz de Minas	MG	32
+Santa Cruz de Monte Castelo	PR	44
+Santa Cruz de Salinas	MG	38
+Santa Cruz do Arari	PA	91
+Santa Cruz do Capibaribe	PE	81
+Santa Cruz do Escalvado	MG	31
+Santa Cruz do Piauí	PI	89
+Santa Cruz do Rio Pardo	SP	14
+Santa Cruz do Sul	RS	51
+Santa Cruz do Xingu	MT	66
+Santa Cruz dos Milagres	PI	89
+Santa Efigênia de Minas	MG	33
+Santa Ernestina	SP	16
+Santa Filomena	PI	89
+Santa Filomena	PE	87
+Santa Filomena do Maranhão	MA	99
+Santa Fé	PR	44
+Santa Fé de Goiás	GO	62
+Santa Fé de Minas	MG	38
+Santa Fé do Araguaia	TO	63
+Santa Fé do Sul	SP	17
+Santa Gertrudes	SP	19
+Santa Helena	MA	98
+Santa Helena	PB	83
+Santa Helena	PR	45
+Santa Helena	SC	49
+Santa Helena de Goiás	GO	64
+Santa Helena de Minas	MG	33
+Santa Inês	MA	98
+Santa Inês	PB	83
+Santa Inês	BA	73
+Santa Inês	PR	44
+Santa Isabel	SP	11
+Santa Isabel	GO	62
+Santa Isabel do Ivaí	PR	44
+Santa Isabel do Rio Negro	AM	97
+Santa Izabel do Oeste	PR	46
+Santa Izabel do Pará	PA	91
+Santa Juliana	MG	34
+Santa Leopoldina	ES	27
+Santa Luz	PI	89
+Santa Luzia	MA	98
+Santa Luzia	PB	83
+Santa Luzia	BA	73
+Santa Luzia	MG	31
+Santa Luzia D'Oeste	RO	69
+Santa Luzia do Itanhy	SE	79
+Santa Luzia do Norte	AL	82
+Santa Luzia do Paruá	MA	98
+Santa Luzia do Pará	PA	91
+Santa Lúcia	SP	16
+Santa Lúcia	PR	45
+Santa Margarida	MG	31
+Santa Margarida do Sul	RS	55
+Santa Maria	RN	84
+Santa Maria	RS	55
+Santa Maria Madalena	RJ	22
+Santa Maria da Boa Vista	PE	87
+Santa Maria da Serra	SP	19
+Santa Maria da Vitória	BA	77
+Santa Maria das Barreiras	PA	94
+Santa Maria de Itabira	MG	31
+Santa Maria de Jetibá	ES	27
+Santa Maria do Cambucá	PE	81
+Santa Maria do Herval	RS	51
+Santa Maria do Oeste	PR	42
+Santa Maria do Pará	PA	91
+Santa Maria do Salto	MG	33
+Santa Maria do Suaçuí	MG	33
+Santa Maria do Tocantins	TO	63
+Santa Mariana	PR	43
+Santa Mercedes	SP	18
+Santa Mônica	PR	44
+Santa Quitéria	CE	88
+Santa Quitéria do Maranhão	MA	98
+Santa Rita	MA	98
+Santa Rita	PB	83
+Santa Rita d'Oeste	SP	17
+Santa Rita de Caldas	MG	35
+Santa Rita de Cássia	BA	77
+Santa Rita de Ibitipoca	MG	32
+Santa Rita de Jacutinga	MG	32
+Santa Rita de Minas	MG	33
+Santa Rita do Araguaia	GO	64
+Santa Rita do Itueto	MG	33
+Santa Rita do Novo Destino	GO	62
+Santa Rita do Pardo	MS	67
+Santa Rita do Passa Quatro	SP	19
+Santa Rita do Sapucaí	MG	35
+Santa Rita do Tocantins	TO	63
+Santa Rita do Trivelato	MT	65
+Santa Rosa	RS	55
+Santa Rosa da Serra	MG	34
+Santa Rosa de Goiás	GO	62
+Santa Rosa de Lima	SE	79
+Santa Rosa de Lima	SC	48
+Santa Rosa de Viterbo	SP	16
+Santa Rosa do Piauí	PI	89
+Santa Rosa do Purus	AC	68
+Santa Rosa do Sul	SC	48
+Santa Rosa do Tocantins	TO	63
+Santa Salete	SP	17
+Santa Teresa	ES	27
+Santa Teresinha	PB	83
+Santa Teresinha	BA	75
+Santa Tereza	RS	54
+Santa Tereza de Goiás	GO	62
+Santa Tereza do Oeste	PR	45
+Santa Tereza do Tocantins	TO	63
+Santa Terezinha	PE	87
+Santa Terezinha	SC	47
+Santa Terezinha	MT	66
+Santa Terezinha de Goiás	GO	62
+Santa Terezinha de Itaipu	PR	45
+Santa Terezinha do Progresso	SC	49
+Santa Terezinha do Tocantins	TO	63
+Santa Vitória	MG	34
+Santa Vitória do Palmar	RS	53
+Santaluz	BA	75
+Santana	AP	96
+Santana	BA	77
+Santana da Boa Vista	RS	53
+Santana da Ponte Pensa	SP	17
+Santana da Vargem	MG	35
+Santana de Cataguases	MG	32
+Santana de Mangueira	PB	83
+Santana de Parnaíba	SP	11
+Santana de Pirapama	MG	31
+Santana do Acaraú	CE	88
+Santana do Araguaia	PA	94
+Santana do Cariri	CE	88
+Santana do Deserto	MG	32
+Santana do Garambéu	MG	32
+Santana do Ipanema	AL	82
+Santana do Itararé	PR	43
+Santana do Jacaré	MG	35
+Santana do Manhuaçu	MG	33
+Santana do Maranhão	MA	98
+Santana do Matos	RN	84
+Santana do Mundaú	AL	82
+Santana do Paraíso	MG	31
+Santana do Piauí	PI	89
+Santana do Riacho	MG	31
+Santana do Seridó	RN	84
+Santana do São Francisco	SE	79
+Santana dos Garrotes	PB	83
+Santana dos Montes	MG	31
+Santanópolis	BA	75
+Santarém	PA	93
+Santarém Novo	PA	91
+Santiago	RS	55
+Santiago do Sul	SC	49
+Santo Afonso	MT	65
+Santo Amaro	BA	75
+Santo Amaro da Imperatriz	SC	48
+Santo Amaro das Brotas	SE	79
+Santo Amaro do Maranhão	MA	98
+Santo Anastácio	SP	18
+Santo André	PB	83
+Santo André	SP	11
+Santo Antônio	RN	84
+Santo Antônio da Alegria	SP	16
+Santo Antônio da Barra	GO	64
+Santo Antônio da Patrulha	RS	51
+Santo Antônio da Platina	PR	43
+Santo Antônio das Missões	RS	55
+Santo Antônio de Goiás	GO	62
+Santo Antônio de Jesus	BA	75
+Santo Antônio de Lisboa	PI	89
+Santo Antônio de Posse	SP	19
+Santo Antônio de Pádua	RJ	22
+Santo Antônio do Amparo	MG	35
+Santo Antônio do Aracanguá	SP	18
+Santo Antônio do Aventureiro	MG	32
+Santo Antônio do Caiuá	PR	44
+Santo Antônio do Descoberto	GO	61
+Santo Antônio do Grama	MG	31
+Santo Antônio do Itambé	MG	33
+Santo Antônio do Içá	AM	97
+Santo Antônio do Jacinto	MG	33
+Santo Antônio do Jardim	SP	19
+Santo Antônio do Leste	MT	66
+Santo Antônio do Leverger	MT	65
+Santo Antônio do Monte	MG	37
+Santo Antônio do Palma	RS	54
+Santo Antônio do Paraíso	PR	43
+Santo Antônio do Pinhal	SP	12
+Santo Antônio do Planalto	RS	54
+Santo Antônio do Retiro	MG	38
+Santo Antônio do Rio Abaixo	MG	31
+Santo Antônio do Sudoeste	PR	46
+Santo Antônio do Tauá	PA	91
+Santo Antônio dos Lopes	MA	99
+Santo Antônio dos Milagres	PI	86
+Santo Augusto	RS	55
+Santo Cristo	RS	55
+Santo Estêvão	BA	75
+Santo Expedito	SP	18
+Santo Expedito do Sul	RS	54
+Santo Hipólito	MG	38
+Santo Inácio	PR	44
+Santo Inácio do Piauí	PI	89
+Santo Ângelo	RS	55
+Santos	SP	13
+Santos Dumont	MG	32
+Santópolis do Aguapeí	SP	18
+Sapeaçu	BA	75
+Sapezal	MT	65
+Sapiranga	RS	51
+Sapopema	PR	43
+Sapucaia	PA	94
+Sapucaia	RJ	24
+Sapucaia do Sul	RS	51
+Sapucaí-Mirim	MG	35
+Sapé	PB	83
+Saquarema	RJ	22
+Sarandi	PR	44
+Sarandi	RS	54
+Sarapuí	SP	15
+Sardoá	MG	33
+Sarutaiá	SP	14
+Sarzedo	MG	31
+Satuba	AL	82
+Satubinha	MA	98
+Saubara	BA	71
+Saudade do Iguaçu	PR	46
+Saudades	SC	49
+Saúde	BA	74
+Schroeder	SC	47
+Seabra	BA	75
+Seara	SC	49
+Sebastianópolis do Sul	SP	17
+Sebastião Barros	PI	89
+Sebastião Laranjeiras	BA	77
+Sebastião Leal	PI	89
+Seberi	RS	55
+Sede Nova	RS	55
+Segredo	RS	51
+Selbach	RS	54
+Selvíria	MS	67
+Sem-Peixe	MG	31
+Sena Madureira	AC	68
+Senador Alexandre Costa	MA	99
+Senador Amaral	MG	35
+Senador Canedo	GO	62
+Senador Cortes	MG	32
+Senador Elói de Souza	RN	84
+Senador Firmino	MG	32
+Senador Georgino Avelino	RN	84
+Senador Guiomard	AC	68
+Senador José Bento	MG	35
+Senador José Porfírio	PA	91
+Senador La Rocque	MA	99
+Senador Modestino Gonçalves	MG	38
+Senador Pompeu	CE	88
+Senador Rui Palmeira	AL	82
+Senador Salgado Filho	RS	55
+Senador Sá	CE	88
+Sengés	PR	43
+Senhor do Bonfim	BA	74
+Senhora de Oliveira	MG	31
+Senhora do Porto	MG	33
+Senhora dos Remédios	MG	32
+Sentinela do Sul	RS	51
+Sento Sé	BA	74
+Serafina Corrêa	RS	54
+Sericita	MG	31
+Seringueiras	RO	69
+Seritinga	MG	35
+Seropédica	RJ	21
+Serra	ES	27
+Serra Alta	SC	49
+Serra Azul	SP	16
+Serra Azul de Minas	MG	38
+Serra Branca	PB	83
+Serra Caiada	RN	84
+Serra Dourada	BA	77
+Serra Grande	PB	83
+Serra Negra	SP	19
+Serra Negra do Norte	RN	84
+Serra Nova Dourada	MT	66
+Serra Preta	BA	75
+Serra Redonda	PB	83
+Serra Talhada	PE	87
+Serra da Raiz	PB	83
+Serra da Saudade	MG	37
+Serra de São Bento	RN	84
+Serra do Mel	RN	84
+Serra do Navio	AP	96
+Serra do Ramalho	BA	77
+Serra do Salitre	MG	34
+Serra dos Aimorés	MG	33
+Serrana	SP	16
+Serrania	MG	35
+Serrano do Maranhão	MA	98
+Serranos	MG	35
+Serranópolis	GO	64
+Serranópolis de Minas	MG	38
+Serranópolis do Iguaçu	PR	45
+Serraria	PB	83
+Serrinha	RN	84
+Serrinha	BA	75
+Serrinha dos Pintos	RN	84
+Serrita	PE	87
+Serro	MG	38
+Serrolândia	BA	74
+Sertaneja	PR	43
+Sertanópolis	PR	43
+Sertânia	PE	87
+Sertão	RS	54
+Sertão Santana	RS	51
+Sertãozinho	PB	83
+Sertãozinho	SP	16
+Sete Barras	SP	13
+Sete Lagoas	MG	31
+Sete Quedas	MS	67
+Sete de Setembro	RS	55
+Setubinha	MG	33
+Severiano Melo	RN	84
+Severiano de Almeida	RS	54
+Severínia	SP	17
+Siderópolis	SC	48
+Sidrolândia	MS	67
+Sigefredo Pacheco	PI	86
+Silva Jardim	RJ	22
+Silvanópolis	TO	63
+Silveira Martins	RS	55
+Silveiras	SP	12
+Silveirânia	MG	32
+Silves	AM	92
+Silvianópolis	MG	35
+Silvânia	GO	62
+Simolândia	GO	62
+Simonésia	MG	33
+Simplício Mendes	PI	89
+Simão Dias	SE	79
+Simão Pereira	MG	32
+Simões	PI	89
+Simões Filho	BA	71
+Sinimbu	RS	51
+Sinop	MT	66
+Siqueira Campos	PR	43
+Sirinhaém	PE	81
+Siriri	SE	79
+Sobradinho	BA	74
+Sobradinho	RS	51
+Sobrado	PB	83
+Sobral	CE	88
+Sobrália	MG	33
+Socorro	SP	19
+Socorro do Piauí	PI	89
+Soledade	PB	83
+Soledade	RS	54
+Soledade de Minas	MG	35
+Solidão	PE	87
+Solonópole	CE	88
+Solânea	PB	83
+Sombrio	SC	48
+Sonora	MS	67
+Sooretama	ES	27
+Sorocaba	SP	15
+Sorriso	MT	66
+Sossêgo	PB	83
+Soure	PA	91
+Sousa	PB	83
+Souto Soares	BA	75
+Sucupira	TO	63
+Sucupira do Norte	MA	99
+Sucupira do Riachão	MA	99
+Sud Mennucci	SP	18
+Sul Brasil	SC	49
+Sulina	PR	46
+Sumaré	SP	19
+Sumidouro	RJ	22
+Sumé	PB	83
+Surubim	PE	81
+Sussuapara	PI	89
+Suzano	SP	11
+Suzanápolis	SP	18
+Sátiro Dias	BA	75
+São Benedito	CE	88
+São Benedito do Rio Preto	MA	98
+São Benedito do Sul	PE	81
+São Bentinho	PB	83
+São Bento	MA	98
+São Bento	PB	83
+São Bento Abade	MG	35
+São Bento do Norte	RN	84
+São Bento do Sapucaí	SP	12
+São Bento do Sul	SC	47
+São Bento do Tocantins	TO	63
+São Bento do Trairí	RN	84
+São Bento do Una	PE	81
+São Bernardino	SC	49
+São Bernardo	MA	98
+São Bernardo do Campo	SP	11
+São Bonifácio	SC	48
+São Borja	RS	55
+São Braz do Piauí	PI	89
+São Brás	AL	82
+São Brás do Suaçuí	MG	31
+São Caetano	PE	81
+São Caetano de Odivelas	PA	91
+São Caetano do Sul	SP	11
+São Carlos	SP	16
+São Carlos	SC	49
+São Carlos do Ivaí	PR	44
+São Cristovão do Sul	SC	49
+São Cristóvão	SE	79
+São Desidério	BA	77
+São Domingos	PB	83
+São Domingos	SE	79
+São Domingos	BA	75
+São Domingos	SC	49
+São Domingos	GO	62
+São Domingos das Dores	MG	33
+São Domingos do Araguaia	PA	94
+São Domingos do Azeitão	MA	99
+São Domingos do Capim	PA	91
+São Domingos do Cariri	PB	83
+São Domingos do Maranhão	MA	99
+São Domingos do Norte	ES	27
+São Domingos do Prata	MG	31
+São Domingos do Sul	RS	54
+São Felipe	BA	75
+São Felipe D'Oeste	RO	69
+São Fernando	RN	84
+São Fidélis	RJ	22
+São Francisco	PB	83
+São Francisco	SE	79
+São Francisco	MG	38
+São Francisco	SP	17
+São Francisco de Assis	RS	55
+São Francisco de Assis do Piauí	PI	89
+São Francisco de Goiás	GO	62
+São Francisco de Itabapoana	RJ	22
+São Francisco de Paula	MG	37
+São Francisco de Paula	RS	54
+São Francisco de Sales	MG	34
+São Francisco do Brejão	MA	99
+São Francisco do Conde	BA	71
+São Francisco do Glória	MG	32
+São Francisco do Guaporé	RO	69
+São Francisco do Maranhão	MA	99
+São Francisco do Oeste	RN	84
+São Francisco do Pará	PA	91
+São Francisco do Piauí	PI	89
+São Francisco do Sul	SC	47
+São Félix	BA	75
+São Félix de Balsas	MA	99
+São Félix de Minas	MG	33
+São Félix do Araguaia	MT	66
+São Félix do Coribe	BA	77
+São Félix do Piauí	PI	86
+São Félix do Tocantins	TO	63
+São Félix do Xingu	PA	94
+São Gabriel	BA	74
+São Gabriel	RS	55
+São Gabriel da Cachoeira	AM	97
+São Gabriel da Palha	ES	27
+São Gabriel do Oeste	MS	67
+São Geraldo	MG	32
+São Geraldo da Piedade	MG	33
+São Geraldo do Araguaia	PA	94
+São Geraldo do Baixio	MG	33
+São Gonçalo	RJ	21
+São Gonçalo do Abaeté	MG	38
+São Gonçalo do Amarante	CE	85
+São Gonçalo do Amarante	RN	84
+São Gonçalo do Gurguéia	PI	89
+São Gonçalo do Pará	MG	37
+São Gonçalo do Piauí	PI	86
+São Gonçalo do Rio Abaixo	MG	31
+São Gonçalo do Rio Preto	MG	38
+São Gonçalo do Sapucaí	MG	35
+São Gonçalo dos Campos	BA	75
+São Gotardo	MG	34
+São Jerônimo	RS	51
+São Jerônimo da Serra	PR	43
+São Joaquim	SC	49
+São Joaquim da Barra	SP	16
+São Joaquim de Bicas	MG	31
+São Joaquim do Monte	PE	81
+São Jorge	RS	54
+São Jorge d'Oeste	PR	46
+São Jorge do Ivaí	PR	44
+São Jorge do Patrocínio	PR	44
+São José	SC	48
+São José da Barra	MG	35
+São José da Bela Vista	SP	16
+São José da Boa Vista	PR	43
+São José da Coroa Grande	PE	81
+São José da Lagoa Tapada	PB	83
+São José da Laje	AL	82
+São José da Lapa	MG	31
+São José da Safira	MG	33
+São José da Tapera	AL	82
+São José da Varginha	MG	37
+São José da Vitória	BA	73
+São José das Missões	RS	55
+São José das Palmeiras	PR	45
+São José de Caiana	PB	83
+São José de Espinharas	PB	83
+São José de Mipibu	RN	84
+São José de Piranhas	PB	83
+São José de Princesa	PB	83
+São José de Ribamar	MA	98
+São José de Ubá	RJ	22
+São José do Alegre	MG	35
+São José do Barreiro	SP	12
+São José do Belmonte	PE	87
+São José do Bonfim	PB	83
+São José do Brejo do Cruz	PB	83
+São José do Calçado	ES	28
+São José do Campestre	RN	84
+São José do Cedro	SC	49
+São José do Cerrito	SC	49
+São José do Divino	PI	86
+São José do Divino	MG	33
+São José do Egito	PE	87
+São José do Goiabal	MG	31
+São José do Herval	RS	54
+São José do Hortêncio	RS	51
+São José do Inhacorá	RS	55
+São José do Jacuri	MG	33
+São José do Jacuípe	BA	74
+São José do Mantimento	MG	33
+São José do Norte	RS	53
+São José do Ouro	RS	54
+São José do Peixe	PI	89
+São José do Piauí	PI	89
+São José do Povo	MT	66
+São José do Rio Claro	MT	65
+São José do Rio Pardo	SP	19
+São José do Rio Preto	SP	17
+São José do Sabugi	PB	83
+São José do Seridó	RN	84
+São José do Sul	RS	51
+São José do Vale do Rio Preto	RJ	24
+São José do Xingu	MT	66
+São José dos Ausentes	RS	54
+São José dos Basílios	MA	99
+São José dos Campos	SP	12
+São José dos Cordeiros	PB	83
+São José dos Pinhais	PR	41
+São José dos Quatro Marcos	MT	65
+São José dos Ramos	PB	83
+São João	PE	87
+São João	PR	46
+São João Batista	MA	98
+São João Batista	SC	48
+São João Batista do Glória	MG	35
+São João Evangelista	MG	33
+São João Nepomuceno	MG	32
+São João d'Aliança	GO	62
+São João da Baliza	RR	95
+São João da Barra	RJ	22
+São João da Boa Vista	SP	19
+São João da Canabrava	PI	89
+São João da Fronteira	PI	86
+São João da Lagoa	MG	38
+São João da Mata	MG	35
+São João da Paraúna	GO	64
+São João da Ponta	PA	91
+São João da Ponte	MG	38
+São João da Serra	PI	86
+São João da Urtiga	RS	54
+São João da Varjota	PI	89
+São João das Duas Pontes	SP	17
+São João das Missões	MG	38
+São João de Iracema	SP	17
+São João de Meriti	RJ	21
+São João de Pirabas	PA	91
+São João del Rei	MG	32
+São João do Araguaia	PA	94
+São João do Arraial	PI	86
+São João do Caiuá	PR	44
+São João do Cariri	PB	83
+São João do Carú	MA	98
+São João do Itaperiú	SC	47
+São João do Ivaí	PR	43
+São João do Jaguaribe	CE	88
+São João do Manhuaçu	MG	33
+São João do Manteninha	MG	33
+São João do Oeste	SC	49
+São João do Oriente	MG	33
+São João do Pacuí	MG	38
+São João do Paraíso	MA	99
+São João do Paraíso	MG	38
+São João do Pau d'Alho	SP	18
+São João do Piauí	PI	89
+São João do Polêsine	RS	55
+São João do Rio do Peixe	PB	83
+São João do Sabugi	RN	84
+São João do Soter	MA	99
+São João do Sul	SC	48
+São João do Tigre	PB	83
+São João do Triunfo	PR	42
+São João dos Patos	MA	99
+São Julião	PI	89
+São Leopoldo	RS	51
+São Lourenço	MG	35
+São Lourenço da Mata	PE	81
+São Lourenço da Serra	SP	11
+São Lourenço do Oeste	SC	49
+São Lourenço do Piauí	PI	89
+São Lourenço do Sul	RS	53
+São Ludgero	SC	48
+São Luis do Piauí	PI	89
+São Luiz	RR	95
+São Luiz Gonzaga	RS	55
+São Luiz do Norte	GO	62
+São Luiz do Paraitinga	SP	12
+São Luís	MA	98
+São Luís Gonzaga do Maranhão	MA	99
+São Luís de Montes Belos	GO	64
+São Luís do Curu	CE	85
+São Luís do Quitunde	AL	82
+São Mamede	PB	83
+São Manoel do Paraná	PR	44
+São Manuel	SP	14
+São Marcos	RS	54
+São Martinho	SC	48
+São Martinho	RS	55
+São Martinho da Serra	RS	55
+São Mateus	ES	27
+São Mateus do Maranhão	MA	99
+São Mateus do Sul	PR	42
+São Miguel	RN	84
+São Miguel Arcanjo	SP	15
+São Miguel da Baixa Grande	PI	86
+São Miguel da Boa Vista	SC	49
+São Miguel das Matas	BA	75
+São Miguel das Missões	RS	55
+São Miguel de Taipu	PB	83
+São Miguel do Aleixo	SE	79
+São Miguel do Anta	MG	31
+São Miguel do Araguaia	GO	62
+São Miguel do Fidalgo	PI	89
+São Miguel do Gostoso	RN	84
+São Miguel do Guamá	PA	91
+São Miguel do Guaporé	RO	69
+São Miguel do Iguaçu	PR	45
+São Miguel do Oeste	SC	49
+São Miguel do Passa Quatro	GO	62
+São Miguel do Tapuio	PI	86
+São Miguel do Tocantins	TO	63
+São Miguel dos Campos	AL	82
+São Miguel dos Milagres	AL	82
+São Nicolau	RS	55
+São Patrício	GO	62
+São Paulo	SP	11
+São Paulo das Missões	RS	55
+São Paulo de Olivença	AM	97
+São Paulo do Potengi	RN	84
+São Pedro	RN	84
+São Pedro	SP	19
+São Pedro da Aldeia	RJ	22
+São Pedro da Cipa	MT	66
+São Pedro da Serra	RS	51
+São Pedro da União	MG	35
+São Pedro da Água Branca	MA	99
+São Pedro das Missões	RS	55
+São Pedro de Alcântara	SC	48
+São Pedro do Butiá	RS	55
+São Pedro do Iguaçu	PR	45
+São Pedro do Ivaí	PR	43
+São Pedro do Paraná	PR	44
+São Pedro do Piauí	PI	86
+São Pedro do Suaçuí	MG	33
+São Pedro do Sul	RS	55
+São Pedro do Turvo	SP	14
+São Pedro dos Crentes	MA	99
+São Pedro dos Ferros	MG	33
+São Rafael	RN	84
+São Raimundo Nonato	PI	89
+São Raimundo das Mangabeiras	MA	99
+São Raimundo do Doca Bezerra	MA	99
+São Roberto	MA	99
+São Romão	MG	38
+São Roque	SP	11
+São Roque de Minas	MG	37
+São Roque do Canaã	ES	27
+São Salvador do Tocantins	TO	63
+São Sebastião	AL	82
+São Sebastião	SP	12
+São Sebastião da Amoreira	PR	43
+São Sebastião da Bela Vista	MG	35
+São Sebastião da Boa Vista	PA	91
+São Sebastião da Grama	SP	19
+São Sebastião da Vargem Alegre	MG	32
+São Sebastião de Lagoa de Roça	PB	83
+São Sebastião do Alto	RJ	22
+São Sebastião do Anta	MG	33
+São Sebastião do Caí	RS	51
+São Sebastião do Maranhão	MG	33
+São Sebastião do Oeste	MG	37
+São Sebastião do Paraíso	MG	35
+São Sebastião do Passé	BA	71
+São Sebastião do Rio Preto	MG	31
+São Sebastião do Rio Verde	MG	35
+São Sebastião do Tocantins	TO	63
+São Sebastião do Uatumã	AM	92
+São Sebastião do Umbuzeiro	PB	83
+São Sepé	RS	55
+São Simão	SP	16
+São Simão	GO	64
+São Thomé das Letras	MG	35
+São Tiago	MG	32
+São Tomás de Aquino	MG	35
+São Tomé	RN	84
+São Tomé	PR	44
+São Valentim	RS	54
+São Valentim do Sul	RS	54
+São Valério	TO	63
+São Valério do Sul	RS	55
+São Vendelino	RS	51
+São Vicente	RN	84
+São Vicente	SP	13
+São Vicente Ferrer	MA	98
+São Vicente Ferrer	PE	81
+São Vicente de Minas	MG	35
+São Vicente do Seridó	PB	83
+São Vicente do Sul	RS	55
+Sério	RS	51
+Sítio Novo	MA	99
+Sítio Novo	RN	84
+Sítio Novo do Tocantins	TO	63
+Sítio d'Abadia	GO	62
+Sítio do Mato	BA	77
+Sítio do Quinto	BA	75
+Tabaporã	MT	66
+Tabapuã	SP	17
+Tabatinga	AM	97
+Tabatinga	SP	16
+Tabaí	RS	51
+Tabira	PE	87
+Tabocas do Brejo Velho	BA	77
+Taboleiro Grande	RN	84
+Taboão da Serra	SP	11
+Tabuleiro	MG	32
+Tabuleiro do Norte	CE	88
+Tacaimbó	PE	81
+Tacaratu	PE	87
+Taciba	SP	18
+Tacima	PB	83
+Tacuru	MS	67
+Taguatinga	TO	63
+Taguaí	SP	14
+Taiaçu	SP	16
+Tailândia	PA	91
+Taiobeiras	MG	38
+Taipas do Tocantins	TO	63
+Taipu	RN	84
+Taió	SC	47
+Taiúva	SP	16
+Talismã	TO	63
+Tamandaré	PE	81
+Tamarana	PR	43
+Tambaú	SP	19
+Tamboara	PR	44
+Tamboril	CE	88
+Tamboril do Piauí	PI	89
+Tanabi	SP	17
+Tangará	RN	84
+Tangará	SC	49
+Tangará da Serra	MT	65
+Tanguá	RJ	21
+Tanhaçu	BA	77
+Tanque Novo	BA	77
+Tanque d'Arca	AL	82
+Tanque do Piauí	PI	89
+Tanquinho	BA	75
+Taparuba	MG	33
+Tapauá	AM	97
+Tapejara	PR	44
+Tapejara	RS	54
+Tapera	RS	54
+Taperoá	PB	83
+Taperoá	BA	75
+Tapes	RS	51
+Tapira	MG	34
+Tapira	PR	44
+Tapiramutá	BA	74
+Tapiratiba	SP	19
+Tapiraí	MG	37
+Tapiraí	SP	15
+Tapurah	MT	66
+Taquara	RS	51
+Taquaral	SP	16
+Taquaral de Goiás	GO	62
+Taquarana	AL	82
+Taquaraçu de Minas	MG	31
+Taquari	RS	51
+Taquaritinga	SP	16
+Taquaritinga do Norte	PE	81
+Taquarituba	SP	14
+Taquarivaí	SP	15
+Taquarussu	MS	67
+Taquaruçu do Sul	RS	55
+Tarabai	SP	18
+Tarauacá	AC	68
+Tarrafas	CE	88
+Tartarugalzinho	AP	96
+Tarumirim	MG	33
+Tarumã	SP	18
+Tasso Fragoso	MA	99
+Tatuí	SP	15
+Taubaté	SP	12
+Tauá	CE	88
+Tavares	PB	83
+Tavares	RS	51
+Tefé	AM	97
+Teixeira	PB	83
+Teixeira Soares	PR	42
+Teixeira de Freitas	BA	73
+Teixeiras	MG	31
+Teixeirópolis	RO	69
+Tejupá	SP	14
+Tejuçuoca	CE	85
+Telha	SE	79
+Telêmaco Borba	PR	42
+Tenente Ananias	RN	84
+Tenente Laurentino Cruz	RN	84
+Tenente Portela	RS	55
+Tenório	PB	83
+Teodoro Sampaio	BA	75
+Teodoro Sampaio	SP	18
+Teofilândia	BA	75
+Teolândia	BA	73
+Teotônio Vilela	AL	82
+Terenos	MS	67
+Teresina	PI	86
+Teresina de Goiás	GO	62
+Teresópolis	RJ	21
+Terezinha	PE	87
+Terezópolis de Goiás	GO	62
+Terra Alta	PA	91
+Terra Boa	PR	44
+Terra Nova	PE	87
+Terra Nova	BA	75
+Terra Nova do Norte	MT	66
+Terra Rica	PR	44
+Terra Roxa	SP	17
+Terra Roxa	PR	44
+Terra Santa	PA	93
+Terra de Areia	RS	51
+Tesouro	MT	66
+Teutônia	RS	51
+Teófilo Otoni	MG	33
+Theobroma	RO	69
+Tianguá	CE	88
+Tibagi	PR	42
+Tibau	RN	84
+Tibau do Sul	RN	84
+Tietê	SP	15
+Tigrinhos	SC	49
+Tijucas	SC	48
+Tijucas do Sul	PR	41
+Timbaúba	PE	81
+Timbaúba dos Batistas	RN	84
+Timbiras	MA	99
+Timburi	SP	14
+Timbé do Sul	SC	48
+Timbó	SC	47
+Timbó Grande	SC	49
+Timon	MA	99
+Timóteo	MG	31
+Tio Hugo	RS	54
+Tiradentes	MG	32
+Tiradentes do Sul	RS	55
+Tiros	MG	34
+Tobias Barreto	SE	79
+Tocantins	MG	32
+Tocantinópolis	TO	63
+Tocantínia	TO	63
+Tocos do Moji	MG	35
+Toledo	MG	35
+Toledo	PR	45
+Tomar do Geru	SE	79
+Tomazina	PR	43
+Tombos	MG	32
+Tomé-Açu	PA	91
+Tonantins	AM	97
+Toritama	PE	81
+Torixoréu	MT	66
+Toropi	RS	55
+Torre de Pedra	SP	15
+Torres	RS	51
+Torrinha	SP	14
+Touros	RN	84
+Trabiju	SP	16
+Tracuateua	PA	91
+Tracunhaém	PE	81
+Traipu	AL	82
+Trairi	CE	85
+Trairão	PA	93
+Trajano de Moraes	RJ	22
+Tramandaí	RS	51
+Travesseiro	RS	51
+Tremedal	BA	77
+Tremembé	SP	12
+Treviso	SC	48
+Treze Tílias	SC	49
+Treze de Maio	SC	48
+Trindade	PE	87
+Trindade	GO	62
+Trindade do Sul	RS	54
+Triunfo	PB	83
+Triunfo	PE	87
+Triunfo	RS	51
+Triunfo Potiguar	RN	84
+Trizidela do Vale	MA	99
+Trombas	GO	62
+Trombudo Central	SC	47
+Três Arroios	RS	54
+Três Barras	SC	47
+Três Barras do Paraná	PR	45
+Três Cachoeiras	RS	51
+Três Corações	MG	35
+Três Coroas	RS	51
+Três Forquilhas	RS	51
+Três Fronteiras	SP	17
+Três Lagoas	MS	67
+Três Marias	MG	38
+Três Palmeiras	RS	54
+Três Passos	RS	55
+Três Pontas	MG	35
+Três Ranchos	GO	64
+Três Rios	RJ	24
+Três de Maio	RS	55
+Tubarão	SC	48
+Tucano	BA	75
+Tucumã	PA	94
+Tucunduva	RS	55
+Tucuruí	PA	94
+Tufilândia	MA	98
+Tuiuti	SP	11
+Tumiritinga	MG	33
+Tunas	RS	51
+Tunas do Paraná	PR	41
+Tuneiras do Oeste	PR	44
+Tuntum	MA	99
+Tunápolis	SC	49
+Tupaciguara	MG	34
+Tupanatinga	PE	87
+Tupanci do Sul	RS	54
+Tupanciretã	RS	55
+Tupandi	RS	51
+Tuparendi	RS	55
+Tuparetama	PE	87
+Tupi Paulista	SP	18
+Tupirama	TO	63
+Tupiratins	TO	63
+Tupã	SP	14
+Tupãssi	PR	44
+Turiaçu	MA	98
+Turilândia	MA	98
+Turiúba	SP	18
+Turmalina	MG	38
+Turmalina	SP	17
+Tururu	CE	85
+Turuçu	RS	53
+Turvelândia	GO	64
+Turvo	PR	42
+Turvo	SC	48
+Turvolândia	MG	35
+Turvânia	GO	64
+Tutóia	MA	98
+Uarini	AM	97
+Uauá	BA	74
+Ubaitaba	BA	73
+Ubajara	CE	88
+Ubaporanga	MG	33
+Ubarana	SP	17
+Ubatuba	SP	12
+Ubatã	BA	73
+Ubaí	MG	38
+Ubaíra	BA	75
+Uberaba	MG	34
+Uberlândia	MG	34
+Ubirajara	SP	14
+Ubiratã	PR	44
+Ubiretama	RS	55
+Ubá	MG	32
+Uchoa	SP	17
+Uibaí	BA	74
+Uiramutã	RR	95
+Uirapuru	GO	62
+Uiraúna	PB	83
+Ulianópolis	PA	91
+Umari	CE	88
+Umarizal	RN	84
+Umbaúba	SE	79
+Umburanas	BA	74
+Umburatiba	MG	33
+Umbuzeiro	PB	83
+Umirim	CE	85
+Umuarama	PR	44
+Una	BA	73
+Unaí	MG	38
+Uniflor	PR	44
+Unistalda	RS	55
+União	PI	86
+União Paulista	SP	17
+União da Serra	RS	54
+União da Vitória	PR	42
+União de Minas	MG	34
+União do Oeste	SC	49
+União do Sul	MT	66
+União dos Palmares	AL	82
+Upanema	RN	84
+Urandi	BA	77
+Uraí	PR	43
+Urbano Santos	MA	98
+Uru	SP	14
+Uruana	GO	62
+Uruana de Minas	MG	38
+Uruará	PA	93
+Uruaçu	GO	62
+Urubici	SC	49
+Uruburetama	CE	85
+Urucará	AM	92
+Urucuia	MG	38
+Urucurituba	AM	92
+Urucânia	MG	31
+Uruguaiana	RS	55
+Uruoca	CE	88
+Urupema	SC	49
+Urupá	RO	69
+Urupês	SP	17
+Urussanga	SC	48
+Urutaí	GO	64
+Uruçuca	BA	73
+Uruçuí	PI	89
+Urânia	SP	17
+Utinga	BA	75
+Vacaria	RS	54
+Vale Real	RS	51
+Vale Verde	RS	51
+Vale de São Domingos	MT	65
+Vale do Anari	RO	69
+Vale do Paraíso	RO	69
+Vale do Sol	RS	51
+Valente	BA	75
+Valentim Gentil	SP	17
+Valença	BA	75
+Valença	RJ	24
+Valença do Piauí	PI	89
+Valinhos	SP	19
+Valparaíso	SP	18
+Valparaíso de Goiás	GO	61
+Vanini	RS	54
+Vargem	SP	11
+Vargem	SC	49
+Vargem Alegre	MG	33
+Vargem Alta	ES	28
+Vargem Bonita	MG	37
+Vargem Bonita	SC	49
+Vargem Grande	MA	98
+Vargem Grande Paulista	SP	11
+Vargem Grande do Rio Pardo	MG	38
+Vargem Grande do Sul	SP	19
+Vargeão	SC	49
+Varginha	MG	35
+Varjota	CE	88
+Varjão	GO	62
+Varjão de Minas	MG	38
+Varre-Sai	RJ	22
+Varzedo	BA	75
+Varzelândia	MG	38
+Vassouras	RJ	24
+Vazante	MG	34
+Venda Nova do Imigrante	ES	28
+Venha-Ver	RN	84
+Ventania	PR	42
+Venturosa	PE	87
+Venâncio Aires	RS	51
+Vera	MT	66
+Vera Cruz	RN	84
+Vera Cruz	BA	71
+Vera Cruz	SP	14
+Vera Cruz	RS	51
+Vera Cruz do Oeste	PR	45
+Vera Mendes	PI	89
+Veranópolis	RS	54
+Verdejante	PE	87
+Verdelândia	MG	38
+Vereda	BA	73
+Veredinha	MG	38
+Vermelho Novo	MG	33
+Vertente do Lério	PE	81
+Vertentes	PE	81
+Verê	PR	46
+Veríssimo	MG	34
+Vespasiano	MG	31
+Vespasiano Corrêa	RS	51
+Viadutos	RS	54
+Viamão	RS	51
+Viana	MA	98
+Viana	ES	27
+Vianópolis	GO	62
+Vicente Dutra	RS	55
+Vicentina	MS	67
+Vicentinópolis	GO	64
+Victor Graeff	RS	54
+Vicência	PE	81
+Vidal Ramos	SC	47
+Videira	SC	49
+Vieiras	MG	32
+Vieirópolis	PB	83
+Vigia	PA	91
+Vila Bela da Santíssima Trindade	MT	65
+Vila Boa	GO	61
+Vila Flor	RN	84
+Vila Flores	RS	54
+Vila Lângaro	RS	54
+Vila Maria	RS	54
+Vila Nova do Piauí	PI	89
+Vila Nova do Sul	RS	55
+Vila Nova dos Martírios	MA	99
+Vila Pavão	ES	27
+Vila Propício	GO	62
+Vila Rica	MT	66
+Vila Valério	ES	27
+Vila Velha	ES	27
+Vilhena	RO	69
+Vinhedo	SP	19
+Viradouro	SP	17
+Virgem da Lapa	MG	33
+Virginópolis	MG	33
+Virgolândia	MG	33
+Virgínia	MG	35
+Virmond	PR	42
+Visconde do Rio Branco	MG	32
+Viseu	PA	91
+Vista Alegre	RS	55
+Vista Alegre do Alto	SP	16
+Vista Alegre do Prata	RS	54
+Vista Gaúcha	RS	55
+Vista Serrana	PB	83
+Vitor Meireles	SC	47
+Vitorino	PR	46
+Vitorino Freire	MA	98
+Vitória	ES	27
+Vitória Brasil	SP	17
+Vitória da Conquista	BA	77
+Vitória das Missões	RS	55
+Vitória de Santo Antão	PE	81
+Vitória do Jari	AP	96
+Vitória do Mearim	MA	98
+Vitória do Xingu	PA	93
+Viçosa	RN	84
+Viçosa	AL	82
+Viçosa	MG	31
+Viçosa do Ceará	CE	88
+Volta Grande	MG	32
+Volta Redonda	RJ	24
+Votorantim	SP	15
+Votuporanga	SP	17
+Várzea	RN	84
+Várzea	PB	83
+Várzea Alegre	CE	88
+Várzea Branca	PI	89
+Várzea Grande	PI	89
+Várzea Grande	MT	65
+Várzea Nova	BA	74
+Várzea Paulista	SP	11
+Várzea da Palma	MG	38
+Várzea da Roça	BA	74
+Várzea do Poço	BA	74
+Wagner	BA	75
+Wall Ferraz	PI	89
+Wanderley	BA	77
+Wanderlândia	TO	63
+Wenceslau Braz	MG	35
+Wenceslau Braz	PR	43
+Wenceslau Guimarães	BA	73
+Westfália	RS	51
+Witmarsum	SC	47
+Xambioá	TO	63
+Xambrê	PR	44
+Xangri-lá	RS	51
+Xanxerê	SC	49
+Xapuri	AC	68
+Xavantina	SC	49
+Xaxim	SC	49
+Xexéu	PE	81
+Xinguara	PA	94
+Xique-Xique	BA	74
+Zabelê	PB	83
+Zacarias	SP	18
+Zortéa	SC	49
+Zé Doca	MA	98
+Água Azul do Norte	PA	94
+Água Boa	MG	33
+Água Boa	MT	66
+Água Branca	PI	86
+Água Branca	PB	83
+Água Branca	AL	82
+Água Clara	MS	67
+Água Comprida	MG	34
+Água Doce	SC	49
+Água Doce do Maranhão	MA	98
+Água Doce do Norte	ES	27
+Água Fria	BA	75
+Água Fria de Goiás	GO	62
+Água Limpa	GO	64
+Água Nova	RN	84
+Água Preta	PE	81
+Água Santa	RS	54
+Águas Belas	PE	87
+Águas Formosas	MG	33
+Águas Frias	SC	49
+Águas Lindas de Goiás	GO	61
+Águas Mornas	SC	48
+Águas Vermelhas	MG	33
+Águas da Prata	SP	19
+Águas de Chapecó	SC	49
+Águas de Lindóia	SP	19
+Águas de Santa Bárbara	SP	14
+Águas de São Pedro	SP	19
+Águia Branca	ES	27
+Álvares Florence	SP	17
+Álvares Machado	SP	18
+Álvaro de Carvalho	SP	14
+Áurea	RS	54
+Ângulo	PR	44
+Érico Cardoso	BA	77
+Óbidos	PA	93
+Óleo	SP	14

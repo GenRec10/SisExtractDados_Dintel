@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Produtos gerados pelo modo --sem-interface (contêm dados sigilosos)
+_extracao/
+extracao_*.xlsx
+extracao_*.csv
+
+# NUNCA versionar arquivos reais de casos
+*.pdf
+*.doc
+*.docx
+*.odt
+*.rtf
+*.xls
+*.xlsx
+*.xlsm
+*.ods
+*.csv
+*.tsv
+*.txt
+*.json
+*.xml
+*.eml
+*.msg
+*.pptx
+*.zip
+*.gz
+*.7z
+*.rar
+*.html
+*.htm
+*.log
+~$*
+
+# Exceções: amostras SINTÉTICAS dos testes, dados de apoio e a interface
+!tests/amostras/*
+!_analisador/extdados/dados/*.txt
+!_analisador/extdados/interface/index.html

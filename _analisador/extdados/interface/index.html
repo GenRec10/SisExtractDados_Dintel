@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SisExtractDados</title>
+<style>
+:root {
+  --bg: #eef2f5; --painel: #ffffff; --painel2: #f7f9fb; --borda: #d8e0e8; --borda-forte: #c3cdd8;
+  --texto: #15212c; --suave: #5a6877; --fraco: #8794a2;
+  --navy: #13293d; --navy2: #1d3a55; --acento: #0f766e; --acento-forte: #0b5d57; --acento-claro: #d9f0ec;
+  --t-email: #1d4ed8; --t-telefone: #0f766e; --t-imei: #6d28d9; --t-cpf: #a16207; --t-nome: #be185d;
+  --ok: #15803d; --ok-bg: #dcf3e4; --at: #a16207; --at-bg: #fcf0cc; --inv: #b91c1c; --inv-bg: #fadcdc;
+  --mark: #fde68a; --sombra: 0 1px 2px rgba(16,32,48,.06), 0 4px 14px rgba(16,32,48,.06);
+  --mono: ui-monospace, "Cascadia Mono", "Segoe UI Mono", Consolas, "Liberation Mono", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1319; --painel: #151d26; --painel2: #1a242f; --borda: #2a3644; --borda-forte: #36475a;
+    --texto: #e5ecf3; --suave: #9fb0c2; --fraco: #73859a;
+    --navy: #0a1622; --navy2: #12283c; --acento: #2bb3a5; --acento-forte: #48c9bb; --acento-claro: #123a37;
+    --t-email: #7aa7ff; --t-telefone: #3cc7b6; --t-imei: #b69cff; --t-cpf: #e0b154; --t-nome: #f08abf;
+    --ok: #4ccf7d; --ok-bg: #12301f; --at: #e5b84f; --at-bg: #3a2f10; --inv: #f07c7c; --inv-bg: #3c1717;
+    --mark: #6b5414; --sombra: 0 1px 2px rgba(0,0,0,.3), 0 4px 14px rgba(0,0,0,.25);
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { background: var(--bg); color: var(--texto); font: 14px/1.45 "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+.mono { font-family: var(--mono); font-size: 13px; }
+
+/* ---------- topo */
+header { background: linear-gradient(90deg, var(--navy), var(--navy2)); color: #fff; padding: 10px 20px; display: flex; align-items: center; gap: 10px 16px; flex-wrap: wrap; }
+.marca { display: flex; align-items: center; gap: 10px; }
+.marca svg { flex: none; }
+.marca h1 { font-size: 16px; margin: 0; letter-spacing: .2px; font-weight: 650; }
+.marca small { display: block; font-size: 11.5px; opacity: .75; font-weight: 400; }
+.local { margin-left: auto; display: flex; align-items: center; gap: 6px; font-size: 12px; opacity: .85; }
+.local .ponto { width: 8px; height: 8px; border-radius: 50%; background: #34d399; box-shadow: 0 0 0 3px rgba(52,211,153,.25); }
+header .btn-sair { background: transparent; border: 1px solid rgba(255,255,255,.35); color: #fff; border-radius: 6px; padding: 5px 10px; font-size: 12.5px; }
+header .btn-sair:hover { background: rgba(255,255,255,.1); }
+
+/* ---------- layout */
+main { display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 16px; padding: 16px; align-items: start; }
+@media (max-width: 980px) { main { grid-template-columns: minmax(0, 1fr); padding: 10px; } }
+.cartao { background: var(--painel); border: 1px solid var(--borda); border-radius: 10px; box-shadow: var(--sombra); }
+.cartao + .cartao { margin-top: 14px; }
+.cartao > h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .6px; color: var(--suave); margin: 0; padding: 12px 14px 0; font-weight: 650; display: flex; align-items: center; gap: 8px; }
+.cartao > .corpo { padding: 10px 14px 14px; }
+
+/* ---------- entradas */
+.soltar { border: 1.5px dashed var(--borda-forte); border-radius: 9px; padding: 18px 12px; text-align: center; background: var(--painel2); transition: .15s; cursor: pointer; }
+.soltar:hover, .soltar.ativo { border-color: var(--acento); background: var(--acento-claro); }
+.soltar strong { display: block; font-size: 14px; margin-top: 6px; }
+.soltar span { font-size: 12px; color: var(--suave); }
+.formatos { font-size: 11.5px; color: var(--fraco); margin-top: 8px; line-height: 1.5; }
+textarea { width: 100%; min-height: 128px; resize: vertical; border: 1px solid var(--borda-forte); border-radius: 8px; padding: 9px 10px; background: var(--painel2); font-family: var(--mono); font-size: 12.5px; }
+textarea:focus, input[type=search]:focus, select:focus { outline: 2px solid var(--acento); outline-offset: 0; border-color: transparent; }
+.linha-botoes { display: flex; gap: 8px; margin-top: 8px; align-items: center; flex-wrap: wrap; }
+.dica { font-size: 11.5px; color: var(--fraco); }
+.btn { border: 1px solid var(--borda-forte); background: var(--painel); border-radius: 7px; padding: 6px 11px; font-size: 13px; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.btn:hover:not(:disabled) { border-color: var(--acento); color: var(--acento-forte); }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.btn.prim { background: var(--acento); border-color: var(--acento); color: #fff; font-weight: 600; }
+.btn.prim:hover:not(:disabled) { background: var(--acento-forte); color: #fff; }
+.btn.peq { padding: 3px 8px; font-size: 12px; }
+.btn svg { width: 15px; height: 15px; }
+.chave { display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer; user-select: none; }
+.chave input { accent-color: var(--acento); width: 16px; height: 16px; }
+
+.fontes { list-style: none; margin: 0; padding: 0; max-height: 46vh; overflow: auto; }
+.fontes li { padding: 9px 0; border-top: 1px solid var(--borda); display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; }
+.fontes li:first-child { border-top: 0; }
+.fontes .nome { font-weight: 600; word-break: break-all; font-size: 13px; }
+.fontes .meta { grid-column: 1; font-size: 11.5px; color: var(--suave); }
+.fontes .avisos { grid-column: 1 / -1; font-size: 11.5px; color: var(--at); background: var(--at-bg); border-radius: 6px; padding: 5px 8px; margin-top: 4px; }
+.fontes .avisos div + div { margin-top: 3px; }
+.fontes .rem { grid-row: 1 / 3; grid-column: 2; align-self: start; border: 0; background: transparent; color: var(--fraco); font-size: 18px; line-height: 1; padding: 2px 6px; border-radius: 5px; }
+.fontes .rem:hover { color: var(--inv); background: var(--inv-bg); }
+.hash { font-family: var(--mono); font-size: 10.5px; color: var(--fraco); cursor: copy; }
+.vazio-fontes { font-size: 12.5px; color: var(--fraco); padding: 4px 0; }
+
+/* ---------- resultados */
+.abas { display: flex; gap: 6px; flex-wrap: wrap; padding: 12px 14px 0; }
+.aba { border: 1px solid var(--borda); background: var(--painel2); border-radius: 999px; padding: 5px 12px 5px 10px; font-size: 13px; display: inline-flex; align-items: center; gap: 7px; }
+.aba .n { font-weight: 700; font-variant-numeric: tabular-nums; }
+.aba .pino { width: 9px; height: 9px; border-radius: 3px; background: var(--fraco); }
+.aba.sel { background: var(--texto); color: var(--painel); border-color: var(--texto); }
+.aba .alerta { font-size: 11px; font-weight: 700; color: var(--at); }
+.aba.sel .alerta { color: var(--mark); }
+.barra { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; padding: 12px 14px; border-bottom: 1px solid var(--borda); }
+.barra input[type=search] { flex: 1 1 220px; min-width: 160px; border: 1px solid var(--borda-forte); border-radius: 7px; padding: 6px 10px; background: var(--painel2); }
+.barra select { border: 1px solid var(--borda-forte); border-radius: 7px; padding: 6px 8px; background: var(--painel2); }
+.seg { display: inline-flex; border: 1px solid var(--borda-forte); border-radius: 7px; overflow: hidden; }
+.seg button { border: 0; background: var(--painel2); padding: 6px 10px; font-size: 13px; }
+.seg button.sel { background: var(--acento); color: #fff; }
+.acoes { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; padding: 10px 14px; background: var(--painel2); border-bottom: 1px solid var(--borda); }
+.acoes .info-sel { font-size: 12.5px; color: var(--suave); margin-right: auto; }
+details.formatos-copia { position: relative; }
+details.formatos-copia summary { list-style: none; }
+details.formatos-copia summary::-webkit-details-marker { display: none; }
+.painel-formatos { position: absolute; right: 0; top: calc(100% + 6px); z-index: 20; background: var(--painel); border: 1px solid var(--borda-forte); border-radius: 9px; box-shadow: var(--sombra); padding: 12px; width: 300px; display: grid; gap: 8px; }
+.painel-formatos label { display: grid; grid-template-columns: 82px 1fr; align-items: center; gap: 8px; font-size: 12.5px; }
+.painel-formatos select { border: 1px solid var(--borda-forte); border-radius: 6px; padding: 4px 6px; background: var(--painel2); font-size: 12.5px; }
+
+.tabela-envolta { overflow: auto; max-height: calc(100vh - 290px); min-height: 220px; }
+table.dados { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 13px; }
+table.dados th { position: sticky; top: 0; background: var(--painel); text-align: left; font-size: 11.5px; text-transform: uppercase; letter-spacing: .5px; color: var(--suave); padding: 8px 10px; border-bottom: 1px solid var(--borda-forte); z-index: 2; white-space: nowrap; }
+table.dados th.ord { cursor: pointer; }
+table.dados th.ord:hover { color: var(--texto); }
+table.dados td { padding: 6px 10px; border-bottom: 1px solid var(--borda); vertical-align: middle; }
+table.dados tr.linha:hover td { background: var(--painel2); }
+table.dados tr.linha.marcada td { background: var(--acento-claro); }
+table.dados tr.linha { cursor: pointer; }
+td.cx, th.cx { width: 34px; padding-right: 0; }
+td.cx input, th.cx input { accent-color: var(--acento); width: 15px; height: 15px; cursor: pointer; }
+.tipo { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .3px; padding: 2px 7px; border-radius: 5px; white-space: nowrap; border: 1px solid currentColor; }
+.tipo.email { color: var(--t-email); } .tipo.telefone { color: var(--t-telefone); } .tipo.imei { color: var(--t-imei); }
+.tipo.cpf { color: var(--t-cpf); } .tipo.nome { color: var(--t-nome); } .tipo.numero { color: var(--suave); }
+.valor { font-family: var(--mono); font-size: 13px; background: none; border: 0; padding: 2px 4px; margin: -2px -4px; border-radius: 4px; text-align: left; overflow-wrap: anywhere; }
+td.col-valor { min-width: 230px; }
+.valor:hover { background: var(--acento-claro); color: var(--acento-forte); }
+.st { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.st.ok { color: var(--ok); background: var(--ok-bg); } .st.atencao { color: var(--at); background: var(--at-bg); } .st.invalido { color: var(--inv); background: var(--inv-bg); }
+.st::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.motivo { color: var(--suave); font-size: 12.5px; max-width: 420px; }
+.n { font-variant-numeric: tabular-nums; text-align: right; }
+.origem { font-size: 12px; color: var(--suave); max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.icone-copiar { border: 1px solid transparent; background: transparent; border-radius: 6px; padding: 4px; color: var(--fraco); display: inline-flex; }
+.icone-copiar:hover { color: var(--acento-forte); border-color: var(--borda-forte); background: var(--painel); }
+.icone-copiar svg { width: 15px; height: 15px; }
+tr.detalhe td { background: var(--painel2); padding: 12px 16px 14px 46px; cursor: default; }
+.det-grade { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
+@media (max-width: 1100px) { .det-grade { grid-template-columns: 1fr; } }
+.det-grade h4 { margin: 0 0 6px; font-size: 11px; text-transform: uppercase; letter-spacing: .5px; color: var(--suave); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-family: var(--mono); font-size: 12px; border: 1px solid var(--borda-forte); border-radius: 6px; padding: 3px 8px; background: var(--painel); cursor: copy; }
+.chip:hover { border-color: var(--acento); color: var(--acento-forte); }
+.chip small { font-family: system-ui, sans-serif; color: var(--fraco); margin-right: 5px; }
+.ocorrencias { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.ocorrencias li { background: var(--painel); border: 1px solid var(--borda); border-radius: 7px; padding: 6px 9px; }
+.ocorrencias .onde { font-size: 11.5px; color: var(--suave); }
+.ocorrencias .trecho { font-family: var(--mono); font-size: 12px; white-space: pre-wrap; word-break: break-word; margin-top: 2px; }
+mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1px; }
+.lista-obs { margin: 0; padding-left: 18px; font-size: 12.5px; color: var(--suave); }
+.mais { text-align: center; padding: 12px; }
+
+.colunas { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; padding: 14px; max-height: calc(100vh - 290px); overflow: auto; }
+.coluna { border: 1px solid var(--borda); border-radius: 9px; background: var(--painel2); display: flex; flex-direction: column; min-height: 120px; }
+.coluna header { background: none; color: inherit; padding: 9px 10px; border-bottom: 1px solid var(--borda); display: flex; align-items: center; gap: 8px; }
+.coluna header .tit { font-weight: 700; font-size: 13px; }
+.coluna header .btn { margin-left: auto; }
+.coluna ul { list-style: none; margin: 0; padding: 6px; overflow: auto; }
+.coluna li { display: flex; align-items: center; gap: 7px; padding: 4px 6px; border-radius: 5px; cursor: copy; font-family: var(--mono); font-size: 12.5px; word-break: break-all; }
+.coluna li:hover { background: var(--acento-claro); }
+.coluna li .bola { flex: none; width: 7px; height: 7px; border-radius: 50%; }
+.bola.ok { background: var(--ok); } .bola.atencao { background: var(--at); } .bola.invalido { background: var(--inv); }
+
+.estado-vazio { padding: 40px 24px; text-align: center; color: var(--suave); }
+.estado-vazio h3 { color: var(--texto); margin: 10px 0 6px; font-size: 17px; }
+.passos { display: inline-grid; gap: 8px; text-align: left; margin-top: 12px; font-size: 13.5px; }
+.passos div { display: flex; gap: 10px; align-items: baseline; }
+.passos b { width: 22px; height: 22px; flex: none; border-radius: 50%; background: var(--acento-claro); color: var(--acento-forte); display: inline-grid; place-items: center; font-size: 12px; }
+.legenda { font-size: 12px; color: var(--fraco); padding: 8px 14px 12px; }
+
+.ocupado { position: fixed; inset: 0; background: rgba(10,20,30,.38); display: none; place-items: center; z-index: 50; }
+.ocupado.on { display: grid; }
+.ocupado .caixa { background: var(--painel); border-radius: 12px; padding: 18px 22px; display: flex; gap: 14px; align-items: center; box-shadow: var(--sombra); max-width: 80vw; }
+.giro { width: 22px; height: 22px; border: 3px solid var(--borda-forte); border-top-color: var(--acento); border-radius: 50%; animation: g .8s linear infinite; }
+@keyframes g { to { transform: rotate(360deg); } }
+.solte { position: fixed; inset: 0; background: rgba(15,118,110,.18); border: 3px dashed var(--acento); display: none; place-items: center; z-index: 40; font-size: 20px; font-weight: 700; color: var(--acento-forte); pointer-events: none; }
+.solte.on { display: grid; }
+.avisos-fim { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); display: grid; gap: 8px; z-index: 60; pointer-events: none; }
+.toast { background: var(--texto); color: var(--painel); padding: 9px 16px; border-radius: 8px; font-size: 13px; box-shadow: var(--sombra); animation: sobe .18s ease-out; max-width: 80vw; }
+.toast.erro { background: var(--inv); color: #fff; }
+@keyframes sobe { from { transform: translateY(8px); opacity: 0; } }
+.oculto { display: none !important; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
+</head>
+<body>
+<header>
+  <div class="marca">
+    <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="7" fill="#0f766e"/><path d="M8 10h10M8 15h16M8 20h7" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><circle cx="22.5" cy="21.5" r="4" fill="none" stroke="#a7f3d0" stroke-width="2.2"/><path d="M25.4 24.4l2.6 2.6" stroke="#a7f3d0" stroke-width="2.4" stroke-linecap="round"/></svg>
+    <div><h1>SisExtractDados <span style="opacity:.6;font-weight:400">· DINTEL</span></h1><small>E-mail · Telefone · IMEI · CPF · Nomes próprios</small></div>
+  </div>
+  <div class="local" title="Os arquivos não saem deste computador"><span class="ponto"></span><span>Processamento local · 127.0.0.1</span> <span id="versao"></span></div>
+  <button class="btn-sair" id="btnEncerrar" title="Encerra o programa (os dados carregados são descartados)">Encerrar</button>
+</header>
+
+<main>
+  <aside>
+    <section class="cartao">
+      <h2>Arquivos</h2>
+      <div class="corpo">
+        <div class="soltar" id="zona" tabindex="0" role="button" aria-label="Escolher arquivos">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" style="color:var(--acento)"><path d="M12 16V4m0 0l-4 4m4-4l4 4"/><path d="M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3"/></svg>
+          <strong>Arraste arquivos ou pastas aqui</strong>
+          <span>ou clique para escolher</span>
+        </div>
+        <input type="file" id="arquivo" multiple class="oculto">
+        <div class="formatos">PDF · DOCX · DOC · ODT · RTF · XLSX · XLS · ODS · CSV · TXT · HTML · JSON · XML · EML · MSG · PPTX · ZIP</div>
+      </div>
+    </section>
+
+    <section class="cartao">
+      <h2>Colar texto</h2>
+      <div class="corpo">
+        <textarea id="texto" placeholder="Cole aqui o conteúdo copiado de qualquer lugar (sistemas, e-mails, planilhas, PDFs)..."></textarea>
+        <div class="linha-botoes">
+          <button class="btn prim" id="btnTexto">Analisar texto</button>
+          <span class="dica">Ctrl+Enter</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cartao">
+      <h2>Fontes carregadas <span id="nFontes" style="font-weight:400"></span></h2>
+      <div class="corpo">
+        <ul class="fontes" id="listaFontes"></ul>
+        <div class="linha-botoes" style="justify-content:space-between">
+          <label class="chave"><input type="checkbox" id="chkNomes" checked> Detectar nomes próprios</label>
+          <button class="btn peq" id="btnLimpar">Limpar tudo</button>
+        </div>
+      </div>
+    </section>
+  </aside>
+
+  <section class="cartao" id="resultados">
+    <div class="abas" id="abas"></div>
+    <div class="barra">
+      <input type="search" id="busca" placeholder="Filtrar por valor, arquivo ou motivo...">
+      <select id="filtroStatus" title="Status">
+        <option value="todos">Todos os status</option>
+        <option value="ok">Somente OK</option>
+        <option value="nao_ok">Atenção + inválidos</option>
+        <option value="atencao">Somente atenção</option>
+        <option value="invalido">Somente inválidos</option>
+      </select>
+      <div class="seg" role="tablist">
+        <button id="vTabela" class="sel">Tabela</button>
+        <button id="vColunas">Colunas por tipo</button>
+      </div>
+      <details class="formatos-copia" id="detFormatos">
+        <summary class="btn" title="Como cada tipo é copiado e exportado">Formato de cópia ▾</summary>
+        <div class="painel-formatos">
+          <label>Telefone <select data-pref="telefone">
+            <option value="nacional">(81) 98765-4321</option>
+            <option value="internacional">+55 81 98765-4321</option>
+            <option value="e164">+5581987654321</option>
+            <option value="digitos_ddi">5581987654321</option>
+            <option value="digitos">81987654321</option></select></label>
+          <label>CPF <select data-pref="cpf">
+            <option value="formatado">000.000.000-00</option>
+            <option value="digitos">00000000000</option></select></label>
+          <label>IMEI <select data-pref="imei">
+            <option value="imei15">15 dígitos</option>
+            <option value="imei14">14 dígitos (sem DV)</option>
+            <option value="formatado">35-209900-176148-1</option></select></label>
+          <label>Nome <select data-pref="nome">
+            <option value="original">Como encontrado</option>
+            <option value="maiusculas">MAIÚSCULAS</option>
+            <option value="titulo">Iniciais Maiúsculas</option></select></label>
+          <label>E-mail <select data-pref="email">
+            <option value="minusculo">minúsculas</option>
+            <option value="original">como encontrado</option></select></label>
+        </div>
+      </details>
+    </div>
+    <div class="acoes" id="acoes">
+      <span class="info-sel" id="infoSel"></span>
+      <button class="btn" id="btnCopSel" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 012-2h10"/></svg>Copiar selecionados</button>
+      <button class="btn" id="btnCopVis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 012-2h10"/></svg>Copiar lista</button>
+      <button class="btn" id="btnCopTab" title="Cola no Excel/Word como tabela, mantendo CPF e IMEI como texto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg>Copiar tabela</button>
+      <button class="btn" id="btnXlsx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v11m0 0l-4-4m4 4l4-4"/><path d="M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>XLSX</button>
+      <button class="btn" id="btnCsv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v11m0 0l-4-4m4 4l4-4"/><path d="M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>CSV</button>
+    </div>
+    <div id="conteudo"></div>
+    <div class="legenda" id="legenda"></div>
+  </section>
+</main>
+
+<div class="ocupado" id="ocupado"><div class="caixa"><div class="giro"></div><div id="msgOcupado">Processando...</div></div></div>
+<div class="solte" id="solte">Solte para analisar</div>
+<div class="avisos-fim" id="toasts"></div>
+
+<script>
+(function () {
+  'use strict';
+  // ------------------------------------------------------------------ estado
+  var params = new URLSearchParams(location.search);
+  var TOKEN = params.get('t') || '';
+  try { if (TOKEN) sessionStorage.setItem('sxd_t', TOKEN); else TOKEN = sessionStorage.getItem('sxd_t') || ''; } catch (e) {}
+
+  var TIPOS = [['email', 'E-mails', 'E-mail'], ['telefone', 'Telefones', 'Telefone'], ['imei', 'IMEIs', 'IMEI'],
+               ['cpf', 'CPFs', 'CPF'], ['nome', 'Nomes', 'Nome']];
+  var ROT_STATUS = { ok: 'OK', atencao: 'Atenção', invalido: 'Inválido' };
+  var ORD_STATUS = { ok: 0, atencao: 1, invalido: 2 };
+  var LIMITE_LINHAS = 1500;
+
+  var S = {
+    docs: [], itens: [], descartes: [], resumo: null, analisado: false,
+    tipo: 'todos', status: 'todos', busca: '', visao: 'tabela',
+    sel: new Set(), aberto: new Set(), ultimoClique: null, ord: { campo: null, dir: 1 }, limite: LIMITE_LINHAS,
+    pref: { telefone: 'nacional', cpf: 'formatado', imei: 'imei15', nome: 'original', email: 'minusculo', nomes: true }
+  };
+  try { var salvo = JSON.parse(localStorage.getItem('sxd_pref') || 'null'); if (salvo) Object.assign(S.pref, salvo); } catch (e) {}
+  function salvarPref() { try { localStorage.setItem('sxd_pref', JSON.stringify(S.pref)); } catch (e) {} }
+
+  // ------------------------------------------------------------------ utilidades
+  var $ = function (id) { return document.getElementById(id); };
+  function el(tag, attrs) {
+    var e = document.createElement(tag);
+    if (attrs) for (var k in attrs) {
+      var v = attrs[k];
+      if (v === null || v === undefined || v === false) continue;
+      if (k === 'class') e.className = v;
+      else if (k === 'text') e.textContent = v;
+      else if (k.slice(0, 2) === 'on') e.addEventListener(k.slice(2), v);
+      else e.setAttribute(k, v === true ? '' : v);
+    }
+    for (var i = 2; i < arguments.length; i++) {
+      var c = arguments[i];
+      if (c === null || c === undefined || c === false) continue;
+      if (Array.isArray(c)) c.forEach(function (x) { if (x) e.appendChild(typeof x === 'string' ? document.createTextNode(x) : x); });
+      else e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c);
+    }
+    return e;
+  }
+  function svgCopiar() {
+    var ns = 'http://www.w3.org/2000/svg';
+    var s = document.createElementNS(ns, 'svg'); s.setAttribute('viewBox', '0 0 24 24'); s.setAttribute('fill', 'none');
+    s.setAttribute('stroke', 'currentColor'); s.setAttribute('stroke-width', '2');
+    var r = document.createElementNS(ns, 'rect'); r.setAttribute('x', '9'); r.setAttribute('y', '9'); r.setAttribute('width', '11'); r.setAttribute('height', '11'); r.setAttribute('rx', '2');
+    var p = document.createElementNS(ns, 'path'); p.setAttribute('d', 'M5 15V5a2 2 0 012-2h10');
+    s.appendChild(r); s.appendChild(p); return s;
+  }
+  function normal(s) { return (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); }
+  function tamanho(n) { if (n < 1024) return n + ' B'; if (n < 1048576) return (n / 1024).toFixed(1) + ' KB'; return (n / 1048576).toFixed(1) + ' MB'; }
+  function toast(msg, erro) {
+    var t = el('div', { class: 'toast' + (erro ? ' erro' : ''), text: msg });
+    $('toasts').appendChild(t);
+    setTimeout(function () { t.remove(); }, erro ? 6000 : 2200);
+  }
+  function ocupado(msg) { if (msg) { $('msgOcupado').textContent = msg; $('ocupado').classList.add('on'); } else $('ocupado').classList.remove('on'); }
+
+  function api(caminho, opcoes) {
+    opcoes = opcoes || {};
+    var h = opcoes.headers || {}; h['X-Token'] = TOKEN; opcoes.headers = h;
+    return fetch(caminho, opcoes).then(function (r) {
+      if (r.ok) return r;
+      return r.json().catch(function () { return {}; }).then(function (j) {
+        if (r.status === 403) throw new Error('Sessão expirada: feche esta aba e abra de novo pelo extrair.bat.');
+        throw new Error(j.erro || ('Erro HTTP ' + r.status));
+      });
+    });
+  }
+
+  // ------------------------------------------------------------------ cópia
+  function copiarFallback(texto) {
+    var ta = el('textarea'); ta.value = texto; ta.style.position = 'fixed'; ta.style.top = '-1000px';
+    document.body.appendChild(ta); ta.select(); var ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) {}
+    ta.remove(); return ok;
+  }
+  function copiar(texto, rotulo) {
+    var fim = function (ok) { if (ok) toast('Copiado: ' + rotulo); else toast('Não foi possível copiar', true); };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(texto).then(function () { fim(true); }, function () { fim(copiarFallback(texto)); });
+    } else fim(copiarFallback(texto));
+  }
+  function copiarTabela(cab, linhas, rotulo) {
+    var esc = function (s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); };
+    var html = '<meta charset="utf-8"><table border="1" style="border-collapse:collapse"><tr>' +
+      cab.map(function (c) { return '<th style="background:#16324f;color:#fff">' + esc(c) + '</th>'; }).join('') + '</tr>' +
+      linhas.map(function (l) { return '<tr>' + l.map(function (c) { return '<td style="mso-number-format:\'\\@\'">' + esc(c) + '</td>'; }).join('') + '</tr>'; }).join('') + '</table>';
+    var tsv = [cab].concat(linhas).map(function (l) { return l.map(function (c) { return String(c).replace(/[\t\r\n]+/g, ' '); }).join('\t'); }).join('\r\n');
+    if (navigator.clipboard && window.ClipboardItem && window.isSecureContext) {
+      var item = new ClipboardItem({ 'text/html': new Blob([html], { type: 'text/html' }), 'text/plain': new Blob([tsv], { type: 'text/plain' }) });
+      navigator.clipboard.write([item]).then(function () { toast('Tabela copiada: ' + rotulo); }, function () { copiarTabelaFallback(html, rotulo); });
+    } else copiarTabelaFallback(html, rotulo);
+  }
+  function copiarTabelaFallback(html, rotulo) {
+    var d = el('div'); d.style.position = 'fixed'; d.style.left = '-9999px';
+    var tpl = document.createElement('template'); tpl.innerHTML = html; d.appendChild(tpl.content);
+    document.body.appendChild(d);
+    var r = document.createRange(); r.selectNodeContents(d); var s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+    s.removeAllRanges(); d.remove();
+    if (ok) toast('Tabela copiada: ' + rotulo); else toast('Não foi possível copiar', true);
+  }
+  function valorCopia(it) { var f = it.formatos || {}; return f[S.pref[it.tipo]] || it.valor; }
+  function rotuloQtd(n) { return n === 1 ? '1 item' : n + ' itens'; }
+
+  // ------------------------------------------------------------------ servidor
+  function carregarEstado() {
+    return api('/api/estado').then(function (r) { return r.json(); }).then(function (j) {
+      $('versao').textContent = 'v' + j.versao;
+      S.docs = j.docs;
+      renderFontes();
+      if (S.docs.length) return analisar(); else render();
+    }).catch(function (e) { toast(e.message, true); render(); });
+  }
+  function analisar() {
+    ocupado('Analisando ' + (S.docs.length === 1 ? '1 fonte' : S.docs.length + ' fontes') + '...');
+    return api('/api/analisar', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ nomes: S.pref.nomes }) })
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        S.itens = j.itens; S.descartes = j.descartes; S.resumo = j.resumo; S.docs = j.docs; S.analisado = true;
+        var ids = new Set(S.itens.map(function (i) { return i.id; }));
+        S.sel = new Set(); S.aberto = new Set(); S.limite = LIMITE_LINHAS;
+        renderFontes(); render();
+        $('legenda').textContent = S.docs.length ? ('Análise em ' + String(j.segundos).replace('.', ',') + ' s · ' +
+          j.resumo.total + ' identificadores distintos · ' + j.descartes.length + ' descartados com motivo') : '';
+      })
+      .catch(function (e) { toast(e.message, true); })
+      .then(function () { ocupado(null); });
+  }
+  function enviarArquivos(lista) {
+    var arquivos = Array.prototype.slice.call(lista).filter(function (f) { return f && f.size >= 0; });
+    if (!arquivos.length) return;
+    var i = 0;
+    var proximo = function () {
+      if (i >= arquivos.length) return analisar();
+      var f = arquivos[i++];
+      ocupado('Lendo ' + f.name + ' (' + i + '/' + arquivos.length + ', ' + tamanho(f.size) + ')...');
+      return api('/api/arquivo?nome=' + encodeURIComponent(f.name), { method: 'POST', headers: { 'Content-Type': 'application/octet-stream' }, body: f })
+        .then(function (r) { return r.json(); })
+        .then(function (d) { S.docs.push(d); renderFontes(); })
+        .catch(function (e) { toast(f.name + ': ' + e.message, true); })
+        .then(proximo);
+    };
+    proximo();
+  }
+  function enviarTexto() {
+    var t = $('texto').value;
+    if (!t.trim()) { toast('Cole algum texto primeiro', true); return; }
+    ocupado('Lendo texto colado...');
+    api('/api/texto', { method: 'POST', headers: { 'Content-Type': 'text/plain; charset=utf-8' }, body: t })
+      .then(function (r) { return r.json(); })
+      .then(function (d) { S.docs.push(d); $('texto').value = ''; return analisar(); })
+      .catch(function (e) { ocupado(null); toast(e.message, true); });
+  }
+  function remover(id) {
+    api('/api/remover', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: id }) })
+      .then(function () { S.docs = S.docs.filter(function (d) { return d.id !== id; }); if (S.docs.length) return analisar(); limparResultados(); })
+      .catch(function (e) { toast(e.message, true); });
+  }
+  function limparTudo() {
+    if (!S.docs.length) return;
+    if (!confirm('Remover todas as fontes carregadas e os resultados?')) return;
+    api('/api/limpar', { method: 'POST' }).then(function () { S.docs = []; limparResultados(); }).catch(function (e) { toast(e.message, true); });
+  }
+  function limparResultados() {
+    S.itens = []; S.descartes = []; S.resumo = null; S.sel = new Set(); S.analisado = false;
+    $('legenda').textContent = ''; renderFontes(); render();
+  }
+  function exportar(formato) {
+    var itens = alvoAcao();
+    if (!itens.length) { toast('Nada para exportar', true); return; }
+    ocupado('Gerando ' + formato.toUpperCase() + '...');
+    var corpo = { itens: itens, descartes: S.descartes, docs: S.docs, formatos: S.pref };
+    api('/api/' + formato, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(corpo) })
+      .then(function (r) {
+        var nome = (r.headers.get('Content-Disposition') || '').match(/filename="([^"]+)"/);
+        return r.blob().then(function (b) { return [b, nome ? nome[1] : 'extracao.' + formato]; });
+      })
+      .then(function (par) {
+        var url = URL.createObjectURL(par[0]); var a = el('a', { href: url, download: par[1] });
+        document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+        toast(formato.toUpperCase() + ' gerado com ' + rotuloQtd(itens.length));
+      })
+      .catch(function (e) { toast(e.message, true); })
+      .then(function () { ocupado(null); });
+  }
+
+  // ------------------------------------------------------------------ filtros
+  function filtrados(ignorarTipo) {
+    var b = normal(S.busca).trim();
+    var lista = S.itens.filter(function (it) {
+      if (!ignorarTipo && S.tipo !== 'todos' && it.tipo !== S.tipo) return false;
+      if (S.status === 'nao_ok' && it.status === 'ok') return false;
+      if (S.status !== 'todos' && S.status !== 'nao_ok' && it.status !== S.status) return false;
+      if (b) {
+        var alvo = [it.valor, it.motivo, (it.origens || []).join(' '), (it.obs || []).join(' ')].concat(Object.values(it.formatos || {})).join(' ');
+        if (normal(alvo).indexOf(b) < 0 && normal(alvo).replace(/\D/g, '').indexOf(b.replace(/\D/g, '') || '\u0000') < 0) return false;
+      }
+      return true;
+    });
+    if (S.ord.campo) {
+      var c = S.ord.campo, d = S.ord.dir;
+      lista = lista.slice().sort(function (x, y) {
+        var a, z;
+        if (c === 'n') { a = x.n; z = y.n; }
+        else if (c === 'status') { a = ORD_STATUS[x.status]; z = ORD_STATUS[y.status]; }
+        else if (c === 'tipo') { a = x.tipo; z = y.tipo; }
+        else if (c === 'origem') { a = (x.origens || [''])[0]; z = (y.origens || [''])[0]; }
+        else { a = normal(valorCopia(x)); z = normal(valorCopia(y)); }
+        return a < z ? -d : a > z ? d : x.id - y.id;
+      });
+    }
+    return lista;
+  }
+  function alvoAcao() {
+    if (S.sel.size) return S.itens.filter(function (it) { return S.sel.has(it.id); });
+    return S.tipo === 'descartes' ? [] : filtrados(false);
+  }
+
+  // ------------------------------------------------------------------ renderização
+  function renderFontes() {
+    var ul = $('listaFontes'); ul.textContent = '';
+    $('nFontes').textContent = S.docs.length ? '(' + S.docs.length + ')' : '';
+    if (!S.docs.length) { ul.appendChild(el('li', { class: 'vazio-fontes', text: 'Nenhuma fonte carregada.' })); return; }
+    S.docs.forEach(function (d) {
+      var meta = [d.tipo, tamanho(d.tamanho)];
+      if (d.info && d.info.paginas) meta.push(d.info.paginas + ' pág.');
+      if (d.info && d.info.criptografia) meta.push('PDF protegido (lido)');
+      var li = el('li', null,
+        el('div', { class: 'nome', text: d.nome }),
+        el('button', { class: 'rem', title: 'Remover esta fonte', 'aria-label': 'Remover ' + d.nome, onclick: function () { remover(d.id); } }, '×'),
+        el('div', { class: 'meta', text: meta.join(' · ') }),
+        el('div', { class: 'hash', title: 'SHA-256 do arquivo recebido (clique para copiar)', text: 'SHA-256 ' + d.sha256.slice(0, 16) + '…',
+          onclick: function () { copiar(d.sha256, 'SHA-256 de ' + d.nome); } }),
+        d.avisos && d.avisos.length ? el('div', { class: 'avisos' }, d.avisos.map(function (a) { return el('div', { text: '⚠ ' + a }); })) : null);
+      ul.appendChild(li);
+    });
+  }
+
+  function render() {
+    renderAbas();
+    var c = $('conteudo'); c.textContent = '';
+    var vazio = !S.analisado || (!S.itens.length && !S.descartes.length);
+    $('acoes').classList.toggle('oculto', vazio || S.tipo === 'descartes');
+    if (!S.docs.length) { c.appendChild(estadoVazio()); return; }
+    if (vazio) { c.appendChild(el('div', { class: 'estado-vazio' }, el('h3', { text: 'Nenhum e-mail, telefone, IMEI, CPF ou nome encontrado' }),
+      el('div', { text: 'Confira os avisos das fontes ao lado (ex.: PDF digitalizado sem texto).' }))); return; }
+    if (S.tipo === 'descartes') { c.appendChild(tabelaDescartes()); return; }
+    if (S.visao === 'colunas') c.appendChild(visaoColunas()); else c.appendChild(tabela());
+    atualizarAcoes();
+  }
+
+  function estadoVazio() {
+    return el('div', { class: 'estado-vazio' },
+      el('h3', { text: 'Carregue arquivos ou cole um texto' }),
+      el('div', { text: 'Tudo é processado neste computador; nada é enviado para a internet.' }),
+      el('div', { class: 'passos' },
+        el('div', null, el('b', { text: '1' }), 'Arraste PDFs, planilhas, documentos, e-mails ou ZIPs — ou cole o texto.'),
+        el('div', null, el('b', { text: '2' }), 'Os dados aparecem separados por tipo, validados e sem repetição.'),
+        el('div', null, el('b', { text: '3' }), 'Clique num valor para copiar, selecione vários ou exporte para XLSX.')));
+  }
+
+  function renderAbas() {
+    var abas = $('abas'); abas.textContent = '';
+    if (!S.analisado || !S.resumo) return;
+    var pt = S.resumo.por_tipo;
+    var botao = function (chave, rotulo, n, alerta, cor) {
+      return el('button', { class: 'aba' + (S.tipo === chave ? ' sel' : ''), onclick: function () { S.tipo = chave; S.sel = new Set(); S.limite = LIMITE_LINHAS; render(); } },
+        cor ? el('span', { class: 'pino', style: 'background:' + cor }) : null, rotulo,
+        el('span', { class: 'n', text: String(n) }), alerta ? el('span', { class: 'alerta', title: 'requerem conferência', text: '⚠' + alerta }) : null);
+    };
+    var nAlerta = S.itens.filter(function (i) { return i.status !== 'ok'; }).length;
+    abas.appendChild(botao('todos', 'Todos', S.itens.length, nAlerta));
+    TIPOS.forEach(function (t) {
+      var p = pt[t[0]];
+      abas.appendChild(botao(t[0], t[1], p.total, p.atencao + p.invalido, 'var(--t-' + t[0] + ')'));
+    });
+    abas.appendChild(botao('descartes', 'Descartados', S.descartes.length, 0, 'var(--fraco)'));
+  }
+
+  function th(rotulo, campo, extra) {
+    var seta = campo && S.ord.campo === campo ? (S.ord.dir > 0 ? ' ▲' : ' ▼') : '';
+    return el('th', Object.assign({ class: campo ? 'ord' : '', text: rotulo + seta,
+      onclick: campo ? function () { if (S.ord.campo === campo) S.ord.dir *= -1; else { S.ord.campo = campo; S.ord.dir = 1; } render(); } : null }, extra || {}));
+  }
+
+  function tabela() {
+    var lista = filtrados(false);
+    var env = el('div', { class: 'tabela-envolta' });
+    if (!lista.length) { env.appendChild(el('div', { class: 'estado-vazio', text: 'Nenhum item com esses filtros.' })); return env; }
+    var todos = lista.length && lista.every(function (it) { return S.sel.has(it.id); });
+    var cx = el('input', { type: 'checkbox', title: 'Selecionar todos os visíveis', 'aria-label': 'Selecionar todos' });
+    cx.checked = todos;
+    cx.addEventListener('change', function () { lista.forEach(function (it) { if (cx.checked) S.sel.add(it.id); else S.sel.delete(it.id); }); render(); });
+    var t = el('table', { class: 'dados' },
+      el('thead', null, el('tr', null, el('th', { class: 'cx' }, cx), th('Tipo', 'tipo'), th('Valor', 'valor'), th('Status', 'status'),
+        th('Ocorr.', 'n', { style: 'text-align:right' }), th('Origem', 'origem'), th('Observação', null), el('th', null))));
+    var tb = el('tbody');
+    lista.slice(0, S.limite).forEach(function (it, idx) { linhaItem(tb, it, idx, lista); });
+    t.appendChild(tb); env.appendChild(t);
+    if (lista.length > S.limite) env.appendChild(el('div', { class: 'mais' }, el('button', { class: 'btn', onclick: function () { S.limite += LIMITE_LINHAS; render(); } },
+      'Mostrar mais ' + Math.min(LIMITE_LINHAS, lista.length - S.limite) + ' de ' + (lista.length - S.limite) + ' restantes')));
+    return env;
+  }
+
+  function linhaItem(tb, it, idx, lista) {
+    var v = valorCopia(it);
+    var cx = el('input', { type: 'checkbox', 'aria-label': 'Selecionar ' + v });
+    cx.checked = S.sel.has(it.id);
+    cx.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      if (ev.shiftKey && S.ultimoClique !== null) {
+        var a = Math.min(S.ultimoClique, idx), b = Math.max(S.ultimoClique, idx);
+        for (var k = a; k <= b; k++) { if (cx.checked) S.sel.add(lista[k].id); else S.sel.delete(lista[k].id); }
+      } else { if (cx.checked) S.sel.add(it.id); else S.sel.delete(it.id); }
+      S.ultimoClique = idx; render();
+    });
+    var obs = it.motivo + (it.obs && it.obs.length ? '  (+' + it.obs.length + ')' : '');
+    var tr = el('tr', { class: 'linha' + (S.sel.has(it.id) ? ' marcada' : ''), onclick: function () { if (S.aberto.has(it.id)) S.aberto.delete(it.id); else S.aberto.add(it.id); render(); } },
+      el('td', { class: 'cx' }, cx),
+      el('td', null, el('span', { class: 'tipo ' + it.tipo, text: it.rotulo_tipo })),
+      el('td', { class: 'col-valor' }, el('button', { class: 'valor', title: 'Clique para copiar', text: v, onclick: function (ev) { ev.stopPropagation(); copiar(v, v); } })),
+      el('td', null, el('span', { class: 'st ' + it.status, title: it.motivo, text: ROT_STATUS[it.status] })),
+      el('td', { class: 'n', text: String(it.n) }),
+      el('td', { class: 'origem', title: (it.origens || []).join('\n'), text: (it.origens || [''])[0] + ((it.origens || []).length > 1 ? ' +' + (it.origens.length - 1) : '') }),
+      el('td', { class: 'motivo', text: obs }),
+      el('td', null, el('button', { class: 'icone-copiar', title: 'Copiar', 'aria-label': 'Copiar ' + v, onclick: function (ev) { ev.stopPropagation(); copiar(v, v); } }, svgCopiar())));
+    tb.appendChild(tr);
+    if (S.aberto.has(it.id)) tb.appendChild(detalhe(it));
+  }
+
+  function trecho(a) {
+    var t = a.trecho || '', i = a.a || 0, j = a.b || 0;
+    return el('div', { class: 'trecho' }, t.slice(0, i), el('mark', { text: t.slice(i, j) }), t.slice(j));
+  }
+
+  function detalhe(it) {
+    var formatos = [];
+    var nomes = { nacional: 'nacional', internacional: 'internacional', e164: 'E.164', digitos_ddi: 'com DDI', digitos: 'dígitos',
+      formatado: 'formatado', imei15: '15 díg.', imei14: '14 díg.', original: 'original', maiusculas: 'maiúsc.', titulo: 'título', minusculo: 'minúsc.' };
+    var vistos = new Set();
+    Object.keys(it.formatos || {}).forEach(function (k) {
+      var v = it.formatos[k]; if (vistos.has(v)) return; vistos.add(v);
+      formatos.push(el('span', { class: 'chip', title: 'Copiar', onclick: function () { copiar(v, v); } }, el('small', { text: nomes[k] || k }), v));
+    });
+    var ex = it.extra || {}, info = [];
+    if (ex.uf) info.push('DDD de ' + ex.uf);
+    if (ex.pais) info.push('País: ' + ex.pais);
+    if (ex.tac) info.push('TAC ' + ex.tac + ' (modelo do aparelho; consultar base GSMA)');
+    if (ex.dominio) info.push('Domínio ' + ex.dominio);
+    var obs = [it.motivo].concat(it.obs || []).concat(info);
+    var td = el('td', { colspan: '8' },
+      el('div', { class: 'det-grade' },
+        el('div', null, el('h4', { text: 'Formatos (clique para copiar)' }), el('div', { class: 'chips' }, formatos),
+          el('h4', { text: 'Análise', style: 'margin-top:12px' }), el('ul', { class: 'lista-obs' }, obs.map(function (o) { return el('li', { text: o }); })),
+          el('div', { class: 'dica', style: 'margin-top:6px', text: 'Regras aplicadas: ' + (it.regras || []).join(', ') + ' (ver README)' })),
+        el('div', null, el('h4', { text: 'Onde aparece (' + it.n + (it.n > it.amostras.length ? ', exibindo ' + it.amostras.length : '') + ')' }),
+          el('ul', { class: 'ocorrencias' }, it.amostras.map(function (a) {
+            return el('li', null, el('div', { class: 'onde', text: a.doc + ' · ' + a.local }), trecho(a));
+          })))));
+    return el('tr', { class: 'detalhe' }, td);
+  }
+
+  function visaoColunas() {
+    var base = filtrados(true);
+    var g = el('div', { class: 'colunas' });
+    TIPOS.forEach(function (t) {
+      if (S.tipo !== 'todos' && S.tipo !== t[0]) return;
+      var lista = base.filter(function (it) { return it.tipo === t[0]; });
+      var valores = lista.map(valorCopia);
+      g.appendChild(el('div', { class: 'coluna' },
+        el('header', null, el('span', { class: 'tipo ' + t[0], text: t[2] }), el('span', { class: 'tit', text: String(lista.length) }),
+          el('button', { class: 'btn peq', disabled: !lista.length, onclick: function () { copiar(valores.join('\n'), rotuloQtd(valores.length) + ' de ' + t[1]); } }, svgCopiar(), 'Copiar')),
+        el('ul', null, lista.map(function (it, k) {
+          return el('li', { title: ROT_STATUS[it.status] + ' — ' + it.motivo + '\nClique para copiar', onclick: function () { copiar(valores[k], valores[k]); } },
+            el('span', { class: 'bola ' + it.status }), valores[k]);
+        }))));
+    });
+    return g;
+  }
+
+  function tabelaDescartes() {
+    var env = el('div', { class: 'tabela-envolta' });
+    var b = normal(S.busca).trim();
+    var lista = S.descartes.filter(function (d) { return !b || normal(d.valor + ' ' + d.motivo + ' ' + d.origens.join(' ')).indexOf(b) >= 0; });
+    env.appendChild(el('div', { class: 'legenda', text: 'Trechos que pareciam um dos tipos, mas falharam em alguma validação. Ficam fora da lista principal; confira se algum deve ser considerado.' }));
+    if (!lista.length) { env.appendChild(el('div', { class: 'estado-vazio', text: 'Nenhum descarte.' })); return env; }
+    var tb = el('tbody');
+    lista.slice(0, S.limite).forEach(function (d) {
+      var aberto = S.aberto.has('d' + d.id);
+      tb.appendChild(el('tr', { class: 'linha', onclick: function () { if (aberto) S.aberto.delete('d' + d.id); else S.aberto.add('d' + d.id); render(); } },
+        el('td', null, el('span', { class: 'tipo ' + d.tipo, text: d.rotulo_tipo })),
+        el('td', null, el('button', { class: 'valor', text: d.valor, title: 'Copiar', onclick: function (ev) { ev.stopPropagation(); copiar(d.valor, d.valor); } })),
+        el('td', { class: 'motivo', text: d.motivo }),
+        el('td', { class: 'mono', text: d.regra }),
+        el('td', { class: 'n', text: String(d.n) }),
+        el('td', { class: 'origem', text: d.origens.join('; ') })));
+      if (aberto) tb.appendChild(el('tr', { class: 'detalhe' }, el('td', { colspan: '6' },
+        el('ul', { class: 'ocorrencias' }, d.amostras.map(function (a) { return el('li', null, el('div', { class: 'onde', text: a.doc + ' · ' + a.local }), trecho(a)); })))));
+    });
+    env.appendChild(el('table', { class: 'dados' }, el('thead', null, el('tr', null, el('th', { text: 'Tentativa' }), el('th', { text: 'Trecho' }),
+      el('th', { text: 'Motivo do descarte' }), el('th', { text: 'Regra' }), el('th', { text: 'Ocorr.', style: 'text-align:right' }), el('th', { text: 'Origem' }))), tb));
+    return env;
+  }
+
+  function atualizarAcoes() {
+    var n = S.sel.size, vis = filtrados(false).length;
+    $('infoSel').textContent = n ? (rotuloQtd(n) + ' selecionado' + (n > 1 ? 's' : '') + ' · ações valem para a seleção') : (rotuloQtd(vis) + ' na lista · clique num valor para copiar');
+    $('btnCopSel').disabled = !n;
+    $('btnCopSel').lastChild.textContent = n ? 'Copiar selecionados (' + n + ')' : 'Copiar selecionados';
+  }
+
+  // ------------------------------------------------------------------ eventos
+  $('zona').addEventListener('click', function () { $('arquivo').click(); });
+  $('zona').addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); $('arquivo').click(); } });
+  $('arquivo').addEventListener('change', function () { enviarArquivos(this.files); this.value = ''; });
+  $('btnTexto').addEventListener('click', enviarTexto);
+  $('texto').addEventListener('keydown', function (e) { if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); enviarTexto(); } });
+  $('btnLimpar').addEventListener('click', limparTudo);
+  $('chkNomes').checked = S.pref.nomes;
+  $('chkNomes').addEventListener('change', function () { S.pref.nomes = this.checked; salvarPref(); if (S.docs.length) analisar(); });
+  $('busca').addEventListener('input', function () { S.busca = this.value; S.limite = LIMITE_LINHAS; render(); });
+  $('filtroStatus').addEventListener('change', function () { S.status = this.value; render(); });
+  $('vTabela').addEventListener('click', function () { S.visao = 'tabela'; $('vTabela').classList.add('sel'); $('vColunas').classList.remove('sel'); render(); });
+  $('vColunas').addEventListener('click', function () { S.visao = 'colunas'; $('vColunas').classList.add('sel'); $('vTabela').classList.remove('sel'); render(); });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-pref]'), function (s) {
+    s.value = S.pref[s.getAttribute('data-pref')];
+    s.addEventListener('change', function () { S.pref[s.getAttribute('data-pref')] = s.value; salvarPref(); render(); });
+  });
+  document.addEventListener('click', function (e) { var d = $('detFormatos'); if (d.open && !d.contains(e.target)) d.open = false; });
+  $('btnCopSel').addEventListener('click', function () { var l = alvoAcao().map(valorCopia); copiar(l.join('\n'), rotuloQtd(l.length)); });
+  $('btnCopVis').addEventListener('click', function () { var l = alvoAcao().map(valorCopia); if (!l.length) return toast('Lista vazia', true); copiar(l.join('\n'), rotuloQtd(l.length)); });
+  $('btnCopTab').addEventListener('click', function () {
+    var l = alvoAcao(); if (!l.length) return toast('Lista vazia', true);
+    copiarTabela(['Tipo', 'Valor', 'Status', 'Ocorrências', 'Arquivo(s)', 'Observação'],
+      l.map(function (it) { return [it.rotulo_tipo, valorCopia(it), ROT_STATUS[it.status], it.n, (it.origens || []).join('; '), it.motivo]; }), rotuloQtd(l.length));
+  });
+  $('btnXlsx').addEventListener('click', function () { exportar('xlsx'); });
+  $('btnCsv').addEventListener('click', function () { exportar('csv'); });
+  $('btnEncerrar').addEventListener('click', function () {
+    if (!confirm('Encerrar a ferramenta? Os dados carregados serão descartados.')) return;
+    api('/api/encerrar', { method: 'POST' }).catch(function () {}).then(function () {
+      document.body.textContent = '';
+      document.body.appendChild(el('div', { class: 'estado-vazio' }, el('h3', { text: 'Ferramenta encerrada' }), el('div', { text: 'Pode fechar esta aba. Para usar de novo, abra o extrair.bat.' })));
+    });
+  });
+
+  // arrastar e soltar (arquivos e pastas) em qualquer lugar da página
+  var contador = 0;
+  window.addEventListener('dragenter', function (e) { if (temArquivos(e)) { contador++; $('solte').classList.add('on'); $('zona').classList.add('ativo'); } });
+  window.addEventListener('dragleave', function () { contador = Math.max(0, contador - 1); if (!contador) { $('solte').classList.remove('on'); $('zona').classList.remove('ativo'); } });
+  window.addEventListener('dragover', function (e) { if (temArquivos(e)) e.preventDefault(); });
+  window.addEventListener('drop', function (e) {
+    if (!temArquivos(e)) return;
+    e.preventDefault(); contador = 0; $('solte').classList.remove('on'); $('zona').classList.remove('ativo');
+    var itens = e.dataTransfer.items;
+    if (itens && itens.length && itens[0].webkitGetAsEntry) {
+      var entradas = Array.prototype.map.call(itens, function (i) { return i.webkitGetAsEntry(); }).filter(Boolean);
+      coletar(entradas).then(enviarArquivos);
+    } else enviarArquivos(e.dataTransfer.files);
+  });
+  function temArquivos(e) { return e.dataTransfer && Array.prototype.indexOf.call(e.dataTransfer.types || [], 'Files') >= 0; }
+  function coletar(entradas) {
+    var saida = [];
+    var ler = function (ent) {
+      if (ent.isFile) return new Promise(function (ok) { ent.file(function (f) { saida.push(f); ok(); }, function () { ok(); }); });
+      if (ent.isDirectory) {
+        var leitor = ent.createReader();
+        return new Promise(function (ok) {
+          var todas = [];
+          var lote = function () {
+            leitor.readEntries(function (es) { if (!es.length) Promise.all(todas.map(ler)).then(ok); else { todas = todas.concat(Array.prototype.slice.call(es)); lote(); } }, function () { ok(); });
+          };
+          lote();
+        });
+      }
+      return Promise.resolve();
+    };
+    return Promise.all(entradas.map(ler)).then(function () { return saida; });
+  }
+
+  carregarEstado();
+})();
+</script>
+</body>
+</html>

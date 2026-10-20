@@ -1,0 +1,28 @@
+{
+ "relato": [
+  "POLÍCIA CIVIL — RELATÓRIO DE TESTE (DADOS FICTÍCIOS)",
+  "Declarante: MARIA APARECIDA DOS SANTOS, CPF 529.982.247-25, telefone (81) 98765-4321, e-mail maria.santos@exemplo.com.br.",
+  "Investigado: JOSÉ CARLOS KOWALSKI, CPF 11144477735, celular +55 81 99876-5432, WhatsApp 5581991234567.",
+  "Aparelho apreendido IMEI 35-209900-176148-1 e segundo aparelho IMEI: 864539041234560.",
+  "Contato alternativo: fulano.teste@mailinator.com; recado no fixo (81) 3333-4444.",
+  "PIX recebido de ***.456.789-** no dia 15/10/2026, valor R$ 1.250,00.",
+  "Testemunha: Ana Paula Cavalcanti de Lima, residente na Rua Maria Quitéria, 120, Recife/PE.",
+  "Protocolo 2026101912345 e chave 26201012345678000190550010000123451000123456 (não extrair)."
+ ],
+ "pessoas": [
+  {
+   "nome": "Pedro Henrique Alves",
+   "cpf": "935.411.347-80",
+   "telefone": "81987650001",
+   "imei": "356938035643809",
+   "email": "pedro.alves@exemplo.org"
+  },
+  {
+   "nome": "Luana Ferreira Lins",
+   "cpf": "07068093868",
+   "telefone": "(11) 91234-5678",
+   "imei": "352099001761480",
+   "email": "luana.lins@teste.com.br"
+  }
+ ]
+}
