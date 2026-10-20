@@ -9,6 +9,9 @@ _extracao/
 extracao_*.xlsx
 extracao_*.csv
 
+# OCR: binários e modelos do Tesseract ficam fora do repositório
+_analisador/ocr/*
+
 # NUNCA versionar arquivos reais de casos
 *.pdf
 *.doc
@@ -33,6 +36,15 @@ extracao_*.csv
 *.rar
 *.html
 *.htm
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.bmp
+*.gif
+*.webp
+*.heic
 *.log
 ~$*
 
@@ -40,3 +52,4 @@ extracao_*.csv
 !tests/amostras/*
 !_analisador/extdados/dados/*.txt
 !_analisador/extdados/interface/index.html
+!_analisador/ocr/LEIA-ME.txt

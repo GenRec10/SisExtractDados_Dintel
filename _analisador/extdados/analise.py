@@ -21,18 +21,20 @@ _DIGITO_OU_ARROBA = re.compile(r'[\d@]')
 
 
 class Unidade(object):
-    __slots__ = ('texto', 'rotulo', 'local', 'anterior', 'coluna')
+    __slots__ = ('texto', 'rotulo', 'local', 'anterior', 'coluna', 'ocr')
 
-    def __init__(self, texto, rotulo, local, anterior, coluna):
+    def __init__(self, texto, rotulo, local, anterior, coluna, ocr=False):
         self.texto, self.rotulo, self.local, self.anterior, self.coluna = texto, rotulo, local, anterior, coluna
+        self.ocr = ocr
 
 
 class Ocorrencia(object):
-    __slots__ = ('cand', 'doc', 'local', 'trecho', 'a', 'b', 'coluna')
+    __slots__ = ('cand', 'doc', 'local', 'trecho', 'a', 'b', 'coluna', 'ocr')
 
-    def __init__(self, cand, doc, local, trecho, a, b, coluna):
+    def __init__(self, cand, doc, local, trecho, a, b, coluna, ocr=False):
         self.cand, self.doc, self.local, self.trecho, self.a, self.b, self.coluna = \
             cand, doc, local, trecho, a, b, coluna
+        self.ocr = ocr
 
 
 # ===================================================================== unidades
@@ -77,7 +79,7 @@ def unidades(doc):
                 t = limpar_unidade(linha)
                 if not t:
                     continue
-                yield Unidade(t, None, '%slinha %d' % (prefixo, n), anterior, None)
+                yield Unidade(t, None, '%slinha %d' % (prefixo, n), anterior, None, b.ocr)
                 anterior = t[-JANELA_CONTEXTO:]
         else:
             linhas = b.linhas
@@ -205,7 +207,7 @@ def analisar(docs, com_nomes=True, progresso=None):
                     cache[chave_cache] = (cands, descs)
             for c in cands:
                 trecho, a, b = _trecho(u, c.ini, c.fim)
-                ocorrencias.append(Ocorrencia(c, doc, u.local, trecho, a, b, u.coluna))
+                ocorrencias.append(Ocorrencia(c, doc, u.local, trecho, a, b, u.coluna, u.ocr))
             for d in descs:
                 trecho, a, b = _trecho(u, d.ini, d.fim)
                 descartes.append((d, doc, u.local, trecho, a, b))
@@ -257,15 +259,16 @@ def _resolver_ambiguos(ocorrencias):
                     decisao, regra = tipo, 'R-AMB-03'
                     motivo = 'Ambíguo resolvido pela coluna: %d de %d valores da coluna são %s' % (
                         cont[tipo], total, 'CPF' if tipo == 'cpf' else 'telefone')
+        if decisao is None:
+            # R-AMB-04 (decisão do usuário): 11 dígitos contíguos com DV válido = CPF
+            decisao, regra = 'cpf', 'R-AMB-04'
+            motivo = ('11 dígitos contíguos com DV de CPF válido: classificado como CPF '
+                      '(também teria formato de celular, DDD %s)' % tel.formatos['digitos'][:2])
         if decisao == 'cpf':
             o.cand = _copia(c, status=OK, motivo=motivo, regra=regra)
-            saida.append(o)
-        elif decisao == 'telefone':
-            o.cand = _copia(tel, status=OK, motivo=motivo, regra=regra)
-            saida.append(o)
         else:
-            saida.append(o)
-            saida.append(Ocorrencia(tel, o.doc, o.local, o.trecho, o.a, o.b, o.coluna))
+            o.cand = _copia(tel, status=OK, motivo=motivo, regra=regra)
+        saida.append(o)
     return saida
 
 
@@ -281,11 +284,13 @@ def _consolidar(ocorrencias):
                 'tipo': c.tipo, 'valor': c.valor, 'formatos': dict(c.formatos),
                 'status': c.status, 'motivo': c.motivo, 'obs': [], 'regras': [],
                 'n': 0, 'origens': [], 'amostras': [], 'extra': dict(c.extra),
-                '_brutos': [],
+                '_brutos': [], '_ocr': 0,
             }
             itens[k] = it
             ordem.append(k)
         it['n'] += 1
+        if o.ocr:
+            it['_ocr'] += 1
         if ORDEM_STATUS[c.status] < ORDEM_STATUS[it['status']]:
             if it['motivo'] and it['motivo'] not in it['obs']:
                 it['obs'].append(it['motivo'])
@@ -312,10 +317,37 @@ def _consolidar(ocorrencias):
         brutos = it.pop('_brutos')
         if it['tipo'] == 'imei' and len(brutos) > 1:
             it['obs'].append('Formas encontradas: ' + ', '.join(brutos[:5]))
+        _regra_ocr(it, it.pop('_ocr'))
         it['id'] = idx
         it['rotulo_tipo'] = ROTULO_TIPO[it['tipo']]
         lista.append(it)
     return lista
+
+
+def _regra_ocr(it, n_ocr):
+    """R-OCR-01: item visto SOMENTE em texto de OCR.
+
+    Telefone, e-mail e nome não têm dígito verificador: um caractere mal lido
+    gera um valor errado mas plausível, então o status cai para Atenção.
+    CPF e IMEI mantêm o status, pois o DV/Luhn já barra a maioria dos erros de leitura.
+    """
+    if not n_ocr:
+        return
+    it['extra']['ocr'] = 'todas' if n_ocr == it['n'] else 'algumas'
+    if n_ocr < it['n']:
+        return
+    if 'R-OCR-01' not in it['regras']:
+        it['regras'].append('R-OCR-01')
+    if it['tipo'] in ('telefone', 'email', 'nome'):
+        nota = 'Lido somente por OCR: conferir com a imagem (este tipo não tem dígito verificador)'
+        if it['status'] == OK:
+            it['status'] = ATENCAO
+            it['obs'].insert(0, it['motivo'])
+            it['motivo'] = nota
+        else:
+            it['obs'].insert(0, nota)
+    else:
+        it['obs'].insert(0, 'Lido somente por OCR; o dígito verificador foi conferido')
 
 
 def _referencias_cruzadas(itens):

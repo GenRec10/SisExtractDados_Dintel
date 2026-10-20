@@ -96,11 +96,19 @@ def _despachar(doc, nome, dados, prof):
     for assinatura, descricao in ASSINATURAS_IMAGEM:
         if dados.startswith(assinatura):
             doc.tipo = descricao
-            doc.aviso('Imagem: a ferramenta não faz OCR. Use um PDF com texto ou cole o texto.')
+            _imagem(doc, dados)
             return
-    if dados[:4] == b'RIFF' and dados[8:12] in (b'WEBP', b'WAVE', b'AVI '):
+    if dados[:4] == b'RIFF' and dados[8:12] == b'WEBP':
+        doc.tipo = 'imagem WebP'
+        _imagem(doc, dados)
+        return
+    if dados[4:12] in (b'ftypheic', b'ftypheix', b'ftypmif1', b'ftyphevc', b'ftypavif'):
+        doc.tipo = 'imagem HEIC/AVIF'
+        doc.aviso('Formato HEIC/AVIF (fotos de iPhone) não é lido pelo OCR: converta para JPEG ou PNG')
+        return
+    if dados[:4] == b'RIFF' and dados[8:12] in (b'WAVE', b'AVI '):
         doc.tipo = 'mídia'
-        doc.aviso('Arquivo de imagem/áudio/vídeo: sem texto para extrair')
+        doc.aviso('Arquivo de áudio/vídeo: sem texto para extrair')
         return
     if dados[4:8] == b'ftyp' or dados[:3] == b'ID3' or dados[:4] == b'OggS':
         doc.tipo = 'mídia'
@@ -127,11 +135,36 @@ def _despachar(doc, nome, dados, prof):
     _texto(doc, nome, texto)
 
 
+def _imagem(doc, dados):
+    from . import ocr
+    dim = ocr.dimensoes(dados)
+    if dim:
+        doc.info['dimensoes'] = '%d x %d px' % dim
+        if dim[0] * dim[1] > ocr.LIMITE_PIXELS:
+            doc.aviso('Imagem grande demais para OCR (%d x %d px)' % dim)
+            return
+    if not ocr.ativo():
+        doc.aviso('Imagem não lida: %s' % ('OCR desligado' if ocr.motor() is not None
+                                           else 'instale o Tesseract para ativar o OCR (ver README)'))
+        return
+    texto, erro = ocr.ler_lote([(0, dados, None)], 'imagem').get(0, ('', 'sem resultado'))
+    if erro:
+        doc.aviso('OCR falhou: %s' % erro)
+        return
+    doc.info['ocr'] = ocr.motor().descricao()
+    if texto.strip():
+        doc.texto('imagem (OCR)', texto, ocr=True)
+    else:
+        doc.aviso('OCR não reconheceu texto na imagem')
+
+
 def _incorporar(doc, sub, prefixo):
     """Copia os blocos e avisos de um sub-documento (membro de zip, anexo) para doc."""
     for b in sub.blocos:
         b.nome = prefixo + (SEP + b.nome if b.nome and prefixo else b.nome)
         doc.blocos.append(b)
+    if sub.info.get('ocr'):
+        doc.info['ocr'] = sub.info['ocr']
     for a in sub.avisos:
         doc.aviso((prefixo + ': ' if prefixo else '') + a)
 

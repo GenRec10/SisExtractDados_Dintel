@@ -1004,6 +1004,9 @@ class Interpretador(object):
         self.tem_imagem = False
         self.caracteres_ruins = 0
         self.caracteres = 0
+        self.invisiveis = 0       # caracteres com Tr 3/7 (camada de OCR de PDF pesquisável)
+        self.imagens = []         # (num_objeto, ctm) de cada imagem desenhada
+        self.tr = 0
 
     def _fonte(self, recursos, nome):
         fontes = self.pdf.r(recursos.get('Font')) if isinstance(recursos, dict) else None
@@ -1026,6 +1029,7 @@ class Interpretador(object):
         vistos = vistos or set()
         pilha_g = []
         fonte, tam, Tc, Tw, Th, TL, Ts = None, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0
+        self.tr = 0
         Tm = Tlm = IDENT
         ops = []
         pilha_arr = []
@@ -1129,11 +1133,13 @@ class Interpretador(object):
                     Ts = float(ops[-1])
                 elif op == b'BT':
                     Tm = Tlm = IDENT
+                elif op == b'Tr' and ops:
+                    self.tr = int(ops[-1])
                 elif op == b'q':
-                    pilha_g.append((ctm, fonte, tam, Tc, Tw, Th, TL, Ts))
+                    pilha_g.append((ctm, fonte, tam, Tc, Tw, Th, TL, Ts, self.tr))
                 elif op == b'Q':
                     if pilha_g:
-                        ctm, fonte, tam, Tc, Tw, Th, TL, Ts = pilha_g.pop()
+                        ctm, fonte, tam, Tc, Tw, Th, TL, Ts, self.tr = pilha_g.pop()
                 elif op == b'cm' and len(ops) >= 6:
                     ctm = _mult(tuple(float(x) for x in ops[-6:]), ctm)
                 elif op == b'Do' and ops and isinstance(ops[-1], str):
@@ -1158,6 +1164,7 @@ class Interpretador(object):
         sub = dic.get('Subtype')
         if sub == 'Image':
             self.tem_imagem = True
+            self.imagens.append((ref.n, ctm))
             return
         if sub != 'Form' or prof >= PROFUNDIDADE_FORM or ref.n in vistos:
             return
@@ -1189,6 +1196,8 @@ class Interpretador(object):
         M2 = _mult(Tm, ctm)
         txt = ''.join(partes)
         self.caracteres += len(txt)
+        if self.tr in (3, 7):
+            self.invisiveis += len(txt.strip())
         self.caracteres_ruins += txt.count('�')
         r = _Run()
         r.x0, r.y0, r.x1, r.y1, r.txt = x0, y0, M2[4], M2[5], txt
@@ -1240,7 +1249,9 @@ def ler_pdf(doc, dados):
         doc.aviso('Estrutura de páginas do PDF não encontrada: arquivo truncado ou corrompido')
     elif b'%%EOF' not in dados[-2048:]:
         doc.aviso('PDF sem marcador de fim (%%EOF): arquivo possivelmente incompleto')
-    sem_texto, ilegiveis = [], []
+    sem_texto, ilegiveis, camada_ocr = [], [], []
+    imagens = []          # (pagina, num_objeto, ctm) candidatas a OCR, sem repetição de objeto
+    vistas = set()
     for i, pg in enumerate(paginas, 1):
         it = Interpretador(pdf)
         try:
@@ -1251,19 +1262,220 @@ def ler_pdf(doc, dados):
         anot = _anotacoes(pdf, pg)
         if texto.strip():
             doc.texto('pág. %d' % i, texto)
-        elif it.tem_imagem or not anot:
+        if it.invisiveis >= 20 and it.invisiveis >= 0.5 * it.caracteres:
+            camada_ocr.append(i)        # PDF pesquisável: a camada de OCR já existe, não refaz
+        else:
+            for num, ctm in it.imagens:
+                if num not in vistas:
+                    vistas.add(num)
+                    imagens.append((i, num, ctm))
+        if not texto.strip() and (it.tem_imagem or not anot):
             sem_texto.append(i)
         if it.caracteres and it.caracteres_ruins > 0.2 * it.caracteres:
             ilegiveis.append(i)
         if anot:
             doc.texto('pág. %d, anotações' % i, anot)
+    if camada_ocr:
+        doc.info['camada_ocr'] = 'já existente nas págs. %s' % _faixas(camada_ocr)
+    lidas_por_ocr = _ocr_paginas(pdf, doc, imagens, sem_texto)
+    sem_texto = [p for p in sem_texto if p not in lidas_por_ocr]
     if sem_texto:
-        doc.aviso('Página(s) sem camada de texto — provável digitalização, precisa de OCR: %s'
-                  % _faixas(sem_texto))
+        from . import ocr
+        if ocr.ativo():
+            motivo = 'o OCR não encontrou texto legível'
+        elif ocr.motor() is not None:
+            motivo = 'OCR desligado'
+        else:
+            motivo = 'instale o Tesseract para ativar o OCR (ver README)'
+        doc.aviso('Página(s) sem camada de texto (provável digitalização): %s — %s' % (_faixas(sem_texto), motivo))
     if ilegiveis:
         doc.aviso('Página(s) com fonte sem mapa Unicode — texto pode sair incorreto: %s' % _faixas(ilegiveis))
     _formulario(pdf, doc)
     _info(pdf, doc)
+
+
+# ===================================================================== imagens para OCR
+
+_FILTROS_IMAGEM = {'DCTDecode': 'jpeg', 'DCT': 'jpeg', 'JPXDecode': 'jp2', 'CCITTFaxDecode': 'ccitt',
+                   'CCF': 'ccitt', 'JBIG2Decode': 'jbig2'}
+
+
+def _ocr_paginas(pdf, doc, imagens, sem_texto):
+    """Faz OCR das imagens relevantes. Retorna o conjunto de páginas que ganharam texto."""
+    from . import ocr
+    if not imagens:
+        return set()
+    tarefas, nomes, erros, ignoradas = [], {}, [], 0
+    for pagina, num, ctm in imagens:
+        dic = pdf.objs[num][2]
+        w = _int(pdf.r(dic.get('Width')))
+        h = _int(pdf.r(dic.get('Height')))
+        if not ocr.vale_ocr(w, h):
+            continue
+        if not ocr.ativo():
+            if pagina not in sem_texto:
+                ignoradas += 1      # figura dentro de página com texto (ex.: print colado num relatório)
+            continue
+        try:
+            img = imagem_para_ocr(pdf, num)
+        except Exception as e:      # imagem corrompida não derruba a leitura
+            img, motivo = None, '%s: %s' % (type(e).__name__, e)
+        else:
+            img, motivo = img
+        if img is None:
+            erros.append('pág. %d: %s' % (pagina, motivo))
+            continue
+        larg_pt = math.hypot(ctm[0], ctm[1])
+        alt_pt = math.hypot(ctm[2], ctm[3])
+        dpi = None
+        if larg_pt > 1 and alt_pt > 1:
+            dpi = (w * 72.0 / larg_pt + h * 72.0 / alt_pt) / 2
+        chave = (pagina, num)
+        tarefas.append((chave, img, dpi))
+        nomes[chave] = pagina
+    if ignoradas:
+        doc.aviso('%d imagem(ns) dentro de páginas com texto não lida(s): %s' % (
+            ignoradas, 'OCR desligado' if ocr.motor() is not None else 'Tesseract não instalado (ver README)'))
+    for e in erros[:10]:
+        doc.aviso('Imagem não lida por OCR — ' + e)
+    if not tarefas:
+        return set()
+    resultado = ocr.ler_lote(tarefas, 'imagem do PDF')
+    com_texto = set()
+    por_pagina = {}
+    for chave, _, _ in tarefas:
+        texto, erro = resultado.get(chave, ('', 'sem resultado'))
+        if erro:
+            doc.aviso('OCR falhou na pág. %d: %s' % (chave[0], erro))
+            continue
+        if texto.strip():
+            por_pagina.setdefault(chave[0], []).append(texto)
+            com_texto.add(chave[0])
+    for pagina in sorted(por_pagina):
+        doc.texto('pág. %d (OCR)' % pagina, '\n'.join(por_pagina[pagina]), ocr=True)
+    vazias = sorted(set(nomes.values()) - com_texto)
+    if vazias:
+        doc.aviso('OCR não reconheceu texto nas imagens das págs. %s' % _faixas(vazias))
+    doc.info['ocr'] = '%s: %d imagem(ns) em %d página(s)' % (ocr.motor().descricao(), len(tarefas),
+                                                             len(set(nomes.values())))
+    return com_texto
+
+
+def _int(v):
+    try:
+        return int(v)
+    except (TypeError, ValueError):
+        return 0
+
+
+def _espaco_cor(pdf, cs):
+    """('gray'|'rgb'|'cmyk'|'sep'|'indexed', componentes, extra) ou (None, 0, motivo)."""
+    cs = pdf.r(cs)
+    nome = pdf.r(cs[0]) if isinstance(cs, list) and cs else cs
+    if nome in ('DeviceGray', 'G', 'CalGray'):
+        return 'gray', 1, None
+    if nome in ('DeviceRGB', 'RGB', 'CalRGB'):
+        return 'rgb', 3, None
+    if nome in ('DeviceCMYK', 'CMYK'):
+        return 'cmyk', 4, None
+    if nome == 'ICCBased' and isinstance(cs, list) and len(cs) > 1:
+        item = pdf.objs.get(cs[1].n) if isinstance(cs[1], Ref) else None
+        n = _int(pdf.r(item[2].get('N'))) if item and isinstance(item[2], dict) else 0
+        return {1: ('gray', 1, None), 3: ('rgb', 3, None), 4: ('cmyk', 4, None)}.get(n, (None, 0, 'ICC N=%d' % n))
+    if nome in ('Indexed', 'I') and isinstance(cs, list) and len(cs) >= 4:
+        base = _espaco_cor(pdf, cs[1])
+        hival = _int(pdf.r(cs[2]))
+        tabela = cs[3]
+        if isinstance(tabela, Ref):
+            _, tabela = pdf.stream_de(tabela)
+        tabela = pdf.r(tabela)
+        if not isinstance(tabela, bytes) or base[0] not in ('gray', 'rgb', 'cmyk'):
+            return None, 0, 'paleta não suportada'
+        n = base[1]
+        tabela = tabela[:n * (hival + 1)]
+        if base[0] == 'gray':
+            tabela = bytes(b for v in tabela for b in (v, v, v))
+        elif base[0] == 'cmyk':
+            from .ocr import cmyk_para_rgb
+            tabela = cmyk_para_rgb(tabela)
+        return 'indexed', 1, tabela
+    if nome == 'Separation':
+        return 'sep', 1, None
+    if nome == 'DeviceN' and isinstance(cs, list) and len(cs) > 1 and isinstance(pdf.r(cs[1]), list) \
+            and len(pdf.r(cs[1])) == 1:
+        return 'sep', 1, None
+    return None, 0, 'espaço de cor %s não suportado' % nome
+
+
+def imagem_para_ocr(pdf, num):
+    """(bytes_de_imagem, None) prontos para o Tesseract, ou (None, motivo)."""
+    from . import ocr
+    dic, bruto = pdf.objs[num][2], pdf.objs[num][3]
+    if bruto is None:
+        return None, 'imagem sem dados'
+    w, h = _int(pdf.r(dic.get('Width'))), _int(pdf.r(dic.get('Height')))
+    filtros = pdf.r(dic.get('Filter'))
+    parms = pdf.r(dic.get('DecodeParms'))
+    if not isinstance(filtros, list):
+        filtros = [filtros] if filtros is not None else []
+        parms = [parms]
+    elif not isinstance(parms, list):
+        parms = [parms] * len(filtros)
+    filtros = [pdf.r(f) for f in filtros]
+    idx = next((k for k, f in enumerate(filtros) if f in _FILTROS_IMAGEM), None)
+    decode = pdf.r(dic.get('Decode'))
+    invertido = isinstance(decode, list) and len(decode) >= 2 and _num(pdf.r(decode[0])) > _num(pdf.r(decode[1]))
+    mascara = pdf.r(dic.get('ImageMask')) is True
+    if idx is not None:
+        anteriores = {'Filter': filtros[:idx], 'DecodeParms': parms[:idx]} if idx else {}
+        dados = pdf.decodificar(anteriores, bruto) if idx else bruto
+        if dados is None:
+            return None, 'filtro não suportado'
+        tipo = _FILTROS_IMAGEM[filtros[idx]]
+        if tipo in ('jpeg', 'jp2'):
+            return dados, None
+        if tipo == 'jbig2':
+            return None, 'imagem JBIG2 (formato de compressão não suportado pelo OCR)'
+        p = pdf.r(parms[idx]) if idx < len(parms) else None
+        p = p if isinstance(p, dict) else {}
+        k = _int(pdf.r(p.get('K', 0)))
+        colunas = _int(pdf.r(p.get('Columns', 1728))) or w
+        linhas = _int(pdf.r(p.get('Rows', 0))) or h
+        preto1 = pdf.r(p.get('BlackIs1')) is True
+        return ocr.tiff_ccitt(colunas, linhas, dados, k, preto1 != invertido), None
+    dados = pdf.decodificar(dic, bruto)
+    if dados is None:
+        return None, 'filtro não suportado'
+    bpc = 1 if mascara else (_int(pdf.r(dic.get('BitsPerComponent'))) or 8)
+    if mascara:
+        espaco, n, extra = 'gray', 1, None
+    else:
+        espaco, n, extra = _espaco_cor(pdf, dic.get('ColorSpace'))
+    if espaco is None:
+        return None, extra
+    if espaco in ('gray', 'sep'):
+        if bpc not in (1, 2, 4, 8, 16):
+            return None, '%d bits por componente' % bpc
+        if (espaco == 'sep') != invertido:
+            dados = dados.translate(ocr.INVERTER)
+        return ocr.png(w, h, bpc, 0, dados), None
+    if espaco == 'rgb':
+        if bpc not in (8, 16):
+            return None, 'RGB com %d bits' % bpc
+        return ocr.png(w, h, bpc, 2, dados), None
+    if espaco == 'cmyk':
+        if bpc != 8:
+            return None, 'CMYK com %d bits' % bpc
+        return ocr.png(w, h, 8, 2, ocr.cmyk_para_rgb(dados[:w * h * 4])), None
+    if espaco == 'indexed':
+        if bpc not in (1, 2, 4, 8):
+            return None, 'paleta com %d bits' % bpc
+        return ocr.png(w, h, bpc, 3, dados, paleta=extra), None
+    return None, 'formato de imagem não suportado'
+
+
+def _num(v):
+    return float(v) if isinstance(v, (int, float)) else 0.0
 
 
 def _faixas(nums):

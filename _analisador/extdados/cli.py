@@ -21,13 +21,27 @@ def principal(argv=None):
     p.add_argument('--saida', default=None, help='pasta de saída do modo --sem-interface (padrão: _extracao)')
     p.add_argument('--sem-nomes', action='store_true', help='não detectar nomes próprios')
     p.add_argument('--porta', type=int, default=0, help='porta local (padrão: automática)')
+    p.add_argument('--sem-ocr', action='store_true', help='não usar OCR em imagens e PDFs digitalizados')
+    p.add_argument('--tesseract', default=None, help='caminho do tesseract(.exe), se não for achado sozinho')
+    p.add_argument('--ocr-idioma', default=None, help='idioma(s) do OCR, ex.: por+eng (padrão: automático)')
     p.add_argument('--sem-navegador', action='store_true', help='não abrir o navegador automaticamente')
     a = p.parse_args(argv)
+    from . import ocr
+    ocr.configurar(a.tesseract, a.ocr_idioma)
 
     if not a.sem_interface:
         from .servidor import iniciar
-        iniciar(a.arquivos, a.porta, not a.sem_navegador)
+        iniciar(a.arquivos, a.porta, not a.sem_navegador, not a.sem_ocr)
         return 0
+
+    diag = ocr.diagnostico()
+    if a.sem_ocr:
+        print('  OCR: desligado')
+    elif diag['disponivel']:
+        print('  OCR: Tesseract %s (%s)' % (diag['versao'], diag['idioma']))
+    else:
+        print('  OCR: indisponível — %s' % diag['motivo'])
+    ocr.definir_contexto(not a.sem_ocr, lambda m: (sys.stdout.write('\r        %s   ' % m), sys.stdout.flush()))
 
     from .analise import analisar
     from .exportar import gerar_csv, gerar_xlsx
@@ -48,7 +62,8 @@ def principal(argv=None):
         d = ler_arquivo(c)
         d.id = 'd%d' % i
         docs.append(d)
-        print('  [%d/%d] %s — %s (%.1fs)' % (i, len(caminhos), c, d.tipo, time.time() - t0))
+        print('\r  [%d/%d] %s — %s (%.1fs)%s' % (i, len(caminhos), c, d.tipo, time.time() - t0,
+                                                (' — ' + d.info['ocr']) if d.info.get('ocr') else ''))
         for av in d.avisos:
             print('        aviso: %s' % av)
     res = analisar(docs, com_nomes=not a.sem_nomes)

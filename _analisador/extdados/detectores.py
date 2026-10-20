@@ -589,7 +589,8 @@ def _onze(d, ctx, kw):
         return _cand_cpf(d, INVALIDO, 'Contexto "%s", mas o DV não confere' % kw, 'R-CPF-03'), None
     if ctx == 'tel':
         if tel_ok and d[0] != '0':
-            return candidato_tel_br(tel[0], tel[1], OK, 'Celular sem formatação; contexto "%s"' % kw,
+            nota = '; também passaria no DV de CPF' if cpf_ok else ''
+            return candidato_tel_br(tel[0], tel[1], OK, 'Celular sem formatação; contexto "%s"%s' % (kw, nota),
                                     'R-TEL-03'), None
         if tel_ok:
             return candidato_tel_br(tel[0], tel[1], OK, 'Com 0 de longa distância; contexto "%s"' % kw,

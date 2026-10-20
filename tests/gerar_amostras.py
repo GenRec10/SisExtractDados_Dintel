@@ -92,6 +92,7 @@ def main():
     tmp = tempfile.mkdtemp()
     try:
         _gerar(tmp)
+        _gerar_ocr(tmp)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     with open(os.path.join(DESTINO, 'gabarito.json'), 'w', encoding='utf-8') as f:
@@ -227,5 +228,77 @@ def _gerar(tmp):
         z.write(os.path.join(DESTINO, 'amostra.txt'), 'relato.txt')
 
 
+# ----------------------------------------------------------------------------- OCR
+OCR_LINHAS = ['TERMO DE DECLARACOES (DOCUMENTO DIGITALIZADO FICTICIO)',
+              'Declarante: JOAO BATISTA DE OLIVEIRA, CPF %s,' % fmt_cpf(CPF_DECL),
+              'telefone (81) 98877-6655, e-mail joao.batista@exemplo.com.br,',
+              'aparelho IMEI %s-%s-%s-%s.' % (IMEI_1[:2], IMEI_1[2:8], IMEI_1[8:14], IMEI_1[14])]
+GABARITO_OCR = {'cpf': CPF_DECL, 'telefone': '+5581988776655', 'imei': IMEI_1[:14],
+                'email': 'joao.batista@exemplo.com.br'}
+
+
+def _pagina_escaneada(largura=2480, altura=1100):
+    import glob
+    from PIL import Image, ImageDraw, ImageFont
+    fonte = ImageFont.truetype(glob.glob('/usr/share/fonts/**/DejaVuSans.ttf', recursive=True)[0], 40)
+    img = Image.new('L', (largura, altura), 255)
+    d = ImageDraw.Draw(img)
+    for i, linha in enumerate(OCR_LINHAS):
+        d.text((140, 140 + i * 100), linha, fill=0, font=fonte)
+    return img
+
+
+def _gerar_ocr(tmp):
+    """Amostras para o OCR: imagem solta, PDFs digitalizados em vários formatos de imagem,
+    PDF já pesquisável (com camada de texto invisível) e print colado num DOCX."""
+    import img2pdf
+    import docx
+    from docx.shared import Inches
+    img = _pagina_escaneada()
+    png = os.path.join(DESTINO, 'ocr_print.png')
+    img.save(png, dpi=(300, 300))
+    jpg = os.path.join(tmp, 'pagina.jpg')
+    img.save(jpg, quality=80, dpi=(300, 300))
+    cinza = os.path.join(tmp, 'pagina_cinza.png')
+    img.save(cinza, dpi=(300, 300))
+    paleta = os.path.join(tmp, 'pagina_paleta.png')
+    img.convert('RGB').quantize(16).save(paleta, dpi=(300, 300))
+    pb = os.path.join(tmp, 'pagina_pb.png')
+    img.convert('1').save(pb, dpi=(300, 300))
+    girada = os.path.join(tmp, 'pagina_girada.png')
+    img.rotate(90, expand=True).save(girada, dpi=(300, 300))
+    for origem, destino in ((jpg, 'ocr_scan_jpeg.pdf'), (cinza, 'ocr_scan_cinza.pdf'),
+                            (paleta, 'ocr_scan_paleta.pdf'), (girada, 'ocr_scan_girado.pdf')):
+        with open(os.path.join(DESTINO, destino), 'wb') as f:
+            f.write(img2pdf.convert(origem))
+    subprocess.run(['convert', pb, '-compress', 'Group4', os.path.join(DESTINO, 'ocr_scan_ccitt.pdf')],
+                   check=True)
+    # PDF pesquisável (scanner com OCR embutido): texto invisível sobre a imagem
+    subprocess.run(['tesseract', cinza, os.path.join(DESTINO, 'ocr_scan_pesquisavel'), '-l', 'eng', 'pdf'],
+                   check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    # página com texto digitado + print colado (relatório exportado para PDF)
+    from reportlab.lib.pagesizes import A4
+    from reportlab.pdfgen import canvas
+    c = canvas.Canvas(os.path.join(DESTINO, 'ocr_misto.pdf'), pagesize=A4)
+    c.setFont('Helvetica', 10)
+    for i, linha in enumerate(PARAGRAFOS[:3]):
+        c.drawString(40, 800 - i * 16, linha[:110])
+    c.drawImage(png, 40, 420, width=515, height=515 * 1100 / 2480.0)
+    c.save()
+    d = docx.Document()
+    d.add_paragraph('Relatório com print colado (fictício). Segue imagem:')
+    d.add_picture(png, width=Inches(6))
+    d.save(os.path.join(DESTINO, 'ocr_print_no_docx.docx'))
+    with open(os.path.join(DESTINO, 'gabarito_ocr.json'), 'w', encoding='utf-8') as f:
+        json.dump(GABARITO_OCR, f, ensure_ascii=False, indent=1)
+
+
 if __name__ == '__main__':
-    main()
+    if sys.argv[1:] == ['--so-ocr']:
+        _t = tempfile.mkdtemp()
+        try:
+            _gerar_ocr(_t)
+        finally:
+            shutil.rmtree(_t, ignore_errors=True)
+    else:
+        main()

@@ -4,13 +4,14 @@
 
 class Bloco(object):
     """tipo = 'texto' (texto corrido, linha a linha) ou 'tabela' (lista de linhas de células)."""
-    __slots__ = ('tipo', 'nome', 'texto', 'linhas')
+    __slots__ = ('tipo', 'nome', 'texto', 'linhas', 'ocr')
 
-    def __init__(self, tipo, nome='', texto='', linhas=None):
+    def __init__(self, tipo, nome='', texto='', linhas=None, ocr=False):
         self.tipo = tipo
         self.nome = nome
         self.texto = texto
         self.linhas = linhas or []
+        self.ocr = ocr      # texto obtido por OCR (sem verificação de dígito para telefone/e-mail/nome)
 
     def tamanho(self):
         if self.tipo == 'texto':
@@ -31,9 +32,9 @@ class Documento(object):
         self.info = {}
         self.sha256 = sha256
 
-    def texto(self, nome, texto):
+    def texto(self, nome, texto, ocr=False):
         if texto and texto.strip():
-            self.blocos.append(Bloco('texto', nome, texto))
+            self.blocos.append(Bloco('texto', nome, texto, ocr=ocr))
 
     def tabela(self, nome, linhas):
         linhas = [l for l in linhas if any(c for c in l)]

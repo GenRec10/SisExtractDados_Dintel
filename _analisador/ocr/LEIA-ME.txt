@@ -1,0 +1,18 @@
+PASTA OPCIONAL DO OCR (nada aqui e versionado no GitHub, exceto este arquivo)
+
+Use esta pasta somente se NAO puder instalar o Tesseract no computador.
+
+1) Tesseract portatil
+   Copie a pasta "Tesseract-OCR" inteira de um computador onde ele foi instalado
+   (normalmente C:\Program Files\Tesseract-OCR) para:
+       _analisador\ocr\Tesseract-OCR\
+   O programa encontra sozinho o arquivo _analisador\ocr\Tesseract-OCR\tesseract.exe
+
+2) Modelos de idioma sem permissao de administrador
+   Crie a pasta _analisador\ocr\tessdata\ e coloque nela os TRES arquivos:
+       por.traineddata   eng.traineddata   osd.traineddata
+   (baixados de https://github.com/tesseract-ocr/tessdata_fast)
+   Quando esta pasta existir, ela substitui a pasta de idiomas do Tesseract.
+   - por: portugues (acentos)
+   - eng: junto com o portugues, evita que "@" seja lido como "r" nos e-mails
+   - osd: detecta paginas digitalizadas de lado ou de cabeca para baixo

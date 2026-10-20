@@ -20,6 +20,7 @@ import urllib.parse
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 from . import NOME_SISTEMA, __version__
+from . import ocr
 from .analise import analisar
 from .exportar import gerar_csv, gerar_xlsx
 from .leitores import LIMITE_ARQUIVO, ler_bytes, texto_colado
@@ -34,6 +35,10 @@ class Estado(object):
         self.trava = threading.Lock()
         self.seq = 0
         self.colados = 0
+        self.progresso = ''
+
+    def informar(self, msg):
+        self.progresso = msg
 
     def adicionar(self, doc):
         with self.trava:
@@ -145,8 +150,10 @@ class Manipulador(BaseHTTPRequestHandler):
         if not self._token_ok():
             return self._erro(403, 'Token inválido')
         if url.path == '/api/estado':
-            return self._enviar(200, {'sistema': NOME_SISTEMA, 'versao': __version__,
+            return self._enviar(200, {'sistema': NOME_SISTEMA, 'versao': __version__, 'ocr': ocr.diagnostico(),
                                       'docs': [d.resumo() for d in self.server.estado.lista()]})
+        if url.path == '/api/progresso':
+            return self._enviar(200, {'msg': self.server.estado.progresso})
         return self._erro(404, 'Não encontrado')
 
     # ------------------------------------------------------------ POST
@@ -159,10 +166,17 @@ class Manipulador(BaseHTTPRequestHandler):
         estado = self.server.estado
         try:
             if url.path == '/api/arquivo':
-                nome = urllib.parse.parse_qs(url.query).get('nome', ['arquivo'])[0]
+                q = urllib.parse.parse_qs(url.query)
+                nome = q.get('nome', ['arquivo'])[0]
                 nome = os.path.basename(nome.replace('\\', '/')) or 'arquivo'
                 dados = self._ler_corpo(LIMITE_ARQUIVO)
-                doc = estado.adicionar(ler_bytes(nome, dados))
+                estado.informar('')
+                ocr.definir_contexto(q.get('ocr', ['1'])[0] != '0', estado.informar)
+                try:
+                    doc = estado.adicionar(ler_bytes(nome, dados))
+                finally:
+                    ocr.definir_contexto(True, None)
+                    estado.informar('')
                 return self._enviar(200, doc.resumo())
             if url.path == '/api/texto':
                 texto = self._ler_corpo(LIMITE_ARQUIVO).decode('utf-8', 'replace')
@@ -209,8 +223,9 @@ class Manipulador(BaseHTTPRequestHandler):
             return self._erro(500, '%s: %s' % (type(e).__name__, e))
 
 
-def iniciar(arquivos=(), porta=0, abrir_navegador=True):
+def iniciar(arquivos=(), porta=0, abrir_navegador=True, usar_ocr=True):
     estado = Estado()
+    ocr.definir_contexto(usar_ocr, _console)
     for caminho in arquivos:
         if os.path.isdir(caminho):
             for raiz, _, nomes in os.walk(caminho):
@@ -218,6 +233,12 @@ def iniciar(arquivos=(), porta=0, abrir_navegador=True):
                     _carregar(estado, os.path.join(raiz, n))
         else:
             _carregar(estado, caminho)
+    diag = ocr.diagnostico()
+    if diag['disponivel']:
+        print('  OCR: Tesseract %s (%s)%s' % (diag['versao'], diag['idioma'],
+                                            (' — ' + diag['aviso']) if diag.get('aviso') else ''))
+    else:
+        print('  OCR: indisponível — %s' % diag['motivo'])
     token = secrets.token_urlsafe(24)
     try:
         srv = Servidor(porta, estado, token)
@@ -241,6 +262,11 @@ def iniciar(arquivos=(), porta=0, abrir_navegador=True):
     print('Encerrado.')
 
 
+def _console(msg):
+    sys.stdout.write('\r    %s        ' % msg)
+    sys.stdout.flush()
+
+
 def _abrir(url):
     import webbrowser
     try:
@@ -252,12 +278,12 @@ def _abrir(url):
 def _carregar(estado, caminho):
     from .leitores import ler_arquivo
     t0 = time.time()
-    sys.stdout.write('  lendo %s ... ' % caminho)
-    sys.stdout.flush()
+    print('  lendo %s' % caminho)
     try:
         doc = ler_arquivo(caminho)
     except OSError as e:
-        print('ERRO: %s' % e)
+        print('\r    ERRO: %s' % e)
         return
     estado.adicionar(doc)
-    print('%s (%.1fs)%s' % (doc.tipo, time.time() - t0, (' — ' + '; '.join(doc.avisos)) if doc.avisos else ''))
+    print('\r    %s (%.1fs)%s%s' % (doc.tipo, time.time() - t0, (' — ' + doc.info['ocr']) if doc.info.get('ocr') else '',
+                                  (' — ' + '; '.join(doc.avisos)) if doc.avisos else ''))

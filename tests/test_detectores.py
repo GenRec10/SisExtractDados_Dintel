@@ -225,9 +225,22 @@ class TestResolucao(unittest.TestCase):
         its = self.itens('81987654099\nCPF 819.876.540-99')
         self.assertEqual([(i['tipo'], i['status']) for i in its], [('cpf', 'ok')])
 
-    def test_ambiguo_sem_evidencia_gera_dois_itens(self):
+    def test_ambiguo_sem_evidencia_vira_cpf(self):
+        # decisão do usuário: 11 dígitos contíguos com DV válido = CPF
         its = self.itens('81987654099')
-        self.assertEqual(sorted((i['tipo'], i['status']) for i in its), [('cpf', 'atencao'), ('telefone', 'atencao')])
+        self.assertEqual([(i['tipo'], i['status'], i['regras']) for i in its], [('cpf', 'ok', ['R-AMB-04'])])
+        self.assertIn('celular', its[0]['motivo'])
+        # DV inválido continua telefone
+        its = self.itens('81987654098')
+        self.assertEqual([(i['tipo'], i['regras']) for i in its], [('telefone', ['R-TEL-03'])])
+        # com espaços não é "contíguo": segue as regras de telefone
+        for t in ('81 98765 4099', '81 98765-4099', '(81)98765-4099'):
+            self.assertEqual([i['tipo'] for i in self.itens(t)], ['telefone'], t)
+
+    def test_contexto_de_telefone_prevalece(self):
+        its = self.itens('Tel: 81987654099')
+        self.assertEqual([i['tipo'] for i in its], ['telefone'])
+        self.assertIn('DV de CPF', its[0]['motivo'])
 
     def test_ambiguo_resolvido_pela_coluna(self):
         texto = 'Coluna1\tData\n' + '\n'.join('8198765%04d\t01/01' % k for k in (1, 2, 3, 4)) + '\n81987654099\t02/01'

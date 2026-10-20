@@ -56,6 +56,10 @@ main { display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 16px; pa
 .soltar strong { display: block; font-size: 14px; margin-top: 6px; }
 .soltar span { font-size: 12px; color: var(--suave); }
 .formatos { font-size: 11.5px; color: var(--fraco); margin-top: 8px; line-height: 1.5; }
+.opcoes { display: grid; gap: 8px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--borda); }
+.estado-ocr { font-size: 11.5px; color: var(--suave); margin: -4px 0 0 24px; }
+.estado-ocr.off { color: var(--at); }
+.selo-ocr { display: inline-block; margin-left: 6px; font-size: 10px; font-weight: 700; letter-spacing: .4px; padding: 1px 5px; border-radius: 4px; border: 1px dashed var(--suave); color: var(--suave); vertical-align: middle; }
 textarea { width: 100%; min-height: 128px; resize: vertical; border: 1px solid var(--borda-forte); border-radius: 8px; padding: 9px 10px; background: var(--painel2); font-family: var(--mono); font-size: 12.5px; }
 textarea:focus, input[type=search]:focus, select:focus { outline: 2px solid var(--acento); outline-offset: 0; border-color: transparent; }
 .linha-botoes { display: flex; gap: 8px; margin-top: 8px; align-items: center; flex-wrap: wrap; }
@@ -201,7 +205,7 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1
           <span>ou clique para escolher</span>
         </div>
         <input type="file" id="arquivo" multiple class="oculto">
-        <div class="formatos">PDF · DOCX · DOC · ODT · RTF · XLSX · XLS · ODS · CSV · TXT · HTML · JSON · XML · EML · MSG · PPTX · ZIP</div>
+        <div class="formatos">PDF · DOCX · DOC · ODT · RTF · XLSX · XLS · ODS · CSV · TXT · HTML · JSON · XML · EML · MSG · PPTX · ZIP · PNG · JPG · TIFF</div>
       </div>
     </section>
 
@@ -220,9 +224,13 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1
       <h2>Fontes carregadas <span id="nFontes" style="font-weight:400"></span></h2>
       <div class="corpo">
         <ul class="fontes" id="listaFontes"></ul>
-        <div class="linha-botoes" style="justify-content:space-between">
-          <label class="chave"><input type="checkbox" id="chkNomes" checked> Detectar nomes próprios</label>
+        <div class="linha-botoes" style="justify-content:flex-end">
           <button class="btn peq" id="btnLimpar">Limpar tudo</button>
+        </div>
+        <div class="opcoes">
+          <label class="chave"><input type="checkbox" id="chkNomes" checked> Detectar nomes próprios</label>
+          <label class="chave" title="Vale para os próximos arquivos carregados"><input type="checkbox" id="chkOcr" checked> OCR em imagens e PDFs digitalizados</label>
+          <div class="estado-ocr" id="estadoOcr">verificando...</div>
         </div>
       </div>
     </section>
@@ -304,7 +312,7 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1
     docs: [], itens: [], descartes: [], resumo: null, analisado: false,
     tipo: 'todos', status: 'todos', busca: '', visao: 'tabela',
     sel: new Set(), aberto: new Set(), ultimoClique: null, ord: { campo: null, dir: 1 }, limite: LIMITE_LINHAS,
-    pref: { telefone: 'nacional', cpf: 'formatado', imei: 'imei15', nome: 'original', email: 'minusculo', nomes: true }
+    pref: { telefone: 'nacional', cpf: 'formatado', imei: 'imei15', nome: 'original', email: 'minusculo', nomes: true, ocr: true }
   };
   try { var salvo = JSON.parse(localStorage.getItem('sxd_pref') || 'null'); if (salvo) Object.assign(S.pref, salvo); } catch (e) {}
   function salvarPref() { try { localStorage.setItem('sxd_pref', JSON.stringify(S.pref)); } catch (e) {} }
@@ -398,6 +406,17 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1
   function carregarEstado() {
     return api('/api/estado').then(function (r) { return r.json(); }).then(function (j) {
       $('versao').textContent = 'v' + j.versao;
+      S.ocr = j.ocr || { disponivel: false, motivo: '' };
+      var eo = $('estadoOcr');
+      if (S.ocr.disponivel) {
+        eo.textContent = 'Tesseract ' + S.ocr.versao + ' · idioma ' + S.ocr.idioma + (S.ocr.aviso ? ' · ⚠ sem modelo de português' : '');
+        eo.title = (S.ocr.aviso || '') + (S.ocr.caminho ? '\n' + S.ocr.caminho : '');
+        eo.className = 'estado-ocr' + (S.ocr.aviso ? ' off' : '');
+      } else {
+        eo.textContent = 'Indisponível: ' + (S.ocr.motivo || 'Tesseract não encontrado') + '.';
+        eo.className = 'estado-ocr off';
+        $('chkOcr').checked = false; $('chkOcr').disabled = true;
+      }
       S.docs = j.docs;
       renderFontes();
       if (S.docs.length) return analisar(); else render();
@@ -425,12 +444,20 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1
     var proximo = function () {
       if (i >= arquivos.length) return analisar();
       var f = arquivos[i++];
-      ocupado('Lendo ' + f.name + ' (' + i + '/' + arquivos.length + ', ' + tamanho(f.size) + ')...');
-      return api('/api/arquivo?nome=' + encodeURIComponent(f.name), { method: 'POST', headers: { 'Content-Type': 'application/octet-stream' }, body: f })
+      var base = 'Lendo ' + f.name + ' (' + i + '/' + arquivos.length + ', ' + tamanho(f.size) + ')';
+      ocupado(base + '...');
+      var usarOcr = S.pref.ocr && S.ocr && S.ocr.disponivel;
+      var vigia = setInterval(function () {
+        api('/api/progresso').then(function (r) { return r.json(); }).then(function (p) {
+          if (p.msg) $('msgOcupado').textContent = base + ' — ' + p.msg;
+        }).catch(function () {});
+      }, 700);
+      return api('/api/arquivo?nome=' + encodeURIComponent(f.name) + '&ocr=' + (usarOcr ? '1' : '0'),
+                 { method: 'POST', headers: { 'Content-Type': 'application/octet-stream' }, body: f })
         .then(function (r) { return r.json(); })
         .then(function (d) { S.docs.push(d); renderFontes(); })
         .catch(function (e) { toast(f.name + ': ' + e.message, true); })
-        .then(proximo);
+        .then(function () { clearInterval(vigia); return proximo(); });
     };
     proximo();
   }
@@ -517,6 +544,8 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1
       var meta = [d.tipo, tamanho(d.tamanho)];
       if (d.info && d.info.paginas) meta.push(d.info.paginas + ' pág.');
       if (d.info && d.info.criptografia) meta.push('PDF protegido (lido)');
+      if (d.info && d.info.ocr) meta.push('OCR: ' + d.info.ocr);
+      if (d.info && d.info.camada_ocr) meta.push('camada de OCR ' + d.info.camada_ocr);
       var li = el('li', null,
         el('div', { class: 'nome', text: d.nome }),
         el('button', { class: 'rem', title: 'Remover esta fonte', 'aria-label': 'Remover ' + d.nome, onclick: function () { remover(d.id); } }, '×'),
@@ -610,7 +639,8 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1
     var tr = el('tr', { class: 'linha' + (S.sel.has(it.id) ? ' marcada' : ''), onclick: function () { if (S.aberto.has(it.id)) S.aberto.delete(it.id); else S.aberto.add(it.id); render(); } },
       el('td', { class: 'cx' }, cx),
       el('td', null, el('span', { class: 'tipo ' + it.tipo, text: it.rotulo_tipo })),
-      el('td', { class: 'col-valor' }, el('button', { class: 'valor', title: 'Clique para copiar', text: v, onclick: function (ev) { ev.stopPropagation(); copiar(v, v); } })),
+      el('td', { class: 'col-valor' }, el('button', { class: 'valor', title: 'Clique para copiar', text: v, onclick: function (ev) { ev.stopPropagation(); copiar(v, v); } }),
+        it.extra && it.extra.ocr ? el('span', { class: 'selo-ocr', title: it.extra.ocr === 'todas' ? 'Lido somente por OCR: confira na imagem' : 'Também aparece em texto lido por OCR', text: 'OCR' }) : null),
       el('td', null, el('span', { class: 'st ' + it.status, title: it.motivo, text: ROT_STATUS[it.status] })),
       el('td', { class: 'n', text: String(it.n) }),
       el('td', { class: 'origem', title: (it.origens || []).join('\n'), text: (it.origens || [''])[0] + ((it.origens || []).length > 1 ? ' +' + (it.origens.length - 1) : '') }),
@@ -708,6 +738,8 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1
   $('btnTexto').addEventListener('click', enviarTexto);
   $('texto').addEventListener('keydown', function (e) { if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); enviarTexto(); } });
   $('btnLimpar').addEventListener('click', limparTudo);
+  $('chkOcr').checked = S.pref.ocr;
+  $('chkOcr').addEventListener('change', function () { S.pref.ocr = this.checked; salvarPref(); toast(this.checked ? 'OCR ligado para os próximos arquivos' : 'OCR desligado para os próximos arquivos'); });
   $('chkNomes').checked = S.pref.nomes;
   $('chkNomes').addEventListener('change', function () { S.pref.nomes = this.checked; salvarPref(); if (S.docs.length) analisar(); });
   $('busca').addEventListener('input', function () { S.busca = this.value; S.limite = LIMITE_LINHAS; render(); });

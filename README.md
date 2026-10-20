@@ -6,6 +6,7 @@ Os resultados aparecem numa tabela no navegador, de onde cada valor (ou um
 conjunto) pode ser copiado ou exportado para XLSX/CSV.
 
 - Python 3.8+ **somente com a biblioteca padrão** — nada para instalar além do Python.
+- **OCR opcional** (Tesseract, gratuito e local) para prints, fotos e PDFs digitalizados — ver seção 3.
 - Processamento 100% no computador do usuário (servidor em `127.0.0.1`).
 - Cada decisão tem uma **regra com código** (ex.: `R-TEL-03`) e um motivo em português.
 
@@ -28,7 +29,8 @@ Para encerrar, feche a janela preta ou clique em *Encerrar* na interface.
 python _analisador\extrair.py --sem-interface pasta_do_caso\ --saida resultado\
 ```
 
-Gera `extracao_AAAAMMDD_HHMMSS.xlsx` e `.csv`. Opções: `--sem-nomes`, `--porta N`, `--sem-navegador`.
+Gera `extracao_AAAAMMDD_HHMMSS.xlsx` e `.csv`. Opções: `--sem-nomes`, `--sem-ocr`, `--tesseract CAMINHO`,
+`--ocr-idioma por+eng`, `--porta N`, `--sem-navegador`.
 
 ---
 
@@ -39,8 +41,8 @@ que na verdade é HTML — comum em exportações de bancos — é lido corretam
 
 | Formato | Observações |
 |---|---|
-| PDF | texto de todas as páginas, campos de formulário, anotações e metadados; PDFs protegidos só contra cópia/impressão (senha de abertura vazia) são lidos — RC4, AES-128 e AES-256 |
-| DOCX, DOC (97-2003), ODT, RTF | corpo, tabelas, cabeçalho/rodapé, notas, comentários e metadados (autor) |
+| PDF | texto de todas as páginas, campos de formulário, anotações e metadados; PDFs protegidos só contra cópia/impressão (senha de abertura vazia) são lidos — RC4, AES-128 e AES-256; páginas digitalizadas e prints colados via **OCR** |
+| DOCX, DOC (97-2003), ODT, RTF | corpo, tabelas, cabeçalho/rodapé, notas, comentários e metadados (autor); imagens coladas (DOCX/ODT) via **OCR** |
 | XLSX, XLS (97-2003), ODS, XML 2003, CSV, TSV | todas as abas, inclusive ocultas; cabeçalho das colunas vira contexto |
 | TXT | colunas separadas por TAB viram tabela |
 | HTML | texto, tabelas e links `mailto:`/`tel:` |
@@ -50,11 +52,49 @@ que na verdade é HTML — comum em exportações de bancos — é lido corretam
 | PPTX | slides, tabelas e notas |
 | ZIP, GZ | todos os arquivos internos, recursivamente (até 4 níveis) |
 | Outros binários | extração de sequências de texto legíveis (como `strings`) |
-| Imagens | **sem OCR** — a ferramenta avisa |
+| PNG, JPEG, TIFF, BMP, GIF, WebP | via **OCR** (prints de WhatsApp, fotos de documentos). HEIC (iPhone): converter antes |
 
 ---
 
-## 3. Regras de detecção
+## 3. OCR (opcional)
+
+Sem o Tesseract a ferramenta funciona normalmente, mas não lê imagens nem páginas digitalizadas
+(avisa quais ficaram de fora). Para ativar no Windows:
+
+1. Baixe o instalador de 64 bits em <https://github.com/UB-Mannheim/tesseract/wiki>.
+2. Na instalação, em *Additional language data*, marque **Portuguese**.
+3. Abra o `extrair.bat`: a interface deve mostrar "Tesseract 5.x · idioma por+eng".
+
+Não precisa colocar no PATH: o programa procura em *Arquivos de Programas* e em `AppData`.
+Sem permissão para instalar: veja `_analisador/ocr/LEIA-ME.txt` (cópia portátil).
+
+O que passa por OCR:
+
+| Fonte | Regra |
+|---|---|
+| Imagem solta (PNG, JPG, TIFF...) | sempre |
+| Página de PDF | cada imagem com pelo menos 120 mil pixels (ícones pequenos ficam de fora); a mesma imagem repetida em várias páginas é lida uma vez |
+| PDF já pesquisável | **não refaz** o OCR quando a página já tem camada de texto invisível (scanner com OCR embutido) |
+| DOCX, ODT, PPTX, XLSX | imagens coladas no documento, com o mesmo limite de tamanho |
+
+Detalhes técnicos:
+- Idioma `por+eng`: o modelo só em português lê "@" como "r" nos e-mails; combinado com o inglês, não.
+- Páginas digitalizadas de lado são corrigidas automaticamente (modelo `osd`).
+- Formatos de imagem do PDF: JPEG, JPEG 2000, CCITT G3/G4 (preto e branco), cinza, RGB, CMYK e paleta.
+  **JBIG2** não é suportado (aviso).
+- A imagem é entregue ao Tesseract pela memória, sem arquivo temporário.
+- Até 4 páginas em paralelo, conforme os núcleos do processador; a interface mostra "OCR: imagem 7 de 40".
+  Referência: ~1,5 s por página A4 a 300 dpi num processador de 2 núcleos.
+- A opção *OCR em imagens e PDFs digitalizados* vale para os arquivos carregados **depois** de marcada.
+
+**R-OCR-01** — item visto *somente* em texto de OCR: telefone, e-mail e nome passam a **Atenção**
+(não têm dígito verificador; um caractere mal lido gera um valor errado mas plausível). CPF e IMEI
+mantêm o status, porque o DV/Luhn já barra a maioria dos erros de leitura. Itens lidos por OCR ganham
+o selo **OCR** na tabela e a anotação "lido por OCR" na exportação.
+
+---
+
+## 4. Regras de detecção
 
 Princípios comuns:
 
@@ -116,10 +156,15 @@ O mesmo aparelho é consolidado pelos 14 primeiros dígitos (TAC + série): `352
 O prefixo `10` não é aceito sem contexto de propósito: IDs do Facebook têm 15 dígitos e começam com `100`.
 
 ### Ambiguidade CPF × celular
-Onze dígitos sem formatação podem ser CPF válido **e** celular válido ao mesmo tempo (`R-AMB-01`). Resolução, nesta ordem:
-1. `R-AMB-02` — o mesmo número aparece formatado ou com contexto em outro ponto do lote;
-2. `R-AMB-03` — na mesma coluna da planilha, ≥ 80% dos valores (mín. 3) são de um tipo;
-3. sem evidência: aparece **nas duas listas**, com *Atenção*.
+Onze dígitos **contíguos** (sem formatação e sem espaços) podem ser CPF válido **e** celular válido ao mesmo tempo.
+Ordem de decisão:
+1. Palavra-chave antes do número (`CPF 819...` ou `Tel 819...`) decide (`R-CPF-03` / `R-TEL-03`).
+2. `R-AMB-02` — o mesmo número aparece formatado ou com contexto em outro ponto do lote;
+3. `R-AMB-03` — na mesma coluna da planilha, ≥ 80% dos valores (mín. 3) são de um tipo;
+4. `R-AMB-04` — sem nenhuma evidência: **CPF**, desde que os dois últimos dígitos sejam DV válido
+   (se o DV não confere, segue como celular, `R-TEL-03`).
+
+Com espaços ou traços (`81 98765-4099`) o número é sempre tratado como telefone.
 
 ### Nomes próprios (heurística por dicionário — menor precisão que os demais tipos)
 | Regra | Descrição | Status |
@@ -139,7 +184,7 @@ nome está contido em outro maior (`João Silva` ⊂ `João Silva Santos`).
 
 ---
 
-## 4. Status, descartes e rastreabilidade
+## 5. Status, descartes e rastreabilidade
 
 - **OK** (verde): validado pela regra. **Atenção** (amarelo): precisa de conferência humana.
   **Inválido** (vermelho): mantido porque o contexto indica o tipo, mas a validação falhou.
@@ -147,7 +192,7 @@ nome está contido em outro maior (`João Silva` ⊂ `João Silva Santos`).
 - Cada item mostra **onde aparece** (arquivo, página/aba/linha/coluna e trecho com destaque) — até 30 ocorrências.
 - Cada arquivo carregado mostra o **SHA-256** do conteúdo recebido (aba *Fontes* do XLSX).
 
-## 5. Copiar e exportar
+## 6. Copiar e exportar
 
 - Clique num valor: copia no formato escolhido em *Formato de cópia* (telefone, CPF, IMEI, nome, e-mail).
 - *Copiar selecionados* / *Copiar lista*: um valor por linha.
@@ -158,23 +203,27 @@ nome está contido em outro maior (`João Silva` ⊂ `João Silva Santos`).
   gravados como texto e status colorido. **CSV**: `;`, UTF-8 com BOM, proteção contra fórmula.
 - As ações valem para os itens **selecionados**; sem seleção, para a lista filtrada.
 
-## 6. Segurança e sigilo
+## 7. Segurança e sigilo
 
 - O servidor escuta **só em 127.0.0.1**: nenhuma outra máquina da rede acessa.
 - Cada execução gera um **token aleatório** exigido em todas as chamadas, e o cabeçalho `Host` é conferido
   (impede que um site aberto no navegador use o servidor local; proteção contra DNS rebinding).
 - A página não carrega nada da internet (sem CDN, sem fontes externas; CSP restritiva).
-- **Nada é gravado em disco**: arquivos e resultados ficam na memória e somem ao encerrar.
+- **Nada é gravado em disco**: arquivos e resultados ficam na memória e somem ao encerrar. As imagens vão ao
+  Tesseract pela memória; só versões antigas dele, que não aceitam isso, usam um arquivo temporário apagado em seguida.
+- O OCR roda no próprio computador (o Tesseract não acessa a internet).
   Exportações só são salvas quando o usuário clica em XLSX/CSV.
 - `.gitignore` bloqueia planilhas, PDFs e documentos fora de `tests/amostras/` (amostras **sintéticas**).
 
-## 7. Limitações conhecidas
+## 8. Limitações conhecidas
 
-1. **Sem OCR**: PDF digitalizado e imagens não têm texto. A ferramenta lista as páginas sem camada de texto.
+1. **OCR depende do Tesseract** e da qualidade da imagem: foto torta, baixa resolução ou fundo colorido
+   reduzem o acerto. Letras e números parecidos (O/0, l/1, S/5) podem ser trocados — por isso a regra R-OCR-01.
+   Sem o Tesseract, a ferramenta lista as páginas sem camada de texto.
 2. **Células estreitas em PDF**: quando o próprio PDF quebra o conteúdo de uma célula em duas linhas
    (`pedro.alves@exe` / `mplo.org`), o dado sai partido — o mesmo ocorre com o `pdftotext`. Prefira a
    planilha original ou cole o texto.
-3. **PDF com senha de abertura**, **XLS/DOC criptografados**, **7z/RAR**: não lidos (há aviso).
+3. **PDF com senha de abertura**, **XLS/DOC criptografados**, **7z/RAR**, imagens **JBIG2** e **HEIC**: não lidos (há aviso).
 4. **Nomes**: heurística. Prenomes raros (fora dos ~8 mil do Censo com frequência ≥ 1.000) só são achados
    pela regra de rótulo/coluna; podem ocorrer falsos positivos em títulos e nomes de lugares.
 5. **Contexto** só olha para trás (`CPF 123...`), não para frente (`123... (CPF)`).
@@ -184,7 +233,7 @@ nome está contido em outro maior (`João Silva` ⊂ `João Silva Santos`).
 
 ---
 
-## 8. Estrutura do código
+## 9. Estrutura do código
 
 ```
 _analisador/
@@ -196,6 +245,7 @@ _analisador/
     ├── ole.py            OLE2: XLS (BIFF5/8), DOC (tabela de peças), MSG
     ├── pdf.py            PDF: objetos, object streams, filtros, fontes/ToUnicode, formulários
     ├── cripto.py         RC4, AES-128/256 (tabelas T) e manipulador de segurança do PDF
+    ├── ocr.py            Tesseract: localização, idiomas, execução em paralelo, PNG/TIFF a partir do PDF
     ├── normaliza.py      limpeza de texto (NFKC, invisíveis, traços/espaços tipográficos)
     ├── regras.py         DDDs, DDIs, RBIs, palavras de contexto, rótulos de nome
     ├── detectores.py     e-mail, telefone, IMEI, CPF (cadeias numéricas + modelos)
@@ -206,8 +256,9 @@ _analisador/
     ├── cli.py            linha de comando
     ├── interface/        index.html (página única, sem dependências)
     └── dados/            prenomes (IBGE), sobrenomes, palavras de bloqueio, municípios
+_analisador/ocr/                 (opcional) Tesseract portátil e modelos de idioma — ver LEIA-ME.txt
 ferramentas/preparar_dados.py   regenera dados/ a partir das fontes públicas
-tests/                           77 testes (unittest) + amostras sintéticas + gerador
+tests/                           89 testes (unittest) + amostras sintéticas + gerador
 ```
 
 ### Testes
@@ -216,21 +267,21 @@ tests/                           77 testes (unittest) + amostras sintéticas + g
 python -m unittest discover -s tests -v
 ```
 
-Validados em Python 3.8, 3.11, 3.12 e 3.13. Cobrem cada regra de detecção, os formatos de arquivo
+Validados em Python 3.8, 3.11, 3.12 e 3.13, com e sem Tesseract (sem ele, 4 testes são pulados). Cobrem cada regra de detecção, os formatos de arquivo
 contra um gabarito (`tests/amostras/gabarito.json`), PDFs criptografados (RC4/AES-128/AES-256, com e sem
-senha de abertura), AES contra os vetores do FIPS-197, exportação XLSX/CSV e a segurança do servidor
-(token, Host). `tests/gerar_amostras.py` recria as amostras (exige python-docx, openpyxl, reportlab,
+senha de abertura), OCR de PDFs digitalizados (JPEG, cinza, paleta, CCITT, página girada, PDF pesquisável,
+página mista), AES contra os vetores do FIPS-197, exportação XLSX/CSV e a segurança do servidor (token, Host). `tests/gerar_amostras.py` recria as amostras (exige python-docx, openpyxl, reportlab,
 python-pptx, LibreOffice e qpdf — só em desenvolvimento).
 
-## 9. Fontes de dados
+## 10. Fontes de dados
 
 - **Prenomes**: IBGE, Censo 2010 — *Nomes no Brasil* (10 mil mais frequentes por sexo), compilados em
   [MedidaSP/nomes-brasileiros-ibge](https://github.com/MedidaSP/nomes-brasileiros-ibge).
 - **Municípios** (nome, UF, DDD): [kelvins/municipios-brasileiros](https://github.com/kelvins/municipios-brasileiros) (MIT).
 - **Sobrenomes** e **palavras de bloqueio**: listas curadas, editáveis em `extdados/dados/`.
 
-## 10. Próximos passos possíveis
+## 11. Próximos passos possíveis
 
 - Outros identificadores: CNPJ, chave PIX aleatória, placa, RG, IP, nº de processo CNJ.
 - Leitura de contexto **depois** do valor.
-- OCR opcional (Tesseract local) para PDFs digitalizados.
+- Correção assistida de confusões típicas de OCR em números (O→0, l→1), sempre sinalizada.

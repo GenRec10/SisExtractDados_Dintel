@@ -42,6 +42,8 @@ def _info(item):
         partes.append(ex['dominio'])
     if ex.get('sem_ddd'):
         partes.append('sem DDD')
+    if ex.get('ocr'):
+        partes.append('lido por OCR' if ex['ocr'] == 'todas' else 'também lido por OCR')
     return '; '.join(partes)
 
 

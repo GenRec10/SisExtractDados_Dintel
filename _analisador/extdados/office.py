@@ -58,6 +58,46 @@ def metadados(doc, z):
         doc.texto('metadados do arquivo', '\n'.join(linhas))
 
 
+_PASTAS_MIDIA = ('word/media/', 'ppt/media/', 'xl/media/', 'Pictures/')
+_EXT_IMAGEM = ('.png', '.jpg', '.jpeg', '.jpe', '.gif', '.bmp', '.tif', '.tiff', '.webp', '.jp2')
+
+
+def imagens_embutidas(doc, z):
+    """OCR das imagens coladas no documento (prints, digitalizações). Ícones pequenos são ignorados."""
+    from . import ocr
+    nomes = sorted(n for n in z.namelist()
+                   if n.startswith(_PASTAS_MIDIA) and n.lower().endswith(_EXT_IMAGEM))
+    tarefas = []
+    for nome in nomes:
+        info = z.getinfo(nome)
+        if info.file_size > 64 * 1024 * 1024:
+            continue
+        dados = z.read(nome)
+        dim = ocr.dimensoes(dados)
+        if dim and not ocr.vale_ocr(*dim):
+            continue
+        tarefas.append((nome, dados, None))
+    if not tarefas:
+        return
+    if not ocr.ativo():
+        doc.aviso('%d imagem(ns) dentro do documento não lida(s): %s' % (
+            len(tarefas), 'OCR desligado' if ocr.motor() is not None else 'Tesseract não instalado (ver README)'))
+        return
+    resultado = ocr.ler_lote(tarefas, 'imagem do documento')
+    for nome, _, _ in tarefas:
+        texto, erro = resultado.get(nome, ('', 'sem resultado'))
+        if erro:
+            doc.aviso('OCR falhou em %s: %s' % (nome, erro))
+        elif texto.strip():
+            doc.texto('imagem %s (OCR)' % nome.rsplit('/', 1)[-1], texto, ocr=True)
+    doc.info['ocr'] = '%s: %d imagem(ns)' % (ocr.motor().descricao(), len(tarefas))
+
+
+def _finalizar(doc, z):
+    imagens_embutidas(doc, z)
+    metadados(doc, z)
+
+
 # ===================================================================== DOCX
 
 def _texto_paragrafo_w(p):
@@ -133,7 +173,7 @@ def ler_docx(doc, z):
         if r is not None:
             textos = [_texto_paragrafo_w(p) for p in r.iter(W + 'p')]
             doc.texto(rotulo, '\n'.join(t for t in textos if t.strip()))
-    metadados(doc, z)
+    _finalizar(doc, z)
 
 
 # ===================================================================== PPTX
@@ -165,7 +205,7 @@ def ler_pptx(doc, z):
         if notas is not None:
             doc.texto('slide %s, notas' % num, '\n'.join(
                 ''.join(t.text or '' for t in p.iter(A + 't')) for p in notas.iter(A + 'p')))
-    metadados(doc, z)
+    _finalizar(doc, z)
 
 
 # ===================================================================== XLSX
@@ -261,7 +301,7 @@ def ler_xlsx(doc, z):
             linhas.append(celulas)
             el.clear()
         doc.tabela('aba ' + nome, linhas)
-    metadados(doc, z)
+    _finalizar(doc, z)
 
 
 # ===================================================================== OpenDocument
@@ -330,7 +370,7 @@ def ler_ods(doc, z):
         return
     for tbl in raiz.iter(TAB + 'table'):
         doc.tabela('aba ' + tbl.get(TAB + 'name', 'planilha'), _tabela_odf(tbl))
-    metadados(doc, z)
+    _finalizar(doc, z)
 
 
 def ler_odt(doc, z):
@@ -366,4 +406,4 @@ def ler_odt(doc, z):
                 andar(f)
     andar(corpo)
     despejar()
-    metadados(doc, z)
+    _finalizar(doc, z)
