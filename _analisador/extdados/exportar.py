@@ -18,7 +18,7 @@ ROTULO_STATUS = {'ok': 'OK', 'atencao': 'Atenção', 'invalido': 'Inválido'}
 TIPOS = (('email', 'E-mails'), ('telefone', 'Telefones'), ('imei', 'IMEIs'), ('cpf', 'CPFs'), ('nome', 'Nomes'))
 _ILEGAL_XML = re.compile('[\x00-\x08\x0b\x0c\x0e-\x1f￾￿]')
 
-FORMATOS_PADRAO = {'telefone': 'nacional', 'cpf': 'formatado', 'imei': 'imei15', 'nome': 'original',
+FORMATOS_PADRAO = {'telefone': 'digitos_ddi', 'cpf': 'formatado', 'imei': 'imei15', 'nome': 'original',
                    'email': 'minusculo'}
 
 

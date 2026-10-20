@@ -66,6 +66,13 @@ class TestExportar(unittest.TestCase):
         for aba in ('Dados', 'Telefones', 'CPFs', 'Ocorrências', 'Fontes'):
             self.assertIn('name="%s"' % aba, wb)
 
+    def test_formato_padrao_telefone(self):
+        d, r = _resultado()
+        txt = gerar_csv(r.itens).decode('utf-8')
+        self.assertIn(';5581987654321;', txt)
+        z = zipfile.ZipFile(io.BytesIO(gerar_xlsx(r.itens)))
+        self.assertIn('>5581987654321<', z.read('xl/worksheets/sheet1.xml').decode('utf-8'))
+
     def test_csv_bom_e_formula(self):
         d, r = _resultado()
         txt = gerar_csv(r.itens, {'telefone': 'e164'}).decode('utf-8')

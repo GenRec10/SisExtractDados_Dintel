@@ -123,13 +123,24 @@ class TestTelefone(unittest.TestCase):
     def test_whatsapp_id(self):
         self.assertEqual(self.e164('WhatsApp ID: 5581987654321'), ['+5581987654321'])
 
+    def test_formato_padrao_de_copia_ddi_ddd_sem_separadores(self):
+        self.assertEqual(um('(81) 98765-4321').formatos['digitos_ddi'], '5581987654321')
+        self.assertEqual(um('fone (81) 3333-4444').formatos['digitos_ddi'], '558133334444')
+        self.assertEqual(um('+1 (555) 234-5678').formatos['digitos_ddi'], '15552345678')
+        self.assertEqual(um('+351 912 345 678').formatos['digitos_ddi'], '351912345678')
+        # sem DDD não há DDI/DDD a acrescentar: só os dígitos, sem traço
+        self.assertEqual(um('ligue 98765-4321').formatos['digitos_ddi'], '987654321')
+        self.assertEqual(um('SAC 0800 123 4567').formatos['digitos_ddi'], '08001234567')
+        for c in det('(81) 98765-4321 / +55 81 3333-4444 / 98765-4321')[0]:
+            self.assertRegex(c.formatos['digitos_ddi'], r'^\d+$')
+
     def test_uf_do_ddd(self):
         self.assertEqual(um('(83) 99999-0000').extra['uf'], 'PB')
 
     def test_varios_na_mesma_cadeia(self):
         self.assertEqual(self.e164('Tel: (81) 98765-4321 / 81 3333-4444'), ['+5581987654321', '+558133334444'])
         # contexto vindo do fim da linha anterior (rótulo acima do valor)
-        self.assertEqual(self.e164('3333-4444 81 98765-4321', anterior='Telefones:'), ['3333-4444', '+5581987654321'])
+        self.assertEqual(self.e164('3333-4444 81 98765-4321', anterior='Telefones:'), ['33334444', '+5581987654321'])
 
 
 class TestFronteiras(unittest.TestCase):

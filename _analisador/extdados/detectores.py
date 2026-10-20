@@ -117,8 +117,9 @@ def candidato_tel_br(ddd, n, status, motivo, regra, extra=None):
 
 def candidato_tel_local(n, status, motivo, regra):
     v = _local(n)
-    formatos = dict.fromkeys(('nacional', 'internacional', 'e164', 'digitos_ddi'), v)
-    formatos['digitos'] = n
+    formatos = dict.fromkeys(('nacional', 'internacional'), v)
+    # sem DDD não há como montar DDI+DDD: os formatos "só dígitos" ficam só com o número local
+    formatos.update(dict.fromkeys(('e164', 'digitos_ddi', 'digitos'), n))
     return Candidato('telefone', 'L:' + n, v, formatos, status, motivo, regra,
                      extra={'sem_ddd': True}, digitos=n)
 
@@ -455,8 +456,8 @@ def _servico_multi(c, i):
 
 def _cand_servico(d):
     v = '%s %s %s' % (d[:4], d[4:7], d[7:])
-    formatos = dict.fromkeys(('nacional', 'internacional', 'e164', 'digitos_ddi'), v)
-    formatos['digitos'] = d
+    formatos = dict.fromkeys(('nacional', 'internacional'), v)
+    formatos.update(dict.fromkeys(('e164', 'digitos_ddi', 'digitos'), d))   # 0800 não tem DDI
     return Candidato('telefone', 'S:' + d, v, formatos, ATENCAO,
                      'Número de serviço (%s) — não é linha pessoal' % d[:4], 'R-TEL-07', digitos=d)
 
