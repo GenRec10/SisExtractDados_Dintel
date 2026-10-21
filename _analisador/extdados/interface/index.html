@@ -255,8 +255,8 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1
         <summary class="btn" title="Como cada tipo é copiado e exportado">Formato de cópia ▾</summary>
         <div class="painel-formatos">
           <label>Telefone <select data-pref="telefone">
-            <option value="digitos_ddi">5581987654321 (padrão)</option>
-            <option value="e164">+5581987654321</option>
+            <option value="e164">+5581987654321 (padrão)</option>
+            <option value="digitos_ddi">5581987654321</option>
             <option value="internacional">+55 81 98765-4321</option>
             <option value="nacional">(81) 98765-4321</option>
             <option value="digitos">81987654321</option></select></label>
@@ -312,10 +312,10 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1
     docs: [], itens: [], descartes: [], resumo: null, analisado: false,
     tipo: 'todos', status: 'todos', busca: '', visao: 'tabela',
     sel: new Set(), aberto: new Set(), ultimoClique: null, ord: { campo: null, dir: 1 }, limite: LIMITE_LINHAS,
-    pref: { telefone: 'digitos_ddi', cpf: 'formatado', imei: 'imei15', nome: 'original', email: 'minusculo', nomes: true, ocr: true }
+    pref: { telefone: 'e164', cpf: 'formatado', imei: 'imei15', nome: 'original', email: 'minusculo', nomes: true, ocr: true }
   };
-  try { var salvo = JSON.parse(localStorage.getItem('sxd_pref2') || 'null'); if (salvo) Object.assign(S.pref, salvo); } catch (e) {}
-  function salvarPref() { try { localStorage.setItem('sxd_pref2', JSON.stringify(S.pref)); } catch (e) {} }
+  try { var salvo = JSON.parse(localStorage.getItem('sxd_pref3') || 'null'); if (salvo) Object.assign(S.pref, salvo); } catch (e) {}
+  function salvarPref() { try { localStorage.setItem('sxd_pref3', JSON.stringify(S.pref)); } catch (e) {} }
 
   // ------------------------------------------------------------------ utilidades
   var $ = function (id) { return document.getElementById(id); };

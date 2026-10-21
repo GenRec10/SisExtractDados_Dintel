@@ -127,9 +127,9 @@ Princípios comuns:
 | R-TEL-9x | DDD inexistente; contexto negativo ("conta 81987654321"); DDI inexistente | descartado |
 
 DDD validado contra os 67 DDDs em uso. Celular de 8 dígitos (formato anterior ao 9º dígito) é aceito com *Atenção*.
-Na tabela o telefone aparece com DDI (`+55 81 98765-4321`). **Cópia e exportação, por padrão: DDI + DDD + número,
-só dígitos** (`5581987654321`; internacional: `15552345678`). Outros formatos no menu *Formato de cópia*:
-`+5581987654321`, `+55 81 98765-4321`, `(81) 98765-4321`, `81987654321`.
+Na tabela o telefone aparece com DDI (`+55 81 98765-4321`). **Cópia e exportação, por padrão: `+` DDI DDD número,
+sem espaços nem separadores** (`+5581987654321`; internacional: `+15552345678`). Outros formatos no menu
+*Formato de cópia*: `5581987654321`, `+55 81 98765-4321`, `(81) 98765-4321`, `81987654321`.
 Número sem DDD não tem como receber DDI/DDD: é copiado só com os dígitos locais (`987654321`) e fica em *Atenção*.
 
 ### CPF
@@ -198,7 +198,7 @@ nome está contido em outro maior (`João Silva` ⊂ `João Silva Santos`).
 ## 6. Copiar e exportar
 
 - Clique num valor: copia no formato escolhido em *Formato de cópia* (telefone, CPF, IMEI, nome, e-mail).
-  Telefone: padrão `5581987654321` (DDI + DDD, sem espaços nem separadores).
+  Telefone: padrão `+5581987654321` (`+` DDI DDD, sem espaços nem separadores).
 - *Copiar selecionados* / *Copiar lista*: um valor por linha.
 - *Copiar tabela*: cola no Excel/Word como tabela, **mantendo CPF e IMEI como texto** (sem perder o zero à
   esquerda nem virar notação científica).

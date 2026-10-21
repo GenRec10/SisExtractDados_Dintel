@@ -18,7 +18,7 @@ ROTULO_STATUS = {'ok': 'OK', 'atencao': 'Atenção', 'invalido': 'Inválido'}
 TIPOS = (('email', 'E-mails'), ('telefone', 'Telefones'), ('imei', 'IMEIs'), ('cpf', 'CPFs'), ('nome', 'Nomes'))
 _ILEGAL_XML = re.compile('[\x00-\x08\x0b\x0c\x0e-\x1f￾￿]')
 
-FORMATOS_PADRAO = {'telefone': 'digitos_ddi', 'cpf': 'formatado', 'imei': 'imei15', 'nome': 'original',
+FORMATOS_PADRAO = {'telefone': 'e164', 'cpf': 'formatado', 'imei': 'imei15', 'nome': 'original',
                    'email': 'minusculo'}
 
 
@@ -210,9 +210,18 @@ def gerar_xlsx(itens, descartes=None, docs=None, formatos=None):
 
 # ===================================================================== CSV
 
+_TELEFONE_E164 = re.compile(r'\+\d{4,15}\Z')
+
+
 def _seguro(v):
-    """Evita injeção de fórmula ao abrir o CSV em planilha (OWASP)."""
+    """Evita injeção de fórmula ao abrir o CSV em planilha (OWASP).
+
+    Exceção: "+" seguido SOMENTE de dígitos (telefone E.164, ex. +5581987654321) é mantido
+    sem apóstrofo — sem letras não há função a executar.
+    """
     v = '' if v is None else str(v)
+    if _TELEFONE_E164.match(v):
+        return v
     if v[:1] in ('=', '+', '-', '@', '\t', '\r'):
         return "'" + v
     return v

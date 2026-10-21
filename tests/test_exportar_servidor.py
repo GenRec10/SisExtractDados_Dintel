@@ -69,15 +69,21 @@ class TestExportar(unittest.TestCase):
     def test_formato_padrao_telefone(self):
         d, r = _resultado()
         txt = gerar_csv(r.itens).decode('utf-8')
-        self.assertIn(';5581987654321;', txt)
+        self.assertIn(';+5581987654321;', txt)          # sem apóstrofo
         z = zipfile.ZipFile(io.BytesIO(gerar_xlsx(r.itens)))
-        self.assertIn('>5581987654321<', z.read('xl/worksheets/sheet1.xml').decode('utf-8'))
+        folha = z.read('xl/worksheets/sheet1.xml').decode('utf-8')
+        self.assertIn('>+5581987654321<', folha)
+        self.assertIn('t="inlineStr"', folha)             # texto: o Excel não tira o "+"
 
     def test_csv_bom_e_formula(self):
         d, r = _resultado()
-        txt = gerar_csv(r.itens, {'telefone': 'e164'}).decode('utf-8')
+        txt = gerar_csv(r.itens).decode('utf-8')
         self.assertTrue(txt.startswith('﻿'))
-        self.assertIn(";'+5581987654321;", txt)
+        from extdados.exportar import _seguro
+        self.assertEqual(_seguro('+5581987654321'), '+5581987654321')
+        self.assertEqual(_seguro('+15552345678'), '+15552345678')
+        for perigoso in ('=1+1', '+HYPERLINK("x")', '+cmd|calc', '-2+3', '@SOMA(A1)', '+55 81 98765-4321'):
+            self.assertEqual(_seguro(perigoso), "'" + perigoso, perigoso)
 
 
 class TestServidor(unittest.TestCase):
